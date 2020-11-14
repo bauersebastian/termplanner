@@ -19,6 +19,7 @@ $black: #000;
 $pink: #f2dede;
 $dark-pink: #eed3d7;
 $red: #b94a48;
+$vawi-blue: #004c93;
 
 ////////////////////////////////
 		//Alerts//
@@ -37,4 +38,13 @@ $red: #b94a48;
   background-color: $pink;
   border-color: $dark-pink;
   color: $red;
+}
+
+.vawi-background {
+  background-color: $vawi-blue;
+  color: white;
+}
+
+.vawi-background a {
+  color: white;
 }
