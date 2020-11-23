@@ -32,7 +32,7 @@
   <body>
 
     <div class="mb-1">
-      <nav class="navbar navbar-expand-md vawi-background">
+      <nav class="navbar navbar-expand-md vawi-background navbar-dark">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,7 +71,7 @@
 
     </div>
 
-    <div class="container">
+    <div class="container mt-4 mb-4">
 
       {% if messages %}
           {% for message in messages %}
@@ -83,6 +83,13 @@
       {% endblock content %}
 
     </div> <!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"><a href="{% url 'imprint' %}">Impressum</a> | <a href="{% url 'privacy' %}">Datenschutz</a></span>
+      </div>
+
+    </footer>
 
     {% block modal %}{% endblock modal %}
 
