@@ -1,4 +1,6 @@
-{% load static i18n %}<!DOCTYPE html>
+{% load static i18n %}
+{% url 'home' as home_url %}
+<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
@@ -40,14 +42,14 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="{% url 'home' %}">Startseite <span class="sr-only">(current)</span></a>
+            <li class="nav-item {% if request.get_full_path == home_url %}active{% endif %}">
+              <a class="nav-link" href="{% url 'home' %}">Startseite</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {% if "/about" in request.path %}active{% endif %}">
               <a class="nav-link" href="{% url 'about' %}">Über uns</a>
             </li>
             {% if request.user.is_authenticated %}
-              <li class="nav-item">
+              <li class="nav-item {% if "/users" in request.path %}active{% endif %}">
                 {# URL provided by django-allauth/account/urls.py #}
                 <a class="nav-link" href="{% url 'users:detail' request.user.username  %}">{% trans "My Profile" %}</a>
               </li>
@@ -56,11 +58,11 @@
                 <a class="nav-link" href="{% url 'account_logout' %}">{% trans "Sign Out" %}</a>
               </li>
             {% else %}
-              <li class="nav-item">
+              <li class="nav-item {% if "signup" in request.path %}active{% endif %}">
                 {# URL provided by django-allauth/account/urls.py #}
                 <a id="sign-up-link" class="nav-link" href="{% url 'account_signup' %}">{% trans "Sign Up" %}</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {% if "/login" in request.path %}active{% endif %}">
                 {# URL provided by django-allauth/account/urls.py #}
                 <a id="log-in-link" class="nav-link" href="{% url 'account_login' %}">{% trans "Sign In" %}</a>
               </li>
@@ -86,7 +88,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted"><a href="{% url 'imprint' %}">Impressum</a> | <a href="{% url 'privacy' %}">Datenschutz</a></span>
+        <span class="text-muted"><a class="{% if "imprint" in request.path %}font-weight-bold{% endif %}" href="{% url 'imprint' %}">Impressum</a> | <a class="{% if "privacy" in request.path %}font-weight-bold{% endif %}" href="{% url 'privacy' %}">Datenschutz</a></span>
       </div>
 
     </footer>
