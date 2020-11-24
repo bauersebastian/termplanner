@@ -12,6 +12,14 @@ class Module(TimeStampedModel):
     title = models.CharField("Titel des Moduls", max_length=255)
     short_title = models.CharField("Abkürzung des Moduls", max_length=5)
     description = models.TextField("Beschreibung zum Modul")
+    host = models.CharField("Anbieter des Moduls", max_length=255)
+    quota_economics = models.IntegerField("Anteil Wirtschaftswissenschaft", default=0)
+    quota_cs = models.IntegerField("Anteil Informatik", default=0)
+    quota_is = models.IntegerField("Anteil Wirtschaftsinformatik", default=0)
+    quota_key_competence = models.IntegerField("Anteil Schlüsselkompetenz", default=0)
+    ects = models.IntegerField("ECTS Punkte", default=0)
+    TermType = models.TextChoices("TermType", "SS WS")
+    term = models.CharField(choices=TermType.choices, max_length=2, default=TermType.SS)
 
 
 class TermStarts(datetime.date, models.Choices):
