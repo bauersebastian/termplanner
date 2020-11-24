@@ -1,12 +1,17 @@
 import datetime
 
-# from django.conf import settings
 from django.db import models
-
-# from model_utils.models import TimeStampedModel
+from model_utils.models import TimeStampedModel
 
 # from django.urls import reverse
 # from autoslug import AutoSlugField
+# from django.conf import settings
+
+
+class Module(TimeStampedModel):
+    title = models.CharField("Titel des Moduls", max_length=255)
+    short_title = models.CharField("Abkürzung des Moduls", max_length=5)
+    description = models.TextField("Beschreibung zum Modul")
 
 
 class TermStarts(datetime.date, models.Choices):
@@ -22,13 +27,10 @@ class TermStarts(datetime.date, models.Choices):
 class Term(TimeStampedModel):
     student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     year = models.DateField(choices=TermStarts.choices)
+"""
 
 
-class Module(TimeStampedModel):
-    title = models.CharField("Titel des Moduls", max_length=255)
-    short_title = models.CharField("Abkürzung des Moduls", max_length=5)
-
-
+"""
 class Event(TimeStampedModel):
     student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 """
