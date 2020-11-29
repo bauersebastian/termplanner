@@ -3,9 +3,9 @@ import datetime
 from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+from django.urls import reverse
 from model_utils.models import TimeStampedModel
 
-# from django.urls import reverse
 # from autoslug import AutoSlugField
 
 
@@ -21,6 +21,9 @@ class Module(TimeStampedModel):
     ects = models.IntegerField("ECTS Punkte", default=0)
     TermType = models.TextChoices("TermType", "SS WS SS/WS")
     term = models.CharField(choices=TermType.choices, max_length=5, default=TermType.SS)
+
+    def __str__(self):
+        return self.title
 
 
 class TermStarts(datetime.date, models.Choices):
@@ -40,15 +43,29 @@ class SemesterModule(TimeStampedModel):
         "Punkte Studienleistung",
         validators=[MinValueValidator(0.0), MaxValueValidator(18)],
         default=0,
+        null=True,
+        blank=True,
     )
     points_exam = models.FloatField(
         "Punkte Klausur",
         validators=[MinValueValidator(0.0), MaxValueValidator(18)],
         default=0,
+        null=True,
+        blank=True,
     )
     grade = models.FloatField(
-        "Note", validators=[MinValueValidator(1.0), MaxValueValidator(5.0)], null=True
+        "Note",
+        validators=[MinValueValidator(1.0), MaxValueValidator(5.0)],
+        null=True,
+        blank=True,
     )
+
+    def __str__(self):
+        return self.user.id
+
+    def get_absolute_url(self):
+        """Return absolute url to the trips detail page."""
+        return reverse("terms:detail", kwargs={"pk": self.pk})
 
 
 """
