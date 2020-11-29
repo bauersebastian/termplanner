@@ -1,11 +1,12 @@
 import datetime
 
+from django.conf import settings
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from model_utils.models import TimeStampedModel
 
 # from django.urls import reverse
 # from autoslug import AutoSlugField
-# from django.conf import settings
 
 
 class Module(TimeStampedModel):
@@ -18,8 +19,8 @@ class Module(TimeStampedModel):
     quota_is = models.IntegerField("Anteil Wirtschaftsinformatik", default=0)
     quota_key_competence = models.IntegerField("Anteil Schlüsselkompetenz", default=0)
     ects = models.IntegerField("ECTS Punkte", default=0)
-    TermType = models.TextChoices("TermType", "SS WS")
-    term = models.CharField(choices=TermType.choices, max_length=2, default=TermType.SS)
+    TermType = models.TextChoices("TermType", "SS WS SS/WS")
+    term = models.CharField(choices=TermType.choices, max_length=5, default=TermType.SS)
 
 
 class TermStarts(datetime.date, models.Choices):
@@ -31,11 +32,23 @@ class TermStarts(datetime.date, models.Choices):
     SS_23 = 2023, 4, 1, "Sommersemester 2023"
 
 
-"""
-class Term(TimeStampedModel):
-    student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    year = models.DateField(choices=TermStarts.choices)
-"""
+class SemesterModule(TimeStampedModel):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    module = models.ForeignKey(Module, on_delete=models.SET_NULL, null=True)
+    term = models.DateField(choices=TermStarts.choices)
+    points_sl = models.FloatField(
+        "Punkte Studienleistung",
+        validators=[MinValueValidator(0.0), MaxValueValidator(18)],
+        default=0,
+    )
+    points_exam = models.FloatField(
+        "Punkte Klausur",
+        validators=[MinValueValidator(0.0), MaxValueValidator(18)],
+        default=0,
+    )
+    grade = models.FloatField(
+        "Note", validators=[MinValueValidator(1.0), MaxValueValidator(5.0)], null=True
+    )
 
 
 """

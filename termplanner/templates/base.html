@@ -48,6 +48,14 @@
             <li class="nav-item {% if "/about" in request.path %}active{% endif %}">
               <a class="nav-link" href="{% url 'about' %}">Über uns</a>
             </li>
+
+            {# Links for authenticated users only #}
+            {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'terms:list' %}">Dashboard</a>
+            </li>
+            {% endif %}
+
             {% if request.user.is_authenticated %}
               <li class="nav-item {% if "/users" in request.path %}active{% endif %}">
                 {# URL provided by django-allauth/account/urls.py #}

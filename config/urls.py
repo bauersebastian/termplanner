@@ -30,6 +30,7 @@ urlpatterns = [
         "favicon.ico/",
         RedirectView.as_view(url=f"{settings.STATIC_URL}images/favicons/favicon.ico"),
     ),
+    path("semester/", include("termplanner.terms.urls", namespace="terms")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
