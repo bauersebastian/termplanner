@@ -8453,3 +8453,8 @@ a.text-dark:hover, a.text-dark:focus {
   height: 60px;
   line-height: 60px;
   margin-top: 80px; }
+
+.table_vawi {
+  background-color: #004c93;
+  color: white;
+  border-color: #dee2e6; }

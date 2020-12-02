@@ -1,7 +1,32 @@
 {% extends "base.html" %}
 {% block content %}
   <h1>Meine Semester</h1>
-  <a class="btn btn-secondary" role="button" href="{% url "terms:add"%}">
+{% if semestermodule_list %}
+  <table class="table mt-4">
+    <thead class="table_vawi">
+      <tr>
+        <th scope="col">Modulbezeichnung</th>
+        <th scope="col">ECTS</th>
+        <th scope="col">Note</th>
+        <th scope="col">Nächste Termine</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for semestermodule in semestermodule_list %}
+      <tr>
+        <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
+        <td>{{ semestermodule.module.ects }}</td>
+        <td>{{ semestermodule.module.grade }}</td>
+        <td></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+    <p>Du hast noch kein Modul hinterlegt. Füge doch gleich eines hinzu.</p>
+  {% endif %}
+
+  <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add"%}">
       Modul hinzufügen
   </a>
 {% endblock %}

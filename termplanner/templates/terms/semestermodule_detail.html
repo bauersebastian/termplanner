@@ -1,4 +1,50 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>{{ semestermodule.module.title }}</h1>
+  <h1>{{ semestermodule.module.title }}</h1>
+  <p>Belegt im {{ semestermodule.get_term_display }}</p>
+  <table class="table">
+    <tr>
+      <td>Punkte Studienleistung</td>
+      <td>{{ semestermodule.points_sl }}</td>
+    </tr>
+    <tr>
+      <td>Punkte Klausur</td>
+      <td>{{ semestermodule.points_exam }}</td>
+    </tr>
+    <tr>
+      <td>Note</td>
+      <td>{{ semestermodule.grade }}</td>
+    </tr>
+  </table>
+  <h2>Angaben zum Modul</h2>
+  <table class="table">
+    <tr>
+      <td>Anbieter</td>
+      <td>{{ semestermodule.module.host }}</td>
+    </tr>
+    <tr>
+      <td>Beschreibung</td>
+      <td>{{ semestermodule.module.description }}</td>
+    </tr>
+    <tr>
+      <td>ECTS</td>
+      <td>{{ semestermodule.module.ects }}</td>
+    </tr>
+    <tr>
+      <td>Anteil WiWi</td>
+      <td>{{ semestermodule.module.quota_economics }}</td>
+    </tr>
+    <tr>
+      <td>Anteil Informatik</td>
+      <td>{{ semestermodule.module.quota_cs }}</td>
+    </tr>
+    <tr>
+      <td>Anteil Wirtschaftsinformatik</td>
+      <td>{{ semestermodule.module.quota_is }}</td>
+    </tr>
+    <tr>
+      <td>Anteil Schlüsselkompetenzen</td>
+      <td>{{ semestermodule.module.quota_key_competence }}</td>
+    </tr>
+  </table>
 {% endblock content %}
