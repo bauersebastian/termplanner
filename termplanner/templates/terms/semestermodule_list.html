@@ -16,7 +16,7 @@
       <tr>
         <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
         <td>{{ semestermodule.module.ects }}</td>
-        <td>{{ semestermodule.module.grade }}</td>
+        <td>{{ semestermodule.grade }}</td>
         <td></td>
       </tr>
     {% endfor %}
