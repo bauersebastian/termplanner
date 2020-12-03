@@ -4,6 +4,7 @@ from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 from model_utils.models import TimeStampedModel
 
 # from autoslug import AutoSlugField
@@ -64,11 +65,35 @@ class SemesterModule(TimeStampedModel):
         return self.module.title
 
     def get_absolute_url(self):
-        """Return absolute url to the trips detail page."""
+        """Return absolute url to the semestermodule detail page."""
         return reverse("terms:detail", kwargs={"pk": self.pk})
 
 
-"""
 class Event(TimeStampedModel):
-    student = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-"""
+    class EventType(models.TextChoices):
+        SCRIPT = "SC", _("Skriptabarbeitung")
+        SL = "SL", _("Studienleistung")
+        EXAM_A = "EA", _("Klausur Block A")
+        EXAM_B = "EB", _("Klausur Block B")
+        EXAM_C = "EC", _("Klausur Block C")
+        ALIGNMENT = "AL", _("Abstimmungstermin")
+
+    semestermodule = models.ForeignKey(SemesterModule, on_delete=models.CASCADE)
+    title = models.CharField("Bezeichnung", max_length=255)
+    start_date = models.DateTimeField("Start des Ereignisses")
+    end_date = models.DateTimeField("Ende des Ereignisses", blank=True)
+    event_type = models.CharField(
+        max_length=2,
+        choices=EventType.choices,
+        default=EventType.SCRIPT,
+    )
+    note = models.TextField("Notiz", blank=True)
+    done = models.BooleanField("Erledigt?", default=False)
+    done_at = models.DateTimeField("Erledigt am", blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        """Return absolute url to the events detail page."""
+        return reverse("terms:detail_event", kwargs={"pk": self.pk})

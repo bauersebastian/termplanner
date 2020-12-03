@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block css %}
+  {{ block.super }}
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+{% endblock css %}
+{% block javascript %}
+    {{ block.super }}
+    {# Django Tempus Dominus assets are included in `{{ form.media }}` #}
+    {{ form.media }}
+{% endblock javascript %}
+
+{% block title %}
+  Ereignis zu Modul hinzufügen
+{% endblock title %}
+
+{% block content %}
+  <h1>Ereignis zu Modul hinzufügen</h1>
+  <form action="." method="post">
+  {% csrf_token %}
+  {{ form|crispy }}
+  <button type="submit" class="btn btn-primary">Speichern</button>
+  </form>
+{% endblock content %}

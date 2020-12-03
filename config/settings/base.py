@@ -69,6 +69,7 @@ THIRD_PARTY_APPS = [
     "allauth",
     "allauth.account",
     "allauth.socialaccount",
+    "tempus_dominus",
 ]
 
 LOCAL_APPS = [
@@ -269,3 +270,4 @@ SOCIALACCOUNT_ADAPTER = "termplanner.users.adapters.SocialAccountAdapter"
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+TEMPUS_DOMINUS_LOCALIZE = True

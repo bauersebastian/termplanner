@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+  <h1>{{ event.title }}</h1>
+  <table class="table">
+    <tr>
+      <td>Modul</td>
+      <td>{{ event.semestermodule.module.title}}</td>
+    </tr>
+    <tr>
+      <td>Semester</td>
+      <td>{{ event.semestermodule.get_term_display }}</td>
+    </tr>
+    <tr>
+      <td>Typ</td>
+      <td>{{ event.get_event_type_display }}</td>
+    </tr>
+    <tr>
+      <td>Startdatum</td>
+      <td>{{ event.start_date }}</td>
+    </tr>
+    <tr>
+      <td>Ende Datum</td>
+      <td>{{ event.end_date }}</td>
+    </tr>
+    <tr>
+      <td>Erledigt?</td>
+      <td>{{ event.done }}</td>
+    </tr>
+  </table>
+  <h2>Notiz zum Ereignis</h2>
+  <p>{{ event.note }}</p>
+{% endblock content %}
