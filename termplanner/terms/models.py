@@ -37,8 +37,14 @@ class TermStarts(datetime.date, models.Choices):
 
 
 class SemesterModule(TimeStampedModel):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    module = models.ForeignKey(Module, on_delete=models.SET_NULL, null=True)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="semester_modules",
+    )
+    module = models.ForeignKey(
+        Module, on_delete=models.SET_NULL, null=True, related_name="semester_modules"
+    )
     term = models.DateField(choices=TermStarts.choices)
     points_sl = models.FloatField(
         "Punkte Studienleistung",
@@ -78,10 +84,12 @@ class Event(TimeStampedModel):
         EXAM_C = "EC", _("Klausur Block C")
         ALIGNMENT = "AL", _("Abstimmungstermin")
 
-    semestermodule = models.ForeignKey(SemesterModule, on_delete=models.CASCADE)
+    semestermodule = models.ForeignKey(
+        SemesterModule, on_delete=models.CASCADE, related_name="events"
+    )
     title = models.CharField("Bezeichnung", max_length=255)
     start_date = models.DateTimeField("Start des Ereignisses")
-    end_date = models.DateTimeField("Ende des Ereignisses", blank=True)
+    end_date = models.DateTimeField("Ende des Ereignisses", blank=True, null=True)
     event_type = models.CharField(
         max_length=2,
         choices=EventType.choices,
@@ -96,4 +104,7 @@ class Event(TimeStampedModel):
 
     def get_absolute_url(self):
         """Return absolute url to the events detail page."""
-        return reverse("terms:detail_event", kwargs={"pk": self.pk})
+        return reverse(
+            "terms:detail_event",
+            kwargs={"pk": self.pk, "semestermodule_id": self.semestermodule_id},
+        )

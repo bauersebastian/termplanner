@@ -17,7 +17,13 @@
         <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
         <td>{{ semestermodule.module.ects }}</td>
         <td>{{ semestermodule.grade }}</td>
-        <td></td>
+        <td>
+          <ul class="list-group list-group-flush">
+            {% for event in semestermodule.events.all %}
+                <li class="list-group-item"><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.start_date }} - {{ event.title }}</a> </li>
+            {% endfor %}
+          </ul>
+        </td>
       </tr>
     {% endfor %}
     </tbody>

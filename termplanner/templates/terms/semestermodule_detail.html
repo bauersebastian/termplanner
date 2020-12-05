@@ -16,6 +16,15 @@
       <td>{{ semestermodule.grade }}</td>
     </tr>
   </table>
+  <h2>Termine</h2>
+  <span class="float-right">
+    <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add_event" semestermodule.id%}">
+      Termin hinzufügen
+    </a>
+  </span>
+  {% for event in event_list %}
+    <p><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.title }}</a></p>
+  {% endfor %}
   <h2>Angaben zum Modul</h2>
   <table class="table">
     <tr>
