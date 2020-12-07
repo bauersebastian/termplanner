@@ -15,6 +15,11 @@ urlpatterns = [
     path(
         route="<int:pk>/", view=views.SemesterModuleDetailView.as_view(), name="detail"
     ),
+    path(
+        route="<int:pk>/delete/",
+        view=views.SemesterModuleDeleteView.as_view(),
+        name="delete",
+    ),
     # Events paths
     path(
         route="<int:semestermodule_id>/event/<int:pk>",
@@ -30,5 +35,10 @@ urlpatterns = [
         route="<int:semestermodule_id>/event/add/",
         view=views.EventCreateView.as_view(),
         name="add_event",
+    ),
+    path(
+        route="<int:semestermodule_id>/event/<int:pk>/delete",
+        view=views.EventDeleteView.as_view(),
+        name="delete_event",
     ),
 ]

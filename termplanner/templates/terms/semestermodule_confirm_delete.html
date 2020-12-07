@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+  <form action="" method="post">{% csrf_token %}
+    <p>Bist du sicher, dass du das Modul {{ event.title }} löschen willst?</p>
+    <input class="btn btn-danger" type="submit" value="Löschen bestätigen" />
+  </form>
+{% endblock %}

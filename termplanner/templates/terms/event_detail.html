@@ -1,38 +1,54 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
   <div class="container">
     <div class="row">
       <div class="col"><h1>{{ event.title }}</h1></div>
-      <div class="col"><a class="btn btn-secondary float-right" role="button" href="{% url "terms:update_event" event.id %}">Termin ändern</a></div>
+      <div class="col">
+        <a class="float-right btn btn-danger" role="button" href="{% url "terms:delete_event" event.semestermodule.id event.id %}">Termin löschen</a>
+        <a class="float-right btn btn-secondary mr-2" role="button" href="{% url "terms:update_event" event.id %}">Termin ändern</a>
+      </div>
     </div>
-  </div>
+    <table class="table">
+      <tr>
+        <td>Modul</td>
+        <td>{{ event.semestermodule.module.title}}</td>
+      </tr>
+      <tr>
+        <td>Semester</td>
+        <td>{{ event.semestermodule.get_term_display }}</td>
+      </tr>
+      <tr>
+        <td>Typ</td>
+        <td>{{ event.get_event_type_display }}</td>
+      </tr>
+      <tr>
+        <td>Start</td>
+        <td>{{ event.start_date }}</td>
+      </tr>
+      <tr>
+        <td>Ende</td>
+        <td>{{ event.end_date }}</td>
+      </tr>
+      <tr>
+        <td>Erledigt?</td>
+        {% if event.done == True %}
+          <td>
+          <svg class="bi text-success" width="25" height="25" fill="currentColor">
+            <use xlink:href="{% static 'images/bootstrap-icons.svg' %}#check-circle"/>
+          </svg>
+          </td>
 
-  <table class="table">
-    <tr>
-      <td>Modul</td>
-      <td>{{ event.semestermodule.module.title}}</td>
-    </tr>
-    <tr>
-      <td>Semester</td>
-      <td>{{ event.semestermodule.get_term_display }}</td>
-    </tr>
-    <tr>
-      <td>Typ</td>
-      <td>{{ event.get_event_type_display }}</td>
-    </tr>
-    <tr>
-      <td>Startdatum</td>
-      <td>{{ event.start_date }}</td>
-    </tr>
-    <tr>
-      <td>Ende Datum</td>
-      <td>{{ event.end_date }}</td>
-    </tr>
-    <tr>
-      <td>Erledigt?</td>
-      <td>{{ event.done }}</td>
-    </tr>
-  </table>
-  <h2>Notiz zum Ereignis</h2>
-  <p>{{ event.note }}</p>
+        {% else %}
+          <td>
+          <svg class="bi text-danger" width="25" height="25" fill="currentColor">
+            <use xlink:href="{% static 'images/bootstrap-icons.svg' %}#x-circle"/>
+          </svg>
+          </td>
+        {% endif %}
+      </tr>
+    </table>
+    <h2>Notiz zum Ereignis</h2>
+    <p>{{ event.note }}</p>
+  </div>
 {% endblock content %}

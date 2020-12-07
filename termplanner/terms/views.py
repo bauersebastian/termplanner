@@ -1,7 +1,14 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, DetailView, FormView, ListView, UpdateView
+from django.views.generic import (
+    CreateView,
+    DeleteView,
+    DetailView,
+    FormView,
+    ListView,
+    UpdateView,
+)
 
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
@@ -74,3 +81,16 @@ class SemesterModuleDetailView(LoginRequiredMixin, IsOwnerMixin, DetailView):
 
 class EventDetailView(LoginRequiredMixin, IsOwnerOfSemesterModuleMixin, DetailView):
     model = Event
+
+
+class SemesterModuleDeleteView(LoginRequiredMixin, IsOwnerMixin, DeleteView):
+    model = SemesterModule
+    success_url = reverse_lazy("terms:list")
+
+
+class EventDeleteView(LoginRequiredMixin, IsOwnerOfSemesterModuleMixin, DeleteView):
+    model = Event
+
+    def get_success_url(self):
+        semestermodule_id = self.kwargs["semestermodule_id"]
+        return reverse_lazy("terms:detail", kwargs={"pk": semestermodule_id})
