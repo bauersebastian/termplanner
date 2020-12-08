@@ -68,7 +68,7 @@ class SemesterModule(TimeStampedModel):
     )
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
     def get_absolute_url(self):
         """Return absolute url to the semestermodule detail page."""
