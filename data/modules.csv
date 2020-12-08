@@ -1,0 +1,989 @@
+﻿title;short_title;description;host;quota_economics;quota_cs;quota_is;quota_key_competence;ects;term
+Analyse Sozialer Netzwerke;ASN;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernun-terstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, Reading Classes, ergänzende Literatur.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallbeispiele, Toolunterstützung.
+Es werden praxisbezogene Aufgaben gestellt, die mithilfe der erlernten Methoden und Theorien zu lösen sind.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Die Teilnehmerinnen und Teilnehmer verstehen die Bedeutung sozialer und ökonomischer Netzwerke für den Erfolg von Unternehmen sowie die Kreativität, Produktivität und Arbeitszufriedenheit von Mitarbeitern. Sie erlernen Methoden und Modelle der Netzwerkforschung, die sie in die Lage versetzen,
+•strukturelle Eigenschaften von Netzwerken zu beschreiben,
+•die Position und Rolle von vernetzten Akteuren zu identifizieren,
+•Prozesse, die in den Netzwerken wirken, zu modellieren,
+•die Auswirkungen von Netzwerkstrukturen und -prozessen auf betriebswirtschaftliche Ergebnisse zu ermitteln,
+•eine Strategie für das Management von Netzwerken zu entwickeln und
+•selbständig wissenschaftliche Forschungsprojekte zu bearbeiten.
+
+Inhalt & Gliederung: Die Strukturen und Prozesse von sozialen und ökonomischen Netzwerken beeinflussen in starkem Maße die Leistung der in sie eingebetteten Unternehmen und ihrer Mitarbeiter. Diese Veranstaltung bietet eine systematische Einführung in die Analyse dieser Netzwerke und die Theorien zu ihrer Erklärung. Sie vermittelt praxisrelevante Methoden und Modelle zur Bestimmung der strukturellen Eigenschaften von Netzwerken und vermittelt, welche Auswirkungen diese auf die Effektivität und Effizienz betrieblicher Prozesse haben.
+1.
+Grundlagen der Netzwerkforschung
+-  Geschichte, Bedeutung und aktuelle Entwicklungen
+-  Definitionen und grundlegende Konzepte
+2.Analyse sozialer Netzwerke
+-  Graphen und Matrizen
+-  Zentralitäten
+-  Triaden, Cliquen und Communities
+-  Netzwerkdynamik
+3.Theorien der Netzwerkforschung
+-  Überblick über zentrale Theorien
+-  Das Phänomen der kleinen Welten (Small Worlds)
+-  Die Theorie der starken und schwachen Beziehungen von Mark Granovetter
+-  Burts Theorie des sozialen Kapitals und der strukturellen Löcher
+-  Uzzis Theorie der strukturellen Einbettung (Embeddedness)
+-  Netzwerkprozesse
+4.Anwendungen der Netzwerkanalyse im betrieblichen Kontext
+-  Analyse informeller Kommunikationsnetzwerke
+-  Neuartige Formen des Wissensmanagements und der Zusammenarbeit
+-  Soziale Netzwerke und Innovation
+-  Social Media und Web 2.0
+-  Enterprise Social Networks";"Prof. Dr. Kai Fischbach  Universität Bamberg
+";20;15;50;15;5;SS
+Artificial Intelligence und Artificial Life (früher: Soft Computing);AIA;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen/Transferaufgaben zur Selbstkontrolle, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit, Toolunterstützung (Shells für eigene Simulationen).
+Die Studierenden werden mit den unterschiedlichen Methoden vertraut gemacht und intensivieren das erworbene Wissen anhand von Übungen. Fortgeschrittene Studierende können auf der Basis der benannten mathematischen Modelle eigene Programme entwickeln, die unter anderem wirtschaftswissenschaftliche Problemstellungen enthalten sollen. Dadurch wird die Praxisrelevanz gewährleistet. Für die Modellentwicklung und Simulationen (auch) im Rahmen der Transferaufgaben stehen für Nichtprogrammierer Shells zur Verfügung.
+
+Studienempfehlungen: •Kontinuierliche Auseinandersetzung mit den Inhalten und Implementierung bzw. Modellierung der Aufgaben bis zu den angegebenen Orientierungsterminen.Voraussetzungen
+•Programmierkenntnisse in einer gebräuchlichen Sprachen, z.B. C#, JAVA, R, Python
+•Interesse an Modellbildung
+
+Angestrebte Lernergebnisse: Die Studierenden haben einen umfassenden Überblick über die Grundlagen und Methoden aus dem Bereich Artificial Intelligence und Artificial Life und können diese Kenntnisse durch eigene Modelle und/oder Programme konkretisieren sowie auf komplexe Problemstellungen aus ihrem beruflichen Kontext anwenden.
+fachliche Kompetenzen: Die Studierenden sind dazu in der Lage, komplexe Sachverhalte zu verstehen, Lösungspotenziale der Methoden der Artificial Intelligence und Artificial Life in unterschiedlichen Anwendungsbereichen zu identifizieren und eigene Modelle/Lösungen unter Nutzung ausgewählter Methoden zu entwickeln.
+soziale Kompetenzen: kommunikative Kompetenzen, Teamarbeit
+
+Inhalt & Gliederung: Im Modul "" Artificial Intelligence und Artificial Life "" werden formale Methoden behandelt, die möglichst eng an Vorbildern aus der biologischen, physikalischen und sozialen Realität orientieren. Dazu gehören vor allem die Berücksichtigung von Unschärfen und adaptiven Anwendungsbeispielen sowie die Kombinationen verschiedener Methoden (hybride Systeme).
+•Zellularautomaten und Boolesche Netze
+•Fuzzy-Mengenlehre";"PD Dr. Christina Klüver  Universität Duisburg-Essen
+";5;50;20;25;5;SS
+Data-Mining-Systeme;DMS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lern-unterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Aufgabenbearbeitung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Absolventinnen und Absolventen des Moduls Data-Mining-Systeme können
+(1)die wesentlichen methodischen und algorithmischen Grundlagen von Data-Mining-Systemen benennen.
+(2)Vorgehensmodelle und Algorithmen im Bereich Data Mining definieren und einordnen.
+(3)praxisnahe Fragestellungen analysieren und geeignete Algorithmen ableiten.
+(4)den Verlauf des Data-Mining-Prozesses strukturieren, durchführen und schlussendlich die gewonnenen Ergebnisse kritisch hinterfragen.
+(5)problemorientierte Aufgabenstellungen wissenschaftlich bearbeiten.
+(6)selbstständig wissenschaftlich arbeiten und durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit verbessern.
+
+Inhalt & Gliederung: •Kapitel 1: Grundlagen „Data Mining“
+-  Begriffsabgrenzung Data Mining, Knowledge Discovery in Databases (KDD)
+-  KDD-Prozessmodell nach Fayyad, CRISP-DM
+-  Ausgewählte Prozessphasen
+-  Zusammenhang mit Data Warehouse";"Prof. Dr. Peter Chamoni  Universität Duisburg-Essen
+";10;25;60;5;5;SS
+Data Science;DAS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb sowie zum Aufbau von Fertigkeiten und Kompetenzen durch folgende
+elektronische Selbstlernmedien unterstützt:
+Erweiterte Foliensätze, ergänzende Literatur
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Audio- und/oder Videoinhalte, interaktive Onlinekurse und Case-Studies zu R und SQL, Mobile Learning Angebote
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Das Modul bietet durch die interaktive Lernumgebung einen guten Einstieg in Programmierung, daher eignet sich der Kurs insbesondere auch für Studierende die noch wenig Erfahrung mit Programmierung haben. Die im Kurs vermittelten Methoden und Inhalte bereiten Studierende auf empirische Projekt- bzw. Masterarbeiten vor, daher wird empfohlen das Modul als Vorbereitung für Projektarbeiten und Masterarbeiten zu wählen.
+
+Angestrebte Lernergebnisse: Data Science ist aktuell das Schlagwort der IT-Branche. Unter anderem hat der Harvard Business Review den Data Scientist zum „Sexiest Job of the 21st Century“ gekürt. Data Science verwendet unter anderem Methoden aus der Informatik, Statistik, Machine Learning sowie Datenbanken, um aus sehr großen Datenmengen verwertbare Erkenntnisse zu gewinnen.
+Das Modul Data Science bietet einen breiten Überblick über Methoden und Werkzeuge eines „Data Scientists“ und legt einen besonderen Fokus auf die praktische Anwendung. Im Rahmen des Moduls lernen die Studierenden die leistungsstarke Programmiersprache R. Zusätzlich lernen Studierende gewonnene Erkenntnisse aus der Datenanalyse zu interpretieren und kritisch mit Fragen rund um Big Data, Machine Learning umzugehen.
+Studierende des Moduls Data Science...
+•lernen einen Überblick über klassische Methoden im Data Science und können diese kritisch hinterfragen
+•können die Herausforderungen und Bedeutung von Data Science diskutieren
+•lernen die Programmiersprache R, so dass ein selbständiges Arbeiten möglich ist
+•können mit Hilfe von R explorative Datenanalysen durchführen
+•verstehen die Grundkonzepte des Machine Learning (supervised / unsupervised learning) und können diese mithilfe von R anwenden
+•können gelerntes Wissen in Fallstudien anwenden
+
+Inhalt & Gliederung: Structure of the course:
+•Introduction to Data Science Big Data and Machine Learning
+•Introduction to Data
+•Supervised Learning: regression analysis for data scientists
+•Supervised Learning: classification data scientists
+•Unsupervised Learning: cluster analysis for data scientists
+
+Structuring the practical exercises using R
+•Introduction to R
+•Advanced topics in R (e.g. Tidyverse, dplyr, ggplot2, readr package)
+•Importing and cleaning data in R (e.g. stringr, lubridate package)
+•Exploratory data analysis in R
+•Correlation and regression analysis in R (e.g. broom, plot_ly package)
+•Unsupervised learning in R: cluster analysis (e.g. tibble, tidyr, purr, cluster package)
+•Supervised learning in R: classification (e.g. naivebyes, rpart, randomForest, pROC, class package)";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";5;55;35;5;5;SS
+Data-Warehouse-Systeme;DWS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und ggf. synchrone (Telefon) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit, Toolunterstützung (Data-Warehouse-Tool-Suite)
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe des erlernten Theorie- und Methodenwissens gelöst werden müssen. Den Studierenden wird eine am Lehrstuhl von Prof. Sinz entwickelte Data-Warehouse-Tool-Suite (Modellierungswerkzeuge und OLAP-System) zur Verfügung gestellt.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Durch das Modul Data-Warehouse-Systeme (DWHS) werden methodische Grundlagen auf dem Gebiet der Data-Warehouse-Systeme vermittelt. Absolventinnen und Absolventen des Moduls ...
+(1)können die Nutzung von DWHS beurteilen und DWHS selbst nutzen,
+(2)kennen die wichtigsten methodischen Grundlagen, um an der Entwicklung, der Einführung und am Betrieb von DWHS mitzuwirken,
+(3)kennen die wichtigsten Architekturformen von DWHS und können diese beurteilen,
+(4)haben eine vollständige und realitätsnahe Fallstudie zur Entwicklung eines DWHS kennengelernt,
+(5)kennen aktuelle Entwicklungen im Bereich von DWHS.
+(6)selbstständig wissenschaftlich arbeiten und verbessern durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit.
+(7)haben durch problemorientierte Fragestellungen ihre Team- und Kommunikationsfähigkeit verbessert und sind in der Lage, Verantwortung für den Erfolg einer Projektgruppe zu übernehmen.
+
+Inhalt & Gliederung: Kapitel 1: Einführung und Motivation „Data-Warehouse“
+-  Zielsetzung
+-  Funktion und Nutzung von Data-Warehouse-Systemen
+-  Fallstudie
+-  Planung von Data-Warehouse-Systemen
+-  Einsatzbereiche für Data-Warehouse-Systeme
+-  Überblick über Aufbau und Inhalt des Moduls
+Kapitel 2: Das multidimensionale Datenmodell
+-  Hypercube: Kennzahl, Dimension, Dimensionshierarchie
+-  Operatoren auf multidimensionalen Datenschemata
+-  Realisierungsformen des multidimensionalen Datenmodells
+-  Multidimensionales OLAP (MOLAP)
+-  Relationales OLAP (ROLAP)
+-  Hybrides OLAP (HOLAP)
+-  Flexibilisierung von Data-Warehouses (Data Vault)
+Kapitel 3: Modellierung multidimensionaler Data-Warehouse-Schemata
+-  Kennzahlen und Kennzahlensysteme
+-  Dimensionen und Dimensionshierarchien
+-  Aggregierbarkeit von Kennzahlen
+-  Visualisierung mehrdimensionaler Datenstrukturen
+-  Schemaarchitektur von Data-Warehouse-Systemen
+-  Das Semantische Data-Warehouse-Modell (SDWM)
+-  Weitere Ansätze für die konzeptuelle Modellierung von Data-Warehouse-Systemen
+Kapitel 4: Architektur von Data-Warehouse-Systemen
+-  Grundlagen der Architektur von Data-Warehouse-Systemen
+-  Verteilung von Data-Warehouse-Systemen
+-  Präsentationswerkzeuge für DWH-Systeme
+-  Softwareschichten von DWH-Systemen
+-  Metadaten von DWH-Systemen
+Kapitel 5: Gestaltung und Durchführung der Datenerfassung
+-  Extraktion
+-  Transformation
+-  Laden
+-  Werkzeugunterstützung des ETL-Prozesses
+-  Zeitliche Veränderung von qualitativen Daten
+Kapitel 6: Fallstudie: Entwicklung von Data-Warehouse-Systemen
+-  Analyse
+-  Design
+-  Implementierung
+-  OLAP-Client
+Kapitel 7: Betrieb von Data-Warehouse-Systemen
+-  Personengruppen und Akzeptanz
+-  Nutzergruppen und Berechtigungskonzepte
+-  Datenschutz
+-  Datenqualität
+Kapitel 8: Aktuelle Entwicklungen im Bereich von Data-Warehouse-Systemen
+-  Reduzierung der Ladelatenz
+-  Reduzierung der Analyse-, Entscheidungs- und Umsetzungstoleranz
+-  MapReduce: Verteiltes Speichern und paralleles Verarbeiten großer Datenmengen (am Beispiel Hadoop)
+-  Einsatz von NoSQL-Datenbanksystemen";"Prof. Dr. Elmar J. Sinz  Universität Bamberg
+";10;25;60;5;5;SS
+Datenmanagement;DAM;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Telefon) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit, Toolunterstützung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen. Zur Bearbeitung der Aufgaben wird eine Server-Plattform mit einem relationalen Datenbanksystem zur Verfügung gestellt. Zudem werden Open-Source-Datenbanksysteme eingesetzt.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Teile des Moduls bauen auf Grundlagen auf, die in folgenden Modulen vermittelt werden:
+•Modellierung von Systemen und Prozessen
+•Objektorientierte Softwareentwicklung in JAVA
+
+Angestrebte Lernergebnisse: Das Datenmanagement sowie die Entwicklung und der Betrieb von Datenmanagementsystemen stellen Kernaufgaben der Wirtschaftsinformatik dar. Das vorliegende Modul vermittelt eine systematische Einführung in diesen Themenbereich. Vor dem Hintergrund betrieblicher Informationssysteme und Anwendungssysteme liegt der Schwerpunkt auf der Analyse, der Gestaltung und der Nutzung von Datenmanagementsystemen, nicht etwa auf der Implementierung von Datenbankverwaltungssystemen. Den roten Faden des Moduls bilden elementare Strukturmodelle für betriebliche Anwendungssysteme, anhand derer die einzelnen Module und ihr Zusammenhang begründet werden.
+Absolventinnen und Absolventen des Moduls
+(1)erneuern, verbreitern und vertiefen ihr Wissen über die methodischen Grundlagen von Datenmanagementsystemen.
+(2)können Datenmanagementsysteme analysieren und bewerten, sowie aktuelle Forschungsansätze und Entwicklungen einordnen.
+(3)können aufgrund von komplexen Problem- und Aufgabenstellungen leistungsfähige Datenmanagementsysteme konzipieren und deren Entwurf kritisch rechtfertigen.
+(4)können selbständig wissenschaftlich arbeiten und verbessern durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken, sowie ihre Abstraktionsfähigkeit.
+
+Inhalt & Gliederung: Kapitel";"Prof. Dr. Elmar J. Sinz  Universität Bamberg
+";10;60;25;5;5;SS
+Decision Analytics;DAN;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt:
+Erweiterte Foliensätze, Beispiele in ClipMOPS/Excel/Lindo, ergänzende Literatur. Zudem wird der Aufbau von Fertigkeiten
+und Kompetenzen insbesondere gefördert durch:
+Übungen/Transferaufgaben zur Selbstkontrolle, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung.
+Eingesetzt im Zuge des Moduls werden sowohl Printmaterialien in Form des Lehrbuches „Optimierungssysteme“ (als E-Book verfügbar), wie auch digitale Medien in Form von kommentierten PowerPoint-Präsentationen, die die Kernpunkte einer Lerneinheit zusammenfassen. Semesterbegleitend werden drei optionale Semesterleistungen angeboten, in denen das Erlernte auf Übungsaufgaben und Fallbeispiele mit Praxisbezug angewendet werden kann und jeweils individuell kommentiert an die Studierenden zurückgegeben wird. Durch E-Mail und das Kursforum steht die Dozentin in einem engen Kontakt zu den Studierenden
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Die Studierenden kennen quantitative Methoden der Decision Analytics und des angewandten Operations Research, insbesondere Modellierung von betrieblichen Entscheidungssituationen und Optimierung der Entscheidungen und können diese zur Analyse und Unterstützung komplexer Entscheidungssituationen in der betrieblichen Praxis einsetzen.
+Die Herausforderung der Entscheidungsprozesse in der betrieblichen Planung und Steuerung besteht darin, die oft knappen Ressourcen optimal (gewinnmaximierend, kostenminimierend, umweltfreundlich usw.) einzusetzen. Als typischer Ansatz hierfür wird in diesem Kurs die mathematische Optimierung zur Lösung der allgemeinen linearen, nichtlinearen, gemischt-ganzzahligen und kombinatorischen Optimierungsaufgaben verwendet. Weiterhin werden betriebliche Optimierungsaufgaben in Netzwerken behandelt, insbesondere Transportplanung sowie Touren- und Standortplanung. Nutzung spezieller Softwarekomponenten für die Optimierung ist ein integraler Bestandteil des Kurses, Fallstudien aus der Praxis runden das Konzept ab.
+Fachliche Kompetenzen: Fähigkeit zur Anwendung der erlernten Decision Analytics-Methoden als Entscheidungsunterstützung für die komplexen Fragestellungen im eigenen beruflichem Umfeld sowie kompetentere Durchführung von Projekten und Begleitung von Ausschreibungen im Bereich Analytics.
+Soziale Kompetenzen: Interaktion und Kommunikation über elektronischen Medien (Foren, E-Mail, Chat) durch räumlich getrenntes Arbeiten.
+
+Inhalt & Gliederung: Unter Decision Analytcs oder auch angewandtes Operations Research (OR) werden allgemein Entwicklung und Einsatz quantitativer Modelle und Methoden zu betrieblichen Entscheidungsunterstützung verstanden. Dies geschieht in der Regel unter Verwendung moderner analytischer Informationssysteme in Unternehmen und Organisationen (in der betrieblichen Praxis bzw. öffentlichen Institutionen). Seit der Entstehung der Disziplin Operations Research in den vierziger Jahren (damals zunächst im militärischen Bereich, daher auch „Operations“) sind in beinahe allen Branchen große Kosteneinsparungen im Rahmen von optimalen Entscheidungen durch OR-Modelle und OR-Methoden erzielt worden. In der letzten Zeit wird der praktische Einsatz der Techniken des OR immer öfter unter dem Begriff Decision Analytics zusammengefasst. Diese Techniken haben stark an praktischer Bedeutung gewonnen, weil weit verbreitete betriebliche Standardsoftwarepakete entsprechende Modelle und Methoden integriert anbieten.
+•Einführung in Decision Analytics/Operations Research
+•Lineare Programmierung (LP): Anwendungsgebiete, Graphische Lösungen
+•LP: Lösungsmethoden; Optimierungssoftware
+•LP: Ökonomische Interpretation, Sensitivitätsanalyse
+•Modellierung mit mehrfachen Zielsetzungen
+•Fortgeschrittene Modellierungstechniken: logische Variablen, Fixkosten, Schwellenwerte etc.
+•Systematische Modellierung mit Aussagenlogik
+•Lösung von Modellen mit ganzzahligen Variablen
+•Graphen und Netzwerke: Basiskonzepte und -modelle
+•Betriebliche Transport- und Umladeprobleme,Tourenplanung und betriebliche Standortoptimierung
+•Erfolgsgeschichten und Fallstudien";"Prof. Dr. Natalia Kliewer  Freie Universität Berlin
+";30;20;40;10;5;SS
+Digital Change Management;DCM;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur, kurze Videos, Selbsttests
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – ausdrücklich empfohlen.
+
+Angestrebte Lernergebnisse: Studierende sollen Konsequenzen der digitalen Transformation sowie mögliche Umsetzungsprobleme, die bspw. aus Widerständen vonseiten der Belegschaft resultieren, analysieren, visualisieren und diskutieren können.
+Mit erfolgreichem Absolvieren des Moduls sind Studierende in der Lage insb. die Herausforderungen auf Fach- und Nutzerseite verstehen und gestalten zu können.
+
+Inhalt & Gliederung: Ablauf- und Aufbauorganisationen, Dienstleistungen oder Produkte von Unternehmen oder ganzen Firmennetzwerken sowie die unterstützenden IT-Systemen sind heutzutage einem stetigen IT-bedingtem Wandel (digitale Transformation) unterworfen, damit Unternehmen wettbewerbsfähig bleiben. Jedoch scheitern viele digitale Transformationsprojekte in Unternehmen oder erfüllen nicht die Erwartungen der beteiligten (IT-)Manager, (IT-)Mitarbeiter und Kunden. Die Implementierung von IT-bedingten Veränderungen in Unternehmen und die Akzeptanz dieser Veränderungen durch die betroffenen Mitarbeiter sind daher nach wie vor eine der größten Herausforderungen des IT-, Projekt, und Top-Managements eines Unternehmens sowie der Digitalisierung im allgemeinen.
+In Wissenschaft und Praxis hat sich in diesem Zusammenhang das Konzept des Change Management etabliert, das Theorien und Methoden zur erfolgreichen Transformation von Organisationen umfasst. Change Management wird dabei als ein Ansatz verstanden “to manage the people-side of business change to achieve the required business outcome, and to realize that business change effectively within the social infrastructure of the workplace.” Das Ziel des Moduls ist es, eine organisatorische und soziale Perspektive auf die digitale Transformation zu bieten, so dass Studierende die Folgen der Einführung neuer Systeme und mögliche Probleme bei der Umsetzung analysieren, diskutieren und gestalten können.";"Prof. Dr. Sven Laumer  Universität Erlangen-Nürnberg
+";30;10;50;10;5;SS
+Digitale Transformation;DTR;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt:
+Videocasts, Skript, Reading Class und Ergänzende Literatur. Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch Fallbeispiele und Fallstudien sowie der Studienleistung, die in Form eines Impulsvortrages spezielle und aktuelle Fragestellungen aus den Kernthemen des Moduls adressiert.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistung dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden...
+...  verstehen die Zusammenhänge der Digitalisierung.
+...  können Herausforderungen und Chancen durch die Digitalisierung in Unternehmen identifizieren.
+...  können digitale Kompetenzen identifizieren und ihre Bedeutung für Mitarbeiter und Unternehmen einschätzen.
+...  erproben und erweitern digitale Kompetenzen eigenständig.
+...  können digitale Transformationsstrategien konzipieren.
+...  können den Beitrag digitaler Reifegradmodelle kritisch hinterfragen.
+soziale Kompetenzen: Die Studierenden sind in der Lage, Ergebnisse im Rahmen eines virtuellen Impulsvortrags einem außenstehenden Personenkreis prägnant und auf einem angemessenen Abstraktionsniveau zu kommunizieren.
+
+Inhalt & Gliederung: •Verstehen
+oBegriffsabgrenzung
+oTechnologien
+oFallbeispiele
+•Anwenden
+oDigitale Teams
+oDigitale Arbeitswelt
+oDigitale Kompetenzen
+•Transformieren
+oDigitale Geschäftsmodelle
+oReifegradmodelle für Digitale Transformation
+oUnternehmen Transformieren";"Prof. Dr. Stefan Eicker  Universität Duisburg-Essen
+";25;0;50;25;5;SS
+Digital Leadership;DIG;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt:
+Videocasts, Skript, Reading Class und Ergänzende Literatur. Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch Fallbeispiele und Fallstudien sowie der Studienleistung, die in Form eines Impulsvortrages spezielle und aktuelle Fragestellungen aus den Kernthemen des Moduls adressiert.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistung dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden...
+...  verstehen die Anforderungen an Leadership im Kontext der Digitalen Transformation.
+...  können Herausforderungen & Chancen in der eigenen Führungsrolle identifizieren und reflektieren.
+...  können Werkzeuge des Digital Leaderships für die Führung Mitarbeitern einsetzen.
+...  verstehen, wie zukunftsfähige organisatorische Systeme gestaltet werden können.
+soziale Kompetenzen:
+Die Studierenden...
+...  können Leadership-Kompetenzen in ihrem Arbeitsalltag bewusst einsetzen, reflektieren und weiterentwickeln.
+...  verstehen die Facetten unterschiedlicher Persönlichkeitstypen und die Auswirkungen auf Führungsaufgaben.
+...  sind in der Lage, digitale Werkzeuge (u.a. in Form des virtuellen Impulsvortrags) zur Führung einzusetzen.
+
+Inhalt & Gliederung: •Herausforderungen der Digitalen Transformation für das Leadership
+•Sich selbst führen
+oPersönlichkeits- und Führungsprofile
+oSelbst-Empathie & Emotionale Intelligenz
+oZiele setzen und erreichen
+oResilienz für Führungskräfte
+•Mitarbeiter führen
+oHerausforderungen digital arbeitender Gruppen
+oIdentität & Zweck von Gruppen
+oFührung in Meetings
+•Systeme führen
+oInnovation ermöglichen";"Prof. Dr. Stefan Eicker  Universität Duisburg-Essen
+";0;0;50;50;5;SS
+E-Commerce;ECO;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernun-terstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze, ergänzende Literatur.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen
+
+Angestrebte Lernergebnisse: Nach Bearbeitung dieses Moduls, können die Studierenden
+(1)Architekturmodelle des E-Commerce darstellen und anwenden,
+(2)die Geschäftsprozesse und Anwendungssysteme des Business-to-Consumer-Bereiches und des Business-to-Business-Bereiches analysieren und gestalten,
+(3)durch fallstudienbasierte Studienleistungen und Aufgaben die Fertigkeit, Konzepte und Methoden des E-Commerce auf Praxisprobleme anwenden und beurteilen,
+(4)selbstständig wissenschaftlich arbeiten und durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit verbessern.
+(5)haben durch problemorientierte Fragestellungen ihre Team- und Kommunikationsfähigkeit verbessert und sind in der Lage, Verantwortung für den Erfolg einer Projektgruppe zu übernehmen.
+
+Inhalt & Gliederung: Die Veranstaltung orientiert sich am Modell des Perspektiven-Fünfecks der WI. Nacheinander werden Markt- und Geschäftsmodelle, überbetriebliche Geschäftsprozesse, Anwendungssysteme und die IT-Infrastruktur des E-Commerce aus unterschiedlichen Perspektiven untersucht. Neben der Betrachtung ökonomischer Effekte des E-Commerce in Geschäftsmodellen stehen vor allem Geschäftsprozessmodelle und Anwendungssysteme im Business-to-Business- und Business-to-Consumer-Bereich im Vordergrund. Auf technischer Ebene werden insbesondere elektronische Kommunikationstechnologien sowie elektronische Zahlungssysteme untersucht. Die Themenbereiche werden durch Fallstudien ergänzt und erläutert.
+3  IT-Infrastruktur
+  3.1  Service-orientierte
+1  Einführung  Architekturen
+  1.1  E-Commerce: Fallbeispiele,  3.2  Portale
+Definition und Abgrenzung  3.3  Mobile Systeme
+  1.2  Übersicht über Akteure,  3.4  Kommunikationsstandards
+Aufgaben und  3.5  IT-Sicherheit
+Architekturmodelle des E-  3.6  Virtual and Augmented Reality
+Commerce  4  B2C-Geschäfte
+  1.3  Wertschöpfungsketten und ihre  4.1  Elektronische
+Akteure  Auftragsabwicklung
+  1.4  Organisationskonzepte  4.2  E-Payment
+  1.5  Internet-Ökonomie  4.3  Customer Relationship
+  1.6  Methodische Grundlagen  Management
+2  Geschäfts- und Marktmodelle des E-  5  B2B-Geschäfte
+Commerce  5.1  Absatz- und
+  2.1  Geschäftsmodelle des E-  Beschaffungsaufgaben
+Commerce  5.2  Beziehungsformen zwischen
+  2.2  Koordinationsformen  Unternehmen
+  2.3  Marktmodelle des E-Commerce  5.3  E-Procurement
+  5.4  Supply Chain Management
+  5.5  Interaktionsformen
+  5.6  B2B-Integration, IoT
+  5.7  Collaborative Business";"Prof. Dr. Otto K. Ferstl  Universität Bamberg
+";30;10;50;10;5;SS
+E-Community;ECY;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, Videocast, Podcast.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen/Transferaufgaben zur Selbstkontrolle, tutoriell betreute Aufgabenbearbeitung.
+Das Modul ist in Form einer explorativen Lernumgebung konzipiert. Die Lernumgebung kann ohne zeitliche und räumliche Restriktionen bearbeitet werden und ist somit nicht an Vorlesungszeiten gebunden.
+Den Erfolgsbausteinen der Net Economy folgend, ergibt sich der Aufbau des Moduls. Dabei wird jedem Baustein ein eigenes Kapitel gewidmet (Systeme, Prozesse, Management, Marketing und Implementierung).
+Im Rahmen des Moduls wird eine semesterbegleitende Studienleistung erbracht. Es ist ein Praxistransfer zu erbringen, bei dem das gesamte während des Moduls gesammelte Wissen Anwendung findet.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen: Die Studierenden kennen elektronische Geschäftsprozesse in der Net Economy, insbesondere im Bereich E-Community. Sie beherrschen das Vorgehen bei der Einführung einer E-Community. Dabei ist anzumerken, dass der Aufbau einer E-Community keinesfalls eine reine Software-Implementierung darstellt; vielmehr beherrschen die Studierenden ebenfalls die im Rahmen des Projekts weiteren wichtigen Erfolgsgrößen zum Gelingen aus den Bereichen Management, Marketing, Prozesse und Systeme. Sie sind in der Lage, ein entsprechendes Implementierungsprojekt zu planen und zu managen.
+soziale Kompetenzen: Neben fachlichen adressiert das Modul explizit auch soziale Kompetenzen. Durch den in das Modul integrierten Praxistransfer sind die Studierenden in der Lage, ein komplexes, praxisrelevantes (Einführungs-)Projekt zu organisieren und es zu verfolgen oder anzuleiten. Die Studierenden sind auf die Übernahme von Führungsverantwortung vorbereitet und haben die Bedeutung und die Wirkung von Team- und Kommunikationsfähigkeit verinnerlicht.
+
+Inhalt & Gliederung: E-Business 2.0 ist da! Gemeint ist damit eine Reihe von neuen Trends und Technologien, die in der jüngeren Vergangenheit dazu geführt haben, dass sich die Wahrnehmung von dem, was wir Internet nennen, zu verändern beginnt. Über viele Jahre hinweg wurde das Internet als Technologie erlebt, die es erlaubt, Daten, Informationen oder multimediale Inhalte zu publizieren und zu verteilen. Die Rollenverteilung der beteiligten Personen war zweiteilig: Zum einen gab es aktive Ersteller von Web-Inhalten, die, teils kommerziell, teils privat, Informationen einstellten und publizierten. Zum anderen gab es passive Konsumenten, die sich lediglich die bereitgestellten Inhalte ansehen konnten und auch gar keine andere Option";"Prof. Dr. Tobias Kollmann  Universität Duisburg-Essen
+";30;20;30;20;5;SS
+E-Kooperation;E-K;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, ergänzende Literatur.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit.
+Im Rahmen der tutoriell betreuten Aufgabenbearbeitung wird das erworbene Wissen durch netzgestütztes kollaboratives Arbeiten in (Klein-) Gruppen vertieft, wobei Studierende neben dem Tutor, als Peer-Reviewer agieren. Dabei werden den Studierenden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Bereitschaft zur Gruppenarbeit bei der Bearbeitung von Studienleistungen
+
+Angestrebte Lernergebnisse: Angestrebt wird die Sensibilisierung der Studierenden für die besonderen Anforderungen und Probleme elektronischer Kommunikation und Kooperation. Der Erwerb von Methodenkenntnissen und etablierten Vorgehensweisen aus mehreren Fachdisziplinen zur Gestaltung und Optimierung elektronischer Zusammenarbeit steht im Fokus des Moduls.
+Die Absolventinnen und Absolventen des Moduls
+(1)verbreitern und vertiefen ihr Wissen über die methodischen Grundlagen und Vorgehensweisen zur Gestaltung und Optimierung der elektronischen Zusammenarbeit.
+(2)sind  in der Lage komplexe Problem- und Aufgabenstellungen zu analysieren  und geeignete Methoden und
+Vorgehensweise zur Lösung von Kommunikations- und Kooperationsproblemen des beruflichen Alltags auszuwählen und anzuwenden.
+(3)haben durch offene, problemorientierte Fragestellungen ihre Team- und Kommunikationsfähigkeit verbessert (durch Feedback und Selbstevaluation) und sind in der Lage Verantwortung für den Erfolg einer Projektgruppe zu übernehmen und konstruktives Feedback zu geben.
+(4)verbessern  durch  den  Umgang  mit  offenen  Fragestellungen  ihr  systemanalytisches  Denken,  sowie  ihre
+Abstraktionsfähigkeit.
+
+Inhalt & Gliederung: Als zentrales Werkzeug gewinnt die elektronische netzgestützte Kooperation in der Arbeitswelt zunehmend an Bedeutung.";"Dr. Walter F. Kugemann  Universität Bamberg
+";20;0;0;80;5;SS
+Electronic Finance;ELE;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: erweiterte Foliensätze, Podcasts, ergänzende Literatur, Videocasts.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallstudien, tutoriell betreute Aufgabenbearbeitung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – ausdrücklich empfohlen. Es können bis zu 18 zusätzliche Punkte erworben werden.
+Das Ziel der Studienleistung ist es, ein Thema der Vorlesung aus praktischer Sicht aufzuarbeiten. Detaillierte Themen können von Studierenden vorgeschlagen und mit den Dozenten abgestimmt werden.
+
+Angestrebte Lernergebnisse: Studierende  erhalten  einen  breiten  Überblick  über  aktuelle  Methoden,  Systeme  und  Strukturen,  welche  in
+Finanzunternehmen und Finanzprozessen Anwendung finden. Zusätzlich werden domänenbezogene Kenntnisse und Kompetenzen hinsichtlich des IT-Einsatzes vermittelt und es werden aktuelle Trend-Themen wie Mobile Payment, Algorithmic-Trading, Blockchain, Kryptowährungen (Bitcoin, Ethereum, ...) thematisiert.
+Neben theoretischen Kenntnissen werden anwendungsorientierte Fähigkeiten vermittelt (u.a. Bewertung von Aktienkursen, heuristische Verfahren für die Evaluierung von Risiken), so dass Studierende selbständig aktuelle Fallstudien bearbeiten können.
+
+Inhalt & Gliederung: Das Modul betrachtet Methoden, Modelle und Systeme des Prozess- und Informationsmanagements am Beispiel ausgewählter Geschäftsprozesse des Finanzdienstleistungssektors und Finanzprozesse anderer Branchen. Die Studierenden sollen die Grundlagen eines erfolgreichen Finanzprozessmanagements kennen lernen sowie die Entscheidungskriterien für die effiziente und effektive IT-Unterstützung dieser Geschäftsprozesse verstehen und anwenden lernen.
+E-Finance bezeichnet die elektronische Unterstützung von Finanzprozessen und Transaktionen im inner- und zwischenbetrieblichen Kontext. Darunter fallen";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";40;10;40;10;5;SS
+Empirisch-probabilistische Verfahren;EMP;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, Reading Class (wissenschaftliche Publikationen).
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Aufgabenbearbeitung, Tooluntertützung.
+Alle Kompetenzbereiche werden im Rahmen von kleineren Anwendungen erarbeitet, welche mit Rücksicht auf den Zeitrahmen die Einsatzfelder möglichst repräsentativ wiedergeben.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Kenntnisse in Java-Programmierung, gerne auch Prolog bzw. Scala; Mathematik, gerne auch Statistik
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden können Komplexitätsebenen von Aufgabenfeldern unterscheiden, und kennen ein erweitertes Spektrum Informationstechnologie gestützten Herangehensweisen an Fragestellungen zunehmender Komplexität.
+Sie können kleinere Projekte der diskreter Simulation nach einem erweiterten transaktionsbasierten Ansatz durchführen und beherrschen die Grundlagen von Renew für die Referenznetz basierte Modellierung und Simulation. Zudem sind sie mit der Prozessmodellierung auf Grundlage erweiterter Petrinetze vertraut.
+Ihnen ist die Agentenmodellierung und -programmierung nach dem heute gängigen Belief-Desire-Intention-Prinzip und der Sprache AgentSpeak vertaut, einschließlich der Environment- und Community-Modellierung sowie der Erstellung von Interfaces und dem Einsatze grundlegender Elemente der logischen Programmierung. Sie können Agenten mit Jason erstellen und kennen die Prometheus-Methode.
+Weiterhin verstehen sie Grundlagen der mathematischen Modellierung / kontinuierlichen Simulation und können kleinere Projekte durchführen auf Grundlage von Scilab/Xcos, und sind hier besonders geschult, Thematiken seltsamer Attraktoren wahrzunehmen.
+Zusätzlich werden semesterabhängig noch weitere Punkte ins Programm genommen.
+soziale Kompetenzen:
+Im Sinne einer ausgeprägten fachlichen Entscheidungskompetenz können die Studierenden Sachverhalte erkennen, deren Komplexität nicht den eingeschränkten Bedingungen ‚gewöhnlicher‘ Aufgabenstellungen entspricht, und entsprechende Methoden zu Urteilsbildung heranziehen.
+
+Inhalt & Gliederung: In diesem Modul werden verschiedene Denkansätze der informationstechnischen Handhabung komplexer Sachverhalte dargestellt.
+Simulation, statistische und betriebswirtschaftliche Grundlagen sowie die Einsatzmöglichkeiten und Anwendungsgebiete werden dargestellt.
+•Anwendungsgebiete
+•Begriffe
+-  System
+-  Modell
+-  Modellierung
+-  Vereinfachtes und erweitertes Phasenmodell
+•Diskrete Simulation
+-  Elemente zeitdiskreter Simulationsmodelle
+-  Konzepte der zeitdiskreten Simulation
+-  Erweiterte Petrinetze
+-  Referenznetzbasierte Simulation
+•Agentensysteme
+-  ökonomische Ansätze
+-  Die Prometheus-Methode
+•Agentenprogrammierung
+-  Jason und AgentSpeak
+-  Agentenkommunikation
+-  Environment- & Communitymodellierung
+•Optional: Mathematische Modellierung / kontinuierliche Simulation
+-  GrundlagenScilab / Xcos
+-  Umsetzung von Vektorrechnung und Analysis
+-  Seltsame Attraktoren
+•semesterabhängig zusätzliche Themen";"Prof. Dr. Heimo H. Adelsberger  Universität Duisburg-Essen
+";20;40;10;30;5;SS
+Enterprise Content Management;ECM;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur, kurze Videos, Selbsttests
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung, Rechnerübungen
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – ausdrücklich empfohlen.
+
+Angestrebte Lernergebnisse: Das Ziel des Moduls ist es, ein grundlegendes Verständnis von Enterprise Content Management (ECM) zu entwickeln, um unterschiedliche Anwendungen und Funktionalitäten von ECM anwenden, Nutzungsszenarien von ECM in Unternehmen analysieren und konzipieren und auf Basis von Microsoft Sharepoint oder anderen Systemen ein ECM-System in seinen Grundfunktionen konfigurieren zu können.
+Nach erfolgreichem Abschluss des Moduls sind Studierende in der Lage, zu verstehen, welche Bedeutung ECM für die Gestaltung der Prozesse in Unternehmen besitzt, was die wichtigsten Funktionalitäten und Merkmale von ECM-Systemen sind, was die verschiedenen Stufen des Lebenszyklus von Dokumenten sind, wie ECM-Systeme erfolgreich in Unternehmen eingeführt werden können, was aktuelle Trends und Entwicklungen im Bereich des ECM sind und wie Technologien und Werkzeuge die verschiedenen ECM-Aspekte unterstützen und integrieren. Darüber hinaus sind Studierende nach erfolgreichem Abschluss des Moduls in der Lage, die Grundfunktionalitäten eines ECM-Systems anwenden zu können.
+
+Inhalt & Gliederung: Es wird geschätzt, dass 70 bis 80 Prozent aller Unternehmensinformationen in Form unstrukturierter Inhalte existieren und dies eine der größten Herausforderungen für die Zusammenarbeit in Unternehmen ist. In diesem Zusammenhang wird Enterprise Content Management (ECM) als ein neues Themenfeld in Praxis und Forschung der Wirtschaftsinformatik definiert, das Technologien, Werkzeuge und Methoden zur Erfassung, Verwaltung, Speicherung und Bereitstellung von Inhalten (Informationen, Dokumente) im gesamten Unternehmen sowie zur Zusammenarbeit umfasst. ECM wird dabei als ein “integrated approach to managing all of an organization’s information including paper documents, data, reports, web pages and digital assets [... and all ...] the strategies, tools, processes, and skills an organization needs to manage all its information assets over their lifecycle” verstanden (Smith und McKeen 2003, S. 647-648). Das Ziel des Moduls Enterprise Content Management ist es, Studierenden eine Einführung in Konzepte und Strategien des Enterprise Content Management";"Prof. Dr. Sven Laumer  Universität Erlangen-Nürnberg
+";30;10;50;10;5;WS
+Enterprise Resource Planning;ERP;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch den Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze, Reading Class.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien zu lösen sind
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistung wird – auch im Sinne einer kontinuierlichen Vorbereitung auf die Abschlussklausur – nachdrücklich empfohlen.
+
+Angestrebte Lernergebnisse: Die Absolventen und Absolventinnen des Moduls,
+(1)können Geschäftsprozessen im Bereich des Enterprise Resource Planning (ERP) identifizieren und interpretieren. Sie sind in der Lage aufgrund von offenen Fragestellungen, Unternehmensbereiche entsprechend ihrer Geschäftsprozesse zu analysieren, zu modellieren und zu bewerten.
+(2)können Architekturen und Funktionen von ERP-Systemen identifizieren, sowie deren horizontale und vertikale Integration mit anderen Anwendungssystemen (CAx, MSS, etc.) darstellen und kritisch hinterfragen.
+(3)können, durch die Bearbeitung einer komplexen Fallstudie, die vermittelnden Konzepte und Methoden des ERP auf offene praxisbezogene Fragestellungen anwenden und verbessern damit ihr systemanalytisches Denken, sowie ihre Abstraktionsfähigkeit.
+(4)haben durch problemorientierte Fragestellungen ihre Team- und Kommunikationsfähigkeit verbessert und sind in der Lage Verantwortung für den Erfolg einer Projektgruppe zu übernehmen.
+
+Inhalt & Gliederung: „ERP-Systeme sind integrierte Anwendungssysteme, die innerhalb von Unternehmen der operativen Planung, Steuerung und Kontrolle aller betrieblichen Ressourcen dienen. Sie besitzen Schnittstellen zu anderen Anwendungssystemen, u.a. zu CAx-, SCM- und BI-Systemen.“ Industrieunternehmen sind komplexe Systeme. Die Gestaltung und Lenkung von Prozessen in den
+verschiedenen  Unternehmensbereichen  erfolgt  daher zunehmend  mit  Hilfe  automatisierter Aufgabenträger.  Den
+Studierenden werden nach einer kurzen  Einführung zunächst die benötigten Grundlagen aus den  Bereichen der
+Systemtheorie und den Leistungssystemen von Produktions- und Dienstleistungsunternehmen vermittelt. Es folgt ein Überblick über operative Geschäftsprozesse und im Anschluss lernen die Studierenden Architekturen und Funktionen von ERP-Systemen sowie zugehörige Basismaschinen kennen. Eine Darstellung ausgewählter Prozesse des Enterprise Resource
+Planning, differenziert nach Prozessen mit hierarchischer und  Prozessen mit heterarchischer Koordination, und die
+Integration von Aufgaben und Prozessen bilden den Schwerpunkt der Veranstaltung. Es werden ausführlich einzelne Prozesse, wie bspw. Vertrieb, Produktion und Dienstleistungsbereich, sowie die horizontale und die vertikale Integration von";"Prof. Dr. Otto K. Ferstl  Universität Bamberg
+";25;10;60;5;5;WS
+Entscheidungsorientierte Betriebswirtschaftslehre;ENT;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden zentral über asynchrone (Foren, E-Mail, Wiki) und bei Bedarf über synchrone (Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skripte, ergänzende Literatur, Glossar, externe Links, Video-Vorlesungsmitschnitt.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch: Lernfragen und Transferaufgaben zur Selbstkontrolle, tutoriell betreute Aufgabenbearbeitung.
+Die sieben Lernmodule können in unterschiedlichen Lernpfaden durchgearbeitet werden. Für jedes Lernmodul stehen Lernfragen zur individuellen Lernkontrolle und Transferübungen für den Bezug zum beruflichen Kontext zur Verfügung.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Kenntnisse:
+Grundkonzepte der BWL, Funktionsfelder der BWL, Methodologische Grundlagen, Wissenschaftsprogramme der BWL, Normative und Deskriptive Entscheidungstheorie, Entscheidungsunterstützende Methoden, Betriebswirtschaftliche Rahmenbedingungen, Konstitutive Entscheidungen, Grundlagen der Unternehmensführung
+fachliche Kompetenzen:
+Die Studierenden besitzen einen fundierten Überblick über die verschiedenen Funktionen, Grundelemente, Methodologischen Grundlagen, Wissenschaftsprogramme und typische Entscheidungen der Betriebswirtschaftslehre und können Frage- und Problemstellungen in dieselben einordnen, kritisch bewerten und mit Hilfe wirtschaftswissenschaftlicher Verfahren, insbesondere der Methoden und Erkenntnisse der Normativen und Deskriptiven Entscheidungstheorie lösen.
+soziale Kompetenzen:
+Online-Kommunikation, Online-Kollaboration
+
+Inhalt & Gliederung: •Gegenstand der BWL
+-  Was sind die „Grundlagen“
+-  Die BWL als wirtschaftswissenschaftliche Einzeldisziplin
+-  Die BWL aus ökonomischer und politischer Perspektive
+•Betriebswirtschaftliche Funktionen
+-  Beschaffung, Produktion und Absatz
+-  Finanzwirtschaft
+-  Personalwirtschaft
+-  Rechnungswesen/Informationswirtschaft
+-  Management/Unternehmensführung
+•Wissenschaftsprogramme der BWL
+-  Methodologische Grundlagen
+(Ziele der Wissenschaft, Grundkategorien, Wissenschaftsrichtungen in der BWL)
+-  Betriebswirtschaftliche Wissenschaftsprogramme
+(Wegbereiter, Produktionsfaktor-Ansatz, Entscheidungsorientierte und verhaltenswissenschaftlich orientierte
+BWL, Systemorientierte BWL, „Alternative“ Programme)
+•Entscheidungen als Grundelement der BWL
+-  Normative Entscheidungstheorie
+(Grundmodell, Entscheidungsregeln)
+-  Deskriptive Entscheidungstheorie
+(Individuelles Entscheidungsverhalten, Kollektives Entscheidungsverhalten)
+•Wirtschaftsordnung: Rahmenbedingungen betriebswirtschaftlichen Entscheidens
+-  Gesellschaftliches Umfeld
+-  Wirtschaftliches Umfeld
+-  Rechtlich-institutionelles Umfeld
+•Konstitutive Entscheidungen
+-  Leistungsprogramm und Fertigungstechnologie
+-  Standort
+-  Rechtsform
+•Management: Strategische Unternehmensführung
+-  Politische Perspektive der Deskriptiven Strategieforschung
+-  Strategische Unternehmensführung";"Prof. Dr. Werner Nienhüser  Universität Duisburg-Essen
+";80;0;10;10;5;WS
+Information Retrieval Systeme;IRS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze, ergänzende Literatur, Video-Vorlesungsmitschnitt (interaktiv).
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Aufgabenbearbeitung
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Grundkenntnisse im Bereich Programmierung (insbesondere Java) werden vorausgesetzt.
+
+Angestrebte Lernergebnisse: Das Modul gibt einen breit gefächerten Überblick über wichtige Aspekte des Information Retrieval und über Suchmaschinen. Dies schließt die zugrundeliegenden Modelle sowie aktuelle Forschungsrichtungen ein.
+Die Absolventinnen und Absolventen des Moduls ...
+(1)verbreitern und vertiefen ihr Wissen über Suchmaschinen und die dahinterstehenden Konzepte und Technologien.
+(2)können Suchmaschinen evaluieren und vergleichen, sowie aktuelle Forschungsansätze und Entwicklungen einordnen.
+(3)können Suchmaschinen aufgrund von komplexen Problem- und Aufgabenstellungen anpassen und deren Einsatzpotenzial kritisch bewerten.
+(4)können aufgrund von problemorientierten Fragestellungen Suchlösungen konzipieren und implementieren
+(5)können selbständig wissenschaftlich arbeiten und verbessern durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken, sowie ihre Abstraktionsfähigkeit.
+
+Inhalt & Gliederung: Gegenstand des Information Retrieval ist die Suche nach Dokumenten. Traditionell handelt es sich dabei im Allgemeinen um Textdokumente. In neuerer Zeit kommt aber verstärkt auch die Suche nach multimedialen Dokumenten (Bilder, Audio, Video, Hypertext-Dokumente) hinzu. Ferner hat das Gebiet des Information Retrieval insbesondere auch durch das Aufkommen des WWW an Bedeutung und Aktualität gewonnen. So werden Retrieval-Konzepte für das Internet, für Unternehmen oder auch für die Desktopsuche im Modul behandelt.
+Konkret geht es  im  Information  Retrieval  darum,  aus einer  Kollektion von  Dokumenten  zu  einem gegebenen
+Informationsbedarf die relevanten Dokumente zu ermitteln. Hierzu werden Techniken eingesetzt, die weit über eine einfache";"Prof. Dr. Andreas Henrich (Dozent)  Universität Bamberg
+";10;60;10;20;5;WS
+Integrierte Informationsverarbeitung – Wirtschaftsinformatik als Wissenschaft;WAW;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Forumsdiskussionen und tutoriell betreute Aufgabenbearbeitung
+Die semesterbegleitenden optionalen Studienleistungen unterstützen das Selbststudium auf verschiedene Arten. Zunächst wird allen Studierenden im Rahmen des Führens eines Lerntagebuchs/-blogs die Möglichkeit zur Reflektion des eigenen wissenschaftlichen Arbeitsstils gegeben. Zudem können die Studierenden im Rahmen der Beantwortung von Quizaufgaben ihre theoretisch erworbenen Kenntnisse im Verlauf des Moduls sukzessive und selbständig überprüfen. Darüber hinaus können sie ihr geplantes Vorgehen zur Bearbeitung einer selbstgewählten wirtschaftsinformatischen Problemstellung im Rahmen der abschließenden Hausarbeit vorab mittels Erstellung eines Videocasts reflektieren. Die Reflexion und Beurteilung des Lernerfolgs erfolgt dabei u. a. mit Hilfe des Peer Review Verfahrens.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Die Belegung des Moduls wird spätestens vor dem Schreiben der ersten Projektarbeit empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen: Die Studierenden erhalten einen Einblick in Forschung und Wissenschaft allgemein und speziell in die Wissenschaftsdisziplin Wirtschaftsinformatik [Kenntnis]. Die Studierenden kennen die verschiedenen möglichen Paradigmen der Wirtschaftsinformatik sowie die aktuelle Diskussion um die Problematik der Abgrenzung des Information Systems Research und der Wirtschaftsinformatik [Kenntnis]. Die Studierenden kennen den Ablauf des wissenschaftlichen Arbeitsprozesses und wichtige wissenschaftliche Arbeitstechniken und Qualitätskriterien [Kenntnis] und können selbständig das Vorgehen im Rahmen wissenschaftlicher Forschung – insbesondere bei der Erstellung einer wissenschaftlichen Arbeit – strukturieren und umsetzen [Fähigkeit].
+soziale Kompetenzen: Im Rahmen der tutoriell betreuten Forumsdiskussionen und der tutoriell betreuten Aufgabenbearbeitung erlangen die Studierenden für das Berufsleben relevante Kompetenzen im Bereich der Team- und Kommunikationsfähigkeit, des Wissensaustausches und des Wissenstransfers.
+
+Inhalt & Gliederung: Die Gliederung des Moduls bildet den Handlungsrahmen, der die verschiedenen Themenfelder miteinander in Beziehung setzt:
+1.Einleitung
+2.Wissenschaft und wissenschaftliches Arbeiten
+o  Zum Wesen von Wissenschaft";"Prof. Dr. Heimo H. Adelsberger  Universität Duisburg-Essen
+";0;0;80;20;5;WS
+IT-Controlling;ITC;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – ausdrücklich empfohlen.
+
+Angestrebte Lernergebnisse: Absolventinnen und Absolventen des Moduls IT-Controlling beherrschen grundlegende Methoden des IT-Controlling und können Verantwortung für den Erfolg einer Projektgruppe zu übernehmen. Sie sind in der Lage,
+•wichtige Konzepte und Methoden in den Bereichen IT-Strategie, IT-Projekte, IT-Betrieb sowie des umfassenden IT-Performance-Measurements anzuwenden,
+•anhand ihres fundierten Wissens über Konzepte und Methoden aktuelle Forschungsansätze und Entwicklungen einzuordnen und auch selbständig weiterzuentwickeln,
+•Kennzahlen zur ganzheitlichen Steuerung des IT-Bereichs vorzuschlagen, zu beurteilen und kritisch zu diskutieren und
+•selbständig wissenschaftlich und praktisch zu arbeiten und durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit zu verbessern.
+
+Inhalt & Gliederung: IT-Controlling ist das Controlling der IT im Unternehmen und soll die Effektivität und Effizienz des IT-Einsatzes unter Berücksichtigung qualitativer, funktionaler und zeitlicher Aspekte sicherstellen. Dabei handelt es sich nicht nur um eine reine Überwachungsfunktion. Vielmehr wird IT-Controlling als umfassende Koordinationsfunktion (Planung, Steuerung und Kontrolle) für die IT sowie das Informationsmanagement verstanden. Das Modul gliedert sich ausgehend von den Grundlagen des IT-Controllings in die Bereiche
+-  IT-Strategie (Chancen, Risiken, Portfoliomanagement),
+-  IT-Projekte (IT-Projektmanagement: Planung, Durchführung, Kontrolle) und
+-  IT-Betrieb (IT-Leistungen und -Produkte, IT-Outsourcing).";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";30;10;50;10;5;WS
+IT-Outsourcing-Management;ITO;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernun-terstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, Ergänzende Literatur, Fallstudien, Lernvideos (in geringem Umfang)
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch: Übungen zur Selbstkontrolle, Fallstudien, Fallbeispiele, Gruppenarbeit.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen empfohlen.
+
+Angestrebte Lernergebnisse: Die Teilnehmer können Chancen und Risiken von IT-Outsourcing in Firmen identifizieren, Outsourcing-Projekte planen (Out-sourcing-Strategie, Business Case, Auswahl unterschiedlicher Sourcing-Modie und Vendorenmodelle) und implementieren (Vertragsmanagement, Outsourcing-Governance, Beziehungsmanagement, Wissenstransfer). Damit sind Sie in der Lage,
+•die grundlegenden Argumente für das Treffen von IT-Outsourcing-Entscheidungen zu identifizieren und zu evaluieren (Wann macht Outsourcing Sinn?),
+•IT-Outsourcing-Optionen zu identifizieren und zu bewerten (Welche Form von Outsourcing ist sinnvoll?),
+•IT-Outsourcing-Projekte zu planen und zu managen (Wie kann ein erfolgreicher Transfer zum Dienstleister gewährleistet werden?),
+•eine Outsourcing-Governance zu implementieren (Wir wird gesteuert? Wer hat welche Verantwortlichkeiten inne?),
+•IT-Outsourcing-Beziehungen zu gestalten und zu managen (Vertragsmanagement, Kontrolle, Beziehungsmanagement, Wissenstransfer) sowie
+•Nearshore- und Offshore-IT-Outsourcing-Optionen zu identifizieren und zu bewerten.
+
+Inhalt & Gliederung: Outsourcing, der Fremdbezug von Leistungen von einem Dienstleister, ist eine wichtige Handlungsoption für IT-Manager. In diesem Modul werden Grundlagen, Vor- und Nachteile des Outsourcing sowie Entscheidungsmodelle, Vorgehensweisen, Good Practices (warum outsourcen, was outsourcen, wie outsourcen?) aber auch Probleme und kulturelle Hürden im Bereich IT-Outsourcing und -Offshoring vermittelt.";"Prof. Dr. Daniel Beimborn  Universität Bamberg
+";20;10;50;20;5;WS
+IT-Prozess- und Wertmanagement;IUW;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur, Audio- und/oder Videoinhalte
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallstudien, konkrete Prozess- und Unternehmensbeispiele, tutoriell betreute Aufgabenbearbeitung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen ist freiwillig und wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – empfohlen.
+
+Angestrebte Lernergebnisse: Studierende lernen Konzepte und Anwendungen des Prozessmanagements (Business Process Management and Redesign) und des IT-Wertmanagements (IT-Management und IT-Wertschöpfung) in Geschäftsprozessen kennen und anwenden.
+Mithilfe  des  Geschäftsprozessmanagement-Zyklus  können  Teilnehmer  systematisch  IT-intensive  Geschäftsprozesse
+verstehen, analysieren, und ändern. Die vermittelten Theorien und Methoden des IT-Wertmanagements erlauben die Ausrichtung der IT auf die Geschäftsprozesse, so dass insgesamt ein messbarer, relevanter IT-Geschäftswertbeitrag gestaltet werden kann. Teilnehmer können damit Werttreiber durch IT in Geschäftsprozessen systematisch identifizieren, gestalten, steuern und messen.
+
+Inhalt & Gliederung: Dss Modul besteht aus den beiden Hauptteilen Business Process Management and Redesign (BPM) und IT Management (ITM). Im BPM-Teil wird der BPM-Zyklus zur Prozessanalyse und -verbesserung zusammen mit nützlichen Methoden eingeführt. Der ITM-Teil erklärt Ansätze und Methoden zum strategischen IT-Wertmanagement (IT Ressourcen, IT Strategie, Business IT Alignment, IT Governance, IT-Wertbeitragsermittlung). In beiden Teilen werden Inhalte anhand konkreter Geschäftsprozesse (v.a. Finanz- und HR-Prozesse) sowie mithilfe von Fallstudien (z.B. Planung und Einführung eines Bewerbermanagementsystems, Einführung eines ERP-Moduls) illustriert.
+
+Gliederung:
+•IT Management
+oITM 1: Konzepte und Theorien zum IT-Wertbeitrag
+oITM 2: Abstimmung von IT und Business (Business-IT-Alignment)
+oITM 3: IT-Wertbeitrag, IT-Wertmanagement und IT-Alignment in der Praxis";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";25;5;60;10;5;WS
+IT-Sicherheit;IST;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, Foliensätze, Glossar, Videocasts.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung und Toolunterstützung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen. Zur Bearbeitung der Aufgaben wird Open-Source-Software eingesetzt.
+
+Angestrebte Lernergebnisse: Fachliche Kompetenzen:
+Die Studierenden kennen die Basiskonzepte der Informationssicherheit. Sie haben tiefgreifende Kenntnisse in den Bereichen Funktionen vertrauenswürdiger IT-Systeme, technische und organisatorische Maßnahmen zur Verbesserung der IT-Sicherheit, wirtschaftliche und rechtliche Aspekte der IT-Sicherheit. Insbesondere auch aufgrund der beiden semesterbegleitenden Studienleistungen verfügen die Studierenden über die Fertigkeit, die Eignung unterschiedlicher Sicherheitskonzepte zur Authentisierung, Autorisierung und Zugriffskontrolle kritisch zu hinterfragen, gegeneinander abzuwägen und diese problem-/ umfeldbezogen in bestehende Systemlandschaften, insbesondere verteilte Umgebungen zu integrieren. Ebenso haben die Studierenden allgemeine Kompetenzen, die es ihnen ermöglichen, die sicherheitsrelevanten Aspekte informationstechnischer Systeme besser bewerten und beherrschen zu können.
+Die Studierenden sind in der Lage, Gefahren durch Computerkriminalität bzw. beabsichtigte und unbeabsichtigte Ereignisse für Informationssysteme einzuschätzen und selbständig präventiv und reaktiv vorzugehen. Der präventive Entwurf sicherer Systeme auf den bereits bekannten Schichten des TCP/IP-Protokollstapels ist den Studierenden ebenso vertraut wie der neu erlernte Umgang mit Kriterienkatalogen zum Sicherheitsmanagement in Unternehmen. Darüber hinaus ist Ihnen das Spannungsfeld zwischen den datenverarbeitungsrelevanten rechtlichen Vorgaben einerseits und den Herausforderungen durch Computerkriminalität und –missbrauch andererseits bekannt.
+Soziale Kompetenzen:
+Gerade im Rahmen der semesterbegleitenden Studienleistung haben die Studierenden gelernt, ihr bisher erworbenes Wissen in die Praxis umzusetzen und können sich schnell und selbstständig in komplexe Aufgabenstellungen der IT-Sicherheit einarbeiten und dabei unterschiedliche, häufig widerstreitende Sichtweisen berücksichtigen.
+
+Inhalt & Gliederung: Behandelt werden unter anderem Grundfunktionen vertrauenswürdiger Zugriffskontrolle) und Sicherheitstechnologien für das World Sicherheitsprotokolle auf den verschiedenen Schichten des TCP/IP-Protokollstapels Anwendungsschicht). Zum weiteren Umfang zählen Digitale Signaturen,
+Aus dem Bereich der Kryptographie werden darüber hinaus eine (z.B. RSA, DES, AES) und Protokolle sowie deren Umsetzung zur Authentizität behandelt. Ferner wird betrachtet, wie unter Zuhilfenahme Verschlüsselungen „geknackt“ werden können.
+Im Bereich Management der IT-Sicherheit werden der Entwurf Bereiche Risikoanalyse und Bedrohungsanalyse behandelt. Den ISO-27000er Familie und die BSI IT-Grundschutz-Kataloge.
+Bezüglich rechtlicher Aspekte werden die wichtigsten nationalen Unternehmen, darunter das Bundesdatenschutzgesetz, das Strafgesetzbuch, werden Aspekte der Kriminalitätsbekämpfung wie Strafverfolgung
+Neben konzeptionellen Inhalten soll der Kurs auch praktisches Konzepte im Bereich der E-Mail-Sicherheit (PGP, S-MIME) und
+•
+Einführung und Überblick
+-  Motivation
+-  Gefahren und Risiken
+-  Sicherheitsstudie
+•Informatik Bestiarium
+-  Computeranomalien
+-  Schadensfunktionen
+-  Gegenmaßnahmen
+•Kryptographie
+-  Grundlagen
+-  Klassische Kryptographie
+-  Moderne Kryptographie
+-  Kryptoanalyse
+•Grundfunktionen vertrauenswürdiger Systeme
+-  Authentisierungstechniken
+-  Rechteverwaltung/-prüfung
+-  Beweissicherung
+•Internetsicherheit
+-  Grundlagen
+-  Angriffsarten
+-  HTTP Authentifizierung und Autorisierung
+-  Firewalls";"Prof. Dr. Günther Pernul  Universität Regensburg
+";0;30;30;40;5;WS
+IT Talent Management;ITM;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur, Audio- und/oder Videoinhalte
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallstudien, konkrete Prozess- und Unternehmensbeispiele, tutoriell betreute Aufgabenbearbeitung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen ist freiwillig und wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – empfohlen.
+
+Angestrebte Lernergebnisse: Teilnehmer lernen Konzepte und Methoden des IT Talent Management kennen und anwenden, insbesondere aktuelle Trends und Besonderheiten in der Rekrutierung von IT-Fachkräften, Ansätze zum Finden, Binden und Einsetzen von IT-Mitarbeitern, Einsatzmöglichkeiten von HRIS (HR-Informationssystemen), Digitalisierung der Personalbeschaffung, datengetriebenes Recruiting, ChatBots und automatisierte Empfehlungssysteme, Zukunft der Arbeit.
+
+Inhalt & Gliederung: Dieses Modul behandelt den Stand des Wissens, aktuelle Trends, Konzepte und Methoden zum Thema IT-Arbeit und IT-Fachkräfte aus Unternehmens- und Mitarbeitersicht und was Digitalisierung für die Zukunft der Arbeit und Personalbeschaffung bedeutet. Leitfragen sind: Wie finden und binden Unternehmen heute gute IT-Mitarbeiter? Wie sehen Unternehmen und Kandidaten den Arbeitsmarkt? Wie ändern sich Jobs und Personalbeschaffung durch Digitalisierung? Was sind sinnvolle Ansätze für datengetriebenes Matching für Kandidatenauswahl und Teamzusammenstellung? Was sind Einsatzszenarien und Akzeptanzfaktoren für ChatBots und automatisierte Empfehlungssysteme? Wie ändern Big Data und künstliche Intelligenz die Personalbeschaffung und das Team Staffing? Dabei liegen die Schwerpunkte einerseits auf der Rekrutierung, Entwicklung und Führung von IT-Mitarbeitern und andererseits auf Technologien und Trends, die die Arbeit und Rekrutierung der Zukunft prägen werden. Im Modul werden auch Diskrepanzen zwischen öffentlicher Diskussion in der Presse und Praxis einerseits und betrieblicher Realität andererseits zum Beispiel zum Thema „künstliche Intelligenz“ (Big Data in der Presse vs. Little Data im Unternehmen) behandelt.
+Das Modul besteht aus den drei inhaltlich zusammenhängenden Teilen E-Recruiting, Zukunft der Arbeit sowie Digitalisierung (ChatBots, KI und automatisiertes Matching) und baut auf der Literatur zu E-Recruitment (und den dort üblichen Phasen Attract – Recruit – Develop – Retain ), CPR („Computer and People Research“ – die älteste ACM Special";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";30;5;50;15;5;WS
+Lerntechnologien;LER;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, Videos
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch: tutoriell betreute Forumsdiskussionen und tutoriell betreute Aufgabenbearbeitung, Tooleinsatz
+Die semesterbegleitenden optionalen Studienleistungen unterstützen das Selbststudium auf verschiedene Arten. Zunächst wird allen Studierenden im Rahmen des Führens eines Lerntagebuchs/-blogs die Möglichkeit zur Reflektion des eigenen Lernverhaltens während des Semesters gegeben. Zudem können die Studierenden im Rahmen der Beantwortung von Quizaufgaben ihre theoretisch erworbenen Kenntnisse im Verlauf des Moduls sukzessive und selbständig überprüfen und darüber hinaus unter Verwendung eines Tools zur Erstellung multimedialer Lerninhalte ihre erworbenen theoretischen Kenntnisse im Rahmen einer Projektarbeit praktisch umsetzen, wobei ein besonderer Fokus auf dem Aspekt des selbstgesteuerten Lernens liegt.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Die Belegung des Moduls wird zu Beginn des Studiums empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden haben Kenntnisse über grundsätzliche Konzepte des E-Learning. Sie kennen grundlegende Lerntechnologien und können sie sowohl hinsichtlich ihrer Einsatz- und Nutzenpotentiale einschätzen als auch selbst lösungsorientiert anwenden. Sie können computergestützte Lernprozesse konzipieren und die korrespondierenden Lernmaterialen unter Einsatz geeigneter Werkzeuge selbständig designen. Die Studierenden sind zudem in der Lage, ihr eigenes Lernverhalten kritisch zu reflektieren.
+soziale Kompetenzen:
+Im Rahmen der tutoriell betreuten Forumsdiskussionen und der tutoriell betreuten Aufgabenbearbeitung erlangen die Studierenden für das Berufsleben relevante Kompetenzen im Bereich der Team- und Kommunikationsfähigkeit, des Wissensaustausches und des Wissenstransfers.
+
+Inhalt & Gliederung: •Einleitung
+•Grundlagen des Lernens
+•Lernen mit multimedialen Medien
+•Technologiegestütztes Lernen
+•Informationssysteme für das Lernen
+•Standards für Lerntechnologien
+•Lernen mit Videokonferenzen
+•Lernen mit Blogs und Podcasts
+•Kollaboratives Lernen
+•Mobiles und ubiquitäres Lernen
+•Game-based Learning / Gamification
+•Simulationsgestütztes Lernen
+•E-Books
+•Offene Bildungsressourcen
+•Management von Lernprozessen
+•Learning Analytics";"Prof. Dr. Heimo H. Adelsberger  Universität Duisburg-Essen
+";10;20;55;15;5;WS
+Medieninformatik (vormals Multimedia-Technik);MEI;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Foliensätze, ergänzende Literatur, Video-Vorlesungsmitschnitt (interaktiv).
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+tutoriell betreute Aufgabenstellungen.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Das Modul setzt lediglich allgemeine EDV-Grundkenntnisse voraus.
+
+Angestrebte Lernergebnisse: Nach Bearbeitung dieses Moduls, können die Studierenden
+(1)wesentliche Formate für die verschiedenen Medientypen, deren Bearbeitungsmöglichkeiten sowie ihre Vor- und Nachteile benennen.
+(2)Methoden und Konzepte zur Entwicklung multimedialer Dokumente bzw. Anwendungen darstellen und begründen.
+(3)analysieren und beurteilen, welche Anforderungen und Möglichkeiten unterschiedliche Formate hinsichtlich Qualität, Bandbreitenbedarf und Speichervolumen bieten.
+(4)einfache Medienobjekte selbst erstellen und bearbeiten.
+(5)selbstständig wissenschaftlich arbeiten und sie verbessern durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit.
+
+Inhalt & Gliederung: Im Rahmen des Moduls werden nach einer Einführung in das Thema grundlegende Hierzu zählen die Medientypen Bild, Audio und Text, aber auch Video und 2D/3D-Animationen. werden auch die entsprechenden Grundlagen wie Farbmodelle und Wahrnehmungsmodelle Grundlagen der Bildbearbeitung und Videoproduktion vermittelt. Schließlich erfolgt Medientypen sowie der Einbettung von Mediensystemen in das WWW.
+•Medieninformatik - zwischen Menschen, Technik und Gesellschaft
+•Kanäle, Codes und Medien
+•Bilder
+•Texte und Typografie
+•2D-Vektorgrafik";"Prof. Dr. Andreas Henrich (Dozent)  Universität Bamberg
+";10;60;20;10;5;WS
+Methoden der Systementwicklung;MDS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit, Toolunterstützung.
+Es werden praxisbezogene Aufgaben gestellt, die mithilfe des erlernten Theorie- und Methodenwissens gelöst werden müssen. Zur Bearbeitung der Aufgaben werden diverse Werkzeuge zur Verfügung gestellt.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Das Modul Methoden der Systementwicklung vermittelt methodische Grundlagen auf dem Gebiet der Systementwicklung. Absolventinnen und Absolventen des Moduls ...
+(1)können komplexe Aufgabenstellungen der Systementwicklung betrieblicher Informationssysteme analysieren und spezifizieren.
+(2)kennen die wichtigsten methodischen Hilfsmittel für die Durchführung von Systementwicklungsaufgaben und können diese beurteilen.
+(3)kennen Methoden und Vorgehensmodelle für das Management von Systementwicklungsprojekten und können diese anwenden.
+(4)kennen grundlegende Software-Architekturen und können deren Einsatzbereiche beurteilen.
+(5)können selbstständig wissenschaftlich arbeiten und verbessern durch den Umgang mit offenen Fragestellungen ihr systemanalytisches Denken sowie ihre Abstraktionsfähigkeit.
+
+Inhalt & Gliederung: Anwendungssysteme  sind  maschinelle  Aufgabenträger  für  die  automatisierten  Aufgaben  eines  betrieblichen
+Informationssystems. Die Entwicklung, die Einführung und der Betrieb von Anwendungssystemen gehören daher zu den Kernaufgaben der Wirtschaftsinformatik. Der vorliegende Kurs vermittelt methodische Grundlagen der Entwicklung von Anwendungssystemen (Systementwicklung). Als Bezugspunkt wird dabei die Sicht des Projektleiters gewählt.
+1.Grundlagen der Entwicklung betrieblicher Anwendungssysteme
+2.Strukturmodelle von Softwaresystemen
+3.Systementwicklung als Aufgabe
+  3.1  Struktur der Systementwicklungsaufgabe
+  3.2  Vorgehensmodelle zur Entwicklung betrieblicher Anwendungssysteme
+  3.3  Einführung einer Fallstudie zur Systementwicklung
+4.Ebenen der Systementwicklung
+  4.1  Die fachliche Ebene von Anwendungssystemen
+4.1.1 Grundlagen des Fachentwurfs von Anwendungssystemen
+4.1.2  Lastenheft und Pflichtenheft
+  4.2  Entwicklungsplattformen für Anwendungssysteme
+  4.3  Die softwaretechnische Ebene von Anwendungssystemen
+4.3.1 Grundlagen des Softwareentwurfs von Anwendungssystemen
+4.3.2  Komponentenbasierte Softwarearchitekturen verteilter Anwendungssysteme 4.3.3 Testen von Software
+5.Management der Systementwicklung
+  5.1  Aufwandschätzung in Projekten
+  5.2  Projektbegleitende Aktivitäten
+5.2.1  Projektmanagement
+5.2.2  Konfigurationsmanagement
+5.2.3  Qualitätsmanagement
+  5.3  Einführung von Anwendungssystemen
+  5.4  Projektmodelle
+6.Gestaltung der Architektur betrieblicher Anwendungssysteme
+  6.1  Integration von Aufgaben und Anwendungssystemen
+  6.2  Wiederverwendung von Entwicklungsbausteinen
+  6.3  Modellbasierte Architekturentwicklung";"Prof. Dr. Elmar J. Sinz  Universität Bamberg
+";10;35;40;15;5;WS
+Modellierung von Systemen und Prozessen;MSP;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Telefon) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeit, Toolunterstützung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden müssen
+Zur Unterstützung der Modellierung werden erm/serm/som/uml Schablonen für Visio bereitgestellt. Zudem kann auf frei verfügbare Modellierungswerkzeuge zugegriffen werden.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Das Modul vermittelt eine umfassende Einführung in die Modellierung von Systemen und Prozessen aus dem Blickwinkel von Fragestellungen der Wirtschaftsinformatik. Dementsprechend liegt der Schwerpunkt auf der Modellierung betrieblicher Systeme, betrieblicher Informationssysteme und betrieblicher Anwendungssysteme sowie der in diesen Systemen auftretenden Prozesse.
+Absolventinnen und Absolventen des Moduls
+(1)erneuern,  vertiefen  und  erweitern  ihr  bisher  erworbenes  Wissen  über  die  methodischen  Grundlagen  der
+Modellierung.
+(2)können unterschiedliche Modellierungsansätze analysieren und erklären, sowie aktuelle Forschungsansätze und Entwicklungen einordnen.
+(3)können unterschiedliche Modellierungsansätze auf komplexe Problem- und Aufgabenstellungen adäquat anwenden und Ihre Ergebnisse rechtfertigen.
+(4)können  selbständig wissenschaftlich arbeiten  und verstehen  es offene,  problemorientierte  Fragestellungen  in
+Projektgruppen zu diskutieren.
+(5)verbessern durch die Projektarbeit ihre Team- und Kommunikationsfähigkeit und über-nehmen Verantwortung für den Erfolg der Gruppe.
+
+Inhalt & Gliederung: ";"Prof. Dr. Elmar J. Sinz  Universität Bamberg
+";10;25;60;5;5;SS/WS
+Objektorientierte Softwareentwicklung in C#;OSC;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Foliensätze, Videocasts, praktische Beispiele, Reading Class und ergänzende Literatur. Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch Übungsaufgaben und eine tutoriell begleitete Aufgabenbearbeitung sowie die Studienleistung. Diese kann entweder in der Form eines virtuellen Impulsvortrages mit Fokus auf spezielle und aktuelle Fragestellungen aus dem Modul oder in der Form einer praktischen Programmieraufgabe durchgeführt werden.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistung dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden...
+...  verstehen die Herausforderungen der Softwareentwicklung.
+...  können den Aufbau und Zweck von .NET mit seinen Komponenten beschreiben und die Besonderheiten und Vorteile eines zentralen Frameworks herausstellen.
+...  verstehen die vertiefenden Konzepte der Objektorientierung und können diese anwenden.
+...  können die modernen Konzepte der Softwareentwicklung mit C# zielgerichtet einsetzen und hinsichtlich ihrer Eignung bewerten.
+...  können eigene C#-Anwendungen entwickeln und bereitstellen.
+...  Können eine moderne Entwicklungsumgebung zur Softwareentwicklung einsetzen.
+...  können bestehenden Code sinnvoll erweitern und dabei die Verständlichkeit verbessern, indem die erlernten modernen Konzepte der Softwareentwicklung zum Einsatz kommen.
+soziale Kompetenzen:
+Die Studierenden...
+...  können Aufgaben durch selbstständiges Aneignen von benötigtem Wissen lösen und durch einen virtuellen Austausch mit Kommilitonen und Betreuern reflektieren.
+...  sind in der Lage, Ergebnisse im Rahmen eines virtuellen Impulsvortrags einem außenstehenden Personenkreis prägnant und auf einem angemessenen Abstraktionsniveau zu kommunizieren.
+
+Inhalt & Gliederung: Die Veranstaltung gliedert sich in drei aufeinander aufbauende Themenbereiche:
+1.Grundlagen von .NET und Grundkonzepte C#
+Zur Beginn der Veranstaltung wird zunächst in die Grundlagen von .NET eingeführt. Dabei liegt der Fokus vor allem auf den Besonderheiten, die sich durch den Einsatz eines zentralen Frameworks ergeben, das explizit für die Integration bzw. Kombination von verteilten Anwendungen entwickelt wurde. Darauf aufbauend wird zudem ein anleitender Überblick über die Programmiersprache C# gegeben (Arrays, Tuples, ...). Dazu gehört auch die Möglichkeit, zur Auffrischung von Kenntnissen der Objektorientierung und Vererbung.
+2.Moderne Softwareentwicklungskonzepte am Beispiel C#
+Aufbauend auf den vermittelten Grundlagen werden moderne Softwareentwicklungskonzepte vorgestellt und in Beispielen angewendet. Viele der Konzepte sind dabei sprachunabhängig einsetzbar. Zu den Konzepten zählen bspw. der Umgang mit Metadaten und Attributen und die Überladung von Operatoren.
+3.Optimierung von bestehendem Code
+Da Code „altert“ und zudem häufig Veränderungen an alten Code-Teilen durchgeführt werden müssen (vgl. oben), schließt die Veranstaltung mit der Vermittlung und Anwendung von Methoden des Refactorings. Dabei können auch die erlernten modernen Softwareentwicklungskonzepte eingesetzt werden.";"Prof. Dr. Stefan Eicker  Universität Duisburg-Essen
+";0;50;25;25;5;SS/WS
+Objektorientierte Softwareentwicklung in JAVA;OSJ;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail, Wiki) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, weitere Literatur.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen/Transferaufgaben zur Selbstkontrolle, Fallstudien, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeiten, Toolunterstützung (Entwicklungsumgebung BlueJ, Oracle Java Development Kit).
+Zum Abschluss des Moduls wird – im Sinne des aufgabenorientierten Lernens – ein Gruppenprojekt durchgeführt bei dem Klassendesign und Implementierung im Team erfolgen.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen: Die Studierenden haben ein tief greifendes Verständnis [Kenntnisse] des objektorientierten Paradigmas und können komplexe Aufgabenstellungen analysieren und entsprechende Programmszenarien objektorientiert strukturieren [Fertigkeit]. Mit Hilfe der application programming interfaces sind sie fähig, JAVA-Klassen zu identifizieren [Kenntnisse], zu verstehen und die Programmszenarien umzusetzen [Fertigkeit].
+soziale Kompetenzen: Im Rahmen der Gruppenprojekte haben die Studierenden für das Berufsleben relevante Kompetenzen im Bereich der Team- und Kommunikationsfähigkeit, Wissensaustausch und Wissenstransfer sowie der Organisation und Kooperation heterogen zusammengesetzter Projektteams erlangt.
+
+Inhalt & Gliederung: Der Schwerpunkt des Kurses liegt in den objektorientierten Konzepten, nicht in der Vermittlung der Programmiersprache JAVA in all ihren Facetten.
+•Einführung und Überblick
+-  Programmiersprachen
+-  Die Programmiersprache Java
+-  kurzer Überblick über Java – Programmierumgebungen
+-  Anleitung zur Installation des Oracle JDK
+-  Anleitung zur Installation von BlueJ";"Prof. Dr. Heimo H. Adelsberger  Universität Duisburg-Essen
+";0;50;30;20;5;SS/WS
+Plattformökonomie;PLA;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript, Videocast, Podcast, Multiple Choice Tests, Fallstudien.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen/Transferaufgaben zur Selbstkontrolle, tutoriell betreute Aufgabenbearbeitung.
+Das Modul ist in Form einer explorativen Lernumgebung konzipiert. Die Lernumgebung kann ohne zeitliche und räumliche Restriktionen bearbeitet werden und ist somit nicht an Vorlesungszeiten gebunden.
+Den Erfolgsbausteinen der Digitalen Wirtschaft folgend, ergibt sich der Aufbau des Moduls. Dabei wird jedem Baustein ein eigenes Kapitel gewidmet (Systeme, Prozesse, Management, Marketing und Implementierung).
+Im Rahmen des Moduls wird eine semesterbegleitende Studienleistung erbracht. Es ist ein Praxistransfer zu erbringen, bei dem das gesamte während des Moduls gesammelte Wissen Anwendung findet.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen: Die Studierenden kennen elektronische Geschäftsprozesse in der Digitalen Wirtschaft, insbesondere im Bereich E-Marketplace. Sie beherrschen das Vorgehen bei der Einführung eines E-Marketplace. Dabei ist anzumerken, dass der Aufbau eines E-Marketplace keinesfalls eine reine Software-Implementierung darstellt; vielmehr beherrschen die Studierenden ebenfalls die im Rahmen des Projekts weiteren wichtigen Erfolgsgrößen zum Gelingen aus den Bereichen Management, Marketing, Prozesse und Systeme. Sie sind in der Lage, ein entsprechendes Implementierungsprojekt zu planen und zu managen.
+soziale Kompetenzen: Neben fachlichen adressiert das Modul explizit auch soziale Kompetenzen. Durch den in das Modul integrierten Praxistransfer sind die Studierenden in der Lage, ein komplexes, praxisrelevantes (Einführungs-)Projekt zu organisieren und es zu verfolgen oder anzuleiten. Die Studierenden sind auf die Übernahme von Führungsverantwortung vorbereitet und haben die Bedeutung und die Wirkung von Team- und Kommunikationsfähigkeit verinnerlicht.
+
+Inhalt & Gliederung: Die Plattformökonomie ist die Königsdisziplin des E-Business! Die Plattformökonomie (auch E-Marketplace genannt) bewegt sich auf elektronischen und somit immateriellen Plattformen, welche allgemein auf die drei Grundbausteine Information, Kommunikation und Transaktion aufbauen. Die Wertschöpfung solcher E-Marketplaces ergibt sich im Gegensatz zu realwirtschaftlichen Unternehmen aus dem Informationsdreisprung, also der systematischen Informationssammlung, -verarbeitung und -übertragung von digitalen Nullen und Einsen, im Rahmen der elektronischen Wertschöpfungskette der Digitalen Wirtschaft. Die Rahmenbedingungen der virtuellen Marktplatzkoordination ermöglichen";"Prof. Dr. Tobias Kollmann  Universität Duisburg-Essen
+";30;20;30;20;5;SS/WS
+Prozessorientierte Informationssysteme;PRO;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Foliensätze, Videocasts.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch: Übungen / Transferaufgaben zur Selbstkontrolle, sowie tutoriell betreute Aufgabenbearbeitung.
+Die Lerninhalte liegen als Präsentations-Folien in Form von PDF-Dokumenten mit Lernzielfragen und Literaturhinweisen zum Selbststudium, sowie Videocasts vor.
+Zusätzlich erfolgen eine eigenständige Vertiefung und ein Transfer der erworbenen Grundlagen durch spezielle und aktuelle Fragestellungen im Rahmen der Studienleistung.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden kennen die Grundlagen von Informationssystemen als zentralen Betrachtungsgegenstand der Wirtschaftsinformatik und verstehen darauf aufbauend die Herausforderungen, die sich aus dem Zusammenhang von Geschäftsprozessen und Informationssystemen in Unternehmen ergeben [Kenntnisse]. Basierend auf den fachlichen Kenntnissen können sie prozess-, system- und unternehmensübergreifende Konzepte identifizieren und durch Anwendung ausgewählter Konzepte und Methoden der Wirtschaftsinformatik verknüpfen und auf verschiedene Sachverhalte übertragen [Fertigkeiten].
+soziale Kompetenzen:
+Die Studierenden können Aufgaben durch selbstständiges Aneignen von benötigtem Wissen lösen und durch einen virtuellen Austausch mit Kommilitonen und Betreuern reflektieren. Im Rahmen der Studienleistung sind die Studierenden in der Lage, Ergebnisse einer entsprechenden Aufgabenstellung im Rahmen eines virtuellen Impulsvortrags einem außenstehenden Personenkreis prägnant und auf einem angemessenen Abstraktionsniveau zu kommunizieren.
+
+Inhalt & Gliederung: Die Veranstaltung erläutert nach einer ausführlichen Motivation durch die Grundlagen der Disziplin Wirtschaftsinformatik verschiedene Ausprägungen von inner- und überbetrieblichen Informationssystemen. Der Fokus liegt hierbei vor allem auf einer konzeptuellen Ebene. Daran anschließend werden Inhalte des Geschäftsprozessmanagements und der Geschäftsprozessmodellierung vertieft und mit den vorangegangenen Inhalten verknüpft. Den Abschluss bildet eine einführende Betrachtung des Managements von Informationssystemen unter Berücksichtigung der Zusammenhänge von Geschäftsprozessen und Informationssystemen.
+•Grundlagen der Disziplin Wirtschaftsinformatik
+•Inner- und überbetriebliche Informationssysteme
+•Geschäftsprozessmanagement und -modellierung
+•Management von Informationssystemen";"Prof. Dr. Stefan Eicker  Universität Duisburg-Essen
+";10;10;70;10;5;SS/WS
+Servicemanagement;SER;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript/Foliensätze, Video-Vorlesungsmitschnitt (gestreamte Lecture-on-Demand-Pakete).
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen zur Selbstkontrolle, Fallstudien, Fallbeispiele.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: Nach dem erfolgreichen Abschluss des Moduls sind die Studierenden in der Lage, verschiedene Arten von mobilen
+Dienstleistungen  zu  analysieren  und  zu  differenzieren  sowie  Einsatzbeispiele für mobile,  elektronisch  unterstützte
+Dienstleistungen in unterschiedlichen Branchen aufzuzeigen. Zum anderen können die Teilnehmer Methoden in den
+verschiedenen Phasen der systematischen Entwicklung von  Dienstleistungen anwenden, interpretieren und kritisch
+hinterfragen.
+
+Inhalt & Gliederung: Im Zentrum des Moduls steht die Planung, Produktion und Distribution von mobilen elektronischen Dienstleistungen in
+unterschiedlichen  Anwendungsfeldern  der  Dienstleistungswirtschaft.  Zunächst  werden  Charakteristika  und
+Gestaltungsformen von IT-gestützten Dienstleistungen vorgestellt. Darauf aufbauend behandelt die Veranstaltung den Prozess des mobilen Service Engineering und die in modernen, mobilen Dienstleistungen eingesetzten Technologien. Ein Abschnitt über innovative, mobile Dienstleistungen, deren Anbieter und Hintergründe rundet die Veranstaltung ab.";"Prof. Dr. Freimut Bodendorf  Universität Erlangen-Nürnberg
+";30;5;60;5;5;SS/WS
+Software- und Qualitätsmanagement;SUQ;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Skript.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudien, Fallbeispiele, tutoriell betreute Aufgabenbearbeitung, Gruppenarbeiten.
+
+Studienempfehlungen: •Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+•Grundlagen des Projektmanagements
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden haben die besonderen Anforderungen des Software- und Qualitätsmanagements erkannt und können reflektiert Entscheidungen hinsichtlich der Projektplanung treffen. Sie können komplexe Probleme und Aufgabenstellungen identifizieren und analysieren und haben die Fähigkeit, die unterschiedliche Methoden und Werkzeuge hinsichtlich ihrer Eignung zu beurteilen, problemorientiert auszuwählen und anzuwenden.
+soziale Kompetenzen:
+Die Studierenden haben die herausragende Bedeutung der sozialen Kompetenz erkannt. Im Zuge der Erarbeitung der Aufgaben im Team haben sie die sozialen und kommunikativen Kompetenzen trainiert, können effektiv in interdisziplinär zusammengesetzten und geographisch verteilten Teams arbeiten sowie Projekte durchführen, organisieren und leiten. Sie können ihre unterschiedlichen (Fach-)Kompetenzen für eine gemeinsame Problemlösung einsetzen und haben die Fähigkeit erworben, Ergebnisse der Problembearbeitung in Teams und auch nach außen zielgruppenorientiert darzustellen.
+
+Inhalt & Gliederung: Das Modul enthält drei Teile: Im ersten Teil werden die Grundlagen der Organisation und die daraus resultierenden Konsequenzen für die Kommunikation sowie die Teambildung thematisiert. Die Einschätzung der jeweiligen Rollen und der damit verbundenen Erwartungen sind von zentraler Bedeutung, um Konflikte zu vermeiden und um die Softwareentwickler zu überzeugen, sich an Standards zu orientieren. Im zweiten Teil wird die Projektplanung unter Berücksichtigung der speziellen Anforderungen in der Softwareentwicklung dargestellt. Die bekanntesten Vorgehensmodelle werden nach Projektgröße gegliedert, wobei das Risikomanagement jeweils integriert wird. Im letzten Teil werden die Methoden des Controllings dargestellt. Diese sind erforderlich, um schließlich die Qualität der Softwareentwicklung sicherzustellen. Verschiedene Berechnungsmethoden für die Aufwandsschätzung sowie Testverfahren werden anhand von Beispielen dargestellt.";"PD Dr. Christina Klüver  Universität Duisburg-Essen
+";50;10;30;10;5;SS/WS
+Standards und Netzeffekte;SUN;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Erweiterte Foliensätze, ergänzende Literatur
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Übungen, Fallstudien, Videotutorien, tutoriell betreute Aufgabenbearbeitung.
+Es werden praxisbezogene Aufgaben gestellt, die mit Hilfe der erlernten Methoden und Theorien gelöst werden sollen.
+
+Studienempfehlungen: Die Bearbeitung der optionalen semesterbegleitenden Studienleistungen wird – auch im Sinne einer frühzeitigen und kontinuierlichen Vorbereitung auf die Abschlussklausur – ausdrücklich empfohlen.
+
+Angestrebte Lernergebnisse: Studierende erwerben breite domänenbezogene Kenntnisse und Kompetenzen über grundlegende Prozesse der Adoption und Ausbreitung von Standards und anderen Technologien, die Netzeffekten unterliegen, in und zwischen Organisationen. Es werden Methoden vermittelt, mit denen Standardisierungsaktivitäten in Unternehmen und in Unternehmensnetzwerken bewertet, gestaltet und gesteuert werden können. Wichtige Anwendungsgebiete sind Innovations- und Technologiediffusion, virales Marketing oder Marktentwicklungen.
+
+Inhalt & Gliederung: Das Modul behandelt Treiber und Dynamik der Technologie- und Innovationsdiffusion in Netzwerken. Studierende erwerben breite domänenbezogene Kenntnisse und Kompetenzen über grundlegende Prozesse der Adoption und Ausbreitung von Standards und anderen Technologien, die Netzeffekten unterliegen, in und zwischen Organisationen. Es werden Methoden vermittelt, mit denen Standardisierungsaktivitäten in Unternehmen und in Unternehmensnetzwerken bewertet, gestaltet und gesteuert werden können. Wichtige Anwendungsgebiete sind Innovations- und Technologiediffusion, virales Marketing oder Marktentwicklungen. In der Veranstaltung wird insbesondere dargestellt, wie Standards bei der Automatisierung und der überbetrieblichen Verknüpfung von Prozessen helfen können (technische Aspekte der Integration; wesentliche Anwendungsdomänen sind hier XML und Electronic Data Interchange (EDI)), was die strategischen Probleme der Standardisierung und Vernetzung sind und wie mit ökonomischen und spieltheoretischen Modellen ein Beitrag zur Lösung geleistet werden kann (wirtschaftliche Aspekte).
+Geplante Gliederung:
+•Theorie: Netzeffekttheorie (Grundlagen, Kritik), IT-Nutzung und IT-Diffusion (TAM, TPB)
+•Praxis: Wichtige E-Business-Standards (EDI, XML)";"Prof. Dr. Tim Weitzel  Universität Bamberg
+";40;10;40;10;5;SS/WS
+User-Centered Web Design;UWD;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt:
+Skript, Foliensätze, Reading Class, Videocast. Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere
+gefördert durch: tutoriell betreute Aufgabenbearbeitung.
+Die Lerninhalte liegen als Präsentations-Folien, Videocasts und ergänzend als Skript in Form von PDF-Dokumenten mit Literaturhinweisen zum Selbststudium vor. Das Modul umfasst neben dem Studium dieser Inhalte auch Einheiten, die in Form einer Reading Class bereitgestellt werden. Diese bestehen aus Publikationen, die die Modulinhalte gezielt ergänzen. Zusätzlich erfolgen eine eigenständige Vertiefung und ein Transfer der erworbenen Grundlagen durch spezielle und aktuelle Fragestellungen im Rahmen der Studienleistung.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden verstehen die Herausforderungen im Bereich des Web Engineering [Kenntnisse]. Sie können die expliziten und impliziten Anforderungen der Benutzer identifizieren [Fertigkeit].
+Der Fokus liegt auf den Konzepten, die den Kontext einer Web-Applikation ausmachen. Dadurch wird gewährleistet, dass die Studierenden aktuelle Entwicklungen im Web korrekt einordnen und ihre Relevanz und Nutzbarkeit bewerten können [Fertigkeit]. Die Studierenden können Lösungsalternativen für komplexe Probleme und Aufgabenstellungen aufzeigen, kritisch hinterfragen und auswählen; der Fokus liegt auf einem ganzheitlichen Bild der Entwurfsprinzipien webbasierter Systeme. anstatt auf einzelnen Technologien.
+soziale Kompetenzen:
+Die Studierenden können Aufgaben in interdisziplinären und heterogenen Projekt-Teams wahrnehmen – auch in der Rolle des Teamleiters. Sie sind zudem vertraut mit der Gestaltung sozialer Interaktion auf Basis von Web 2.0 Konzepten und für unterschiedliche Benutzergruppen, wie beispielsweise Menschen unterschiedlichen Alters, unterschiedlicher Nationalitäten oder unterschiedlicher Behinderung.
+Sie sind in der Lage, die Ergebnisse im Rahmen eines virtuellen Impulsvortrags einem außenstehenden Personenkreis prägnant und auf einem angemessenen Abstraktionsniveau zu kommunizieren.
+
+Inhalt & Gliederung: Web x.y
+Das erste Kapitel stellt die Entwicklung des Webs bis heute dar und beleuchtet was das Web an sich ausmacht. Darüber hinaus wird bezogen auf Web 2.0 Kriterien abgeleitet die es erlauben bestehende Plattformen einzuordnen und deren Erfolgsfaktoren zu identifizieren.
+Strategic Planning
+Spezifika von Web-Projekten werden vorgestellt und bezogen auf das vorhandene Wissen zu Projektmanagement eingeordnet, darüber hinaus wird auf zwei wesentliche Besonderheiten bei Webprojekten eingegangen: die Wichtigkeit von Inhalt im Gegensatz zur Applikation selbst und die Lokalisierung und globale Verfügbarkeit.
+Client Technologies
+Für die Gestaltung von Webseiten ist es wichtig zu verstehen welche Arten von Hard- und Software eingesetzt werden, und welchen Einfluss diese auf die Verfügbarkeit und Darstellung von Inhalten haben. Ein Fokus liegt dabei auf dem Responsive Web Design als Technik zur geräteabhängigen Anpassung der Darstellung.
+Web-Content-Management-Systems
+Als Beispiel für ganzheitliche Systeme werden Web-CMS herangezogen, da diese viele Komponenten und Verfahren zusammenführen, die in bestehenden Web-Applikationen zu finden sind. Hierbei sind Assets, Schnittstellen und Wiederverwendung wesentliche Themen.
+Accessibility
+Barrierefreiheit stellt eine alternative Sicht auf Webinhalte dar, da hier Lösungen eingesetzt werden um eine Nutzung zu ermöglichen, wenn einzelne oder mehrere als typisch vorausgesetzte menschliche Fähigkeiten nicht zur Verfügung stehen.
+Usability
+Die Gestaltung von gebrauchstauglichen Benutzeroberflächen stellt für das Web eine wesentliche Grundlage dar. Fokus dieses Kapitels sind die Grundlagen der Gestaltungslehre, um allgemeine Regeln für die Darstellung und Anordnung von Elementen zu ermitteln sowie die Einordnung der Usability in den Entwicklungsprozess.
+Search Engines
+Index-Suchmaschinen stellen den wesentlichen Zugangspunkt zu Webinhalten dar, daher ist deren Funktionsweise wesentlicher Baustein. Darüber hinaus werden Guidelines für die Bewertung von Suchalgorithmen vorgestellt um reflektieren zu können wie die inhaltliche Qualität Einfluss auf das Suchmaschinenranking hat.
+Security
+Durch die öffentliche Verfügbarkeit von Webapplikationen sind diese typischerweise häufige Angriffsziele. Grundlage der Auseinandersetzung mit Sicherheitsrisiken und deren Mitigation sind die OWASP Top 10 – die 10 häufigsten aktuellen Angriffskategorien.";"Prof. Dr. Stefan Eicker  Universität Duisburg-Essen
+";10;30;50;10;5;SS/WS
+Web-Technologien;WEB;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt:
+Skript, Foliensätze, Reading Class, Videocast. Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere
+gefördert durch: tutoriell betreute Aufgabenbearbeitung.
+Die Lerninhalte liegen als Präsentations-Folien, Videocasts und ergänzend als Skript in Form von PDF-Dokumenten mit Literaturhinweisen zum Selbststudium vor. Das Modul umfasst neben dem Studium dieser Inhalte auch Einheiten, die in Form einer Reading Class bereitgestellt werden. Diese bestehen aus Publikationen, die die Modulinhalte gezielt ergänzen. Zusätzlich erfolgen eine eigenständige Vertiefung und ein Transfer der erworbenen Grundlagen durch spezielle und aktuelle Fragestellungen im Rahmen der Studienleistung.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden verstehen die Herausforderungen im Bereich des Web Engineering [Kenntnisse]. Sie können die expliziten und impliziten Anforderungen der Benutzer identifizieren [Fertigkeit].
+Der Fokus liegt auf den Konzepten, die den Kontext einer Web-Applikation ausmachen. Dadurch wird gewährleistet, dass die Studierenden aktuelle Entwicklungen im Web korrekt einordnen und ihre Relevanz und Nutzbarkeit bewerten können [Fertigkeit]. Die Studierenden können Lösungsalternativen für komplexe Probleme und Aufgabenstellungen aufzeigen, kritisch hinterfragen und auswählen; der Fokus liegt auf einem ganzheitlichen Bild der Entwurfsprinzipien webbasierter Systeme. anstatt auf einzelnen Technologien.
+soziale Kompetenzen:
+Die Studierenden können Aufgaben in interdisziplinären und heterogenen Projekt-Teams wahrnehmen – auch in der Rolle des Teamleiters. Sie sind zudem vertraut mit der Gestaltung sozialer Interaktion auf Basis von Web 2.0 Konzepten und für unterschiedliche Benutzergruppen, wie beispielsweise Menschen unterschiedlichen Alters, unterschiedlicher Nationalitäten oder unterschiedlicher Behinderung.
+Sie sind in der Lage, die Ergebnisse im Rahmen eines virtuellen Impulsvortrags einem außenstehenden Personenkreis prägnant und auf einem angemessenen Abstraktionsniveau zu kommunizieren.
+
+Inhalt & Gliederung: Web x.y
+Das erste Kapitel stellt die Entwicklung des Webs bis heute dar und beleuchtet was das Web an sich ausmacht. Darüber hinaus wird bezogen auf Web 2.0 Kriterien abgeleitet die es erlauben bestehende Plattformen einzuordnen und deren Erfolgsfaktoren zu identifizieren.
+Strategic Planning
+Spezifika von Web-Projekten werden vorgestellt und bezogen auf das vorhandene Wissen zu Projektmanagement eingeordnet, darüber hinaus wird auf zwei wesentliche Besonderheiten bei Webprojekten eingegangen: die Wichtigkeit von Inhalt im Gegensatz zur Applikation selbst und die Lokalisierung und globale Verfügbarkeit.
+Client Technologies
+Für die Gestaltung von Webseiten ist es wichtig zu verstehen welche Arten von Hard- und Software eingesetzt werden, und welchen Einfluss diese auf die Verfügbarkeit und Darstellung von Inhalten haben. Ein Fokus liegt dabei auf dem Responsive Web Design als Technik zur geräteabhängigen Anpassung der Darstellung.
+Web-Content-Management-Systems
+Als Beispiel für ganzheitliche Systeme werden Web-CMS herangezogen, da diese viele Komponenten und Verfahren zusammenführen, die in bestehenden Web-Applikationen zu finden sind. Hierbei sind Assets, Schnittstellen und Wiederverwendung wesentliche Themen.
+Accessibility
+Barrierefreiheit stellt eine alternative Sicht auf Webinhalte dar, da hier Lösungen eingesetzt werden um eine Nutzung zu ermöglichen, wenn einzelne oder mehrere als typisch vorausgesetzte menschliche Fähigkeiten nicht zur Verfügung stehen.
+Usability
+Die Gestaltung von gebrauchstauglichen Benutzeroberflächen stellt für das Web eine wesentliche Grundlage dar. Fokus dieses Kapitels sind die Grundlagen der Gestaltungslehre, um allgemeine Regeln für die Darstellung und Anordnung von Elementen zu ermitteln sowie die Einordnung der Usability in den Entwicklungsprozess.
+Search Engines
+Index-Suchmaschinen stellen den wesentlichen Zugangspunkt zu Webinhalten dar, daher ist deren Funktionsweise wesentlicher Baustein. Darüber hinaus werden Guidelines für die Bewertung von Suchalgorithmen vorgestellt um reflektieren zu können wie die inhaltliche Qualität Einfluss auf das Suchmaschinenranking hat.
+Security
+Durch die öffentliche Verfügbarkeit von Webapplikationen sind diese typischerweise häufige Angriffsziele. Grundlage der Auseinandersetzung mit Sicherheitsrisiken und deren Mitigation sind die OWASP Top 10 – die 10 häufigsten aktuellen Angriffskategorien.";Prof. Dr. Andreas Henrich  Universität Bamberg;10;50;30;10;5;SS/WS
+Wissensmanagement;WIS;"Lehrformen & Medienformen: Für dieses Modul steht eine internetbasierte Lernumgebung für die Durchführung der Lehr-/Lernprozesse und der Lernunterstützungsprozesse zur Verfügung. Dabei erfolgt die Betreuung der Studierenden durch die Lehrenden über asynchrone (Foren, E-Mail) und synchrone (Chat, Telefon, Online-Konferenzen) Kommunikationswerkzeuge. Diese stehen auch für die Kommunikation der Studierenden untereinander zur Verfügung.
+Die Studierenden werden beim Wissenserwerb durch folgende elektronische Selbstlernmedien unterstützt: Pflichtliteratur und zusammenfassende Foliensätze.
+Zudem wird der Aufbau von Fertigkeiten und Kompetenzen insbesondere gefördert durch:
+Fallstudie, tutoriell betreute Forumsdiskussionen sowie problemorientierte Chats.
+
+Studienempfehlungen: Für den erfolgreichen Abschluss des Moduls wird die Abgabe der Aufgabenbearbeitung im Rahmen der optionalen semesterbegleitenden Studienleistungen dringend empfohlen.
+
+Angestrebte Lernergebnisse: fachliche Kompetenzen:
+Die Studierenden sind in der Lage, Grundlagen des Wissensmanagements zu erklären und unterschiedliche Ansätze, Konzepte und Vorgehensmodelle des Wissensmanagements und der Wissensbewertung zu beurteilen. Sie können die komplexen Prozesse zur Einführung eines ganzheitlichen Wissensmanagements, insbesondere unter Berücksichtigung von Barrieren und Erfolgsfaktoren, konzipieren und durchführen sowie Lösungsansätze/Ergebnisse kritisch hinterfragen. In einem optionalen Webinar zum Thema „Change Management“ können die Studierenden zusätzlich Kompetenzen in der Gestaltung von organisationalen Veränderungsprozessen aufbauen.
+soziale Kompetenzen:
+Durch die Teilnahme an den online Veranstaltungen (Webinar, Chats zur freiwilligen Prüfungsleistung/Klausurvorbereitung und fachlichen Austausch) und Nutzung des online Forums lernen die Studierenden zum einen den Umgang mit geläufigen, digitalen Kommunikationstools und Social Software und zum anderen die Gestaltung von Kommunikation und Interaktion mit Menschen in der digitalen Welt.
+
+Inhalt & Gliederung: In diesem Kurs werden die verschiedenen Sichtweisen und Einsatzmöglichkeiten des Wissensmanagements vorgestellt und ein umfassender Überblick über ganzheitliche Wissensmanagement-Konzepte gegeben. Neben Erfolgsfaktoren und Barrieren, die den Einführungsprozess eines Wissensmanagements determinieren, steht insbesondere die Umsetzung von Wissensmanagementstrategien in der Praxis im Vordergrund.";"Prof. Dr. Markus Bick  ESCP Europe Wirtschaftshochschule Berlin
+";30;10;30;30;5;SS/WS
