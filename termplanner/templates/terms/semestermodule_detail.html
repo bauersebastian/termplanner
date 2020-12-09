@@ -10,8 +10,14 @@
         <div class="col"><a class="btn btn-secondary float-right mr-2" role="button" href="{% url "terms:update" semestermodule.id %}">Modul ändern</a></div>
       </div>
     </div>
-    <p>Belegt im {{ semestermodule.get_term_display }}</p>
-    <table class="table">
+    <div class="row mt-4">
+      <div class="col">
+        <p>Belegt im {{ semestermodule.get_term_display }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table">
       <tr>
         <td>Punkte Studienleistung</td>
         <td>{{ semestermodule.points_sl }}</td>
@@ -25,16 +31,24 @@
         <td>{{ semestermodule.grade }}</td>
       </tr>
     </table>
-    <h2>Termine</h2>
-    <span class="float-right">
-      <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add_event" semestermodule.id%}">
-        Termin hinzufügen
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col">
+        <h2>Termine</h2>
+      </div>
+      <div class="col">
+        <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add_event" semestermodule.id%}">
+          Termin hinzufügen
       </a>
-    </span>
+      </div>
+    </div>
+
     {% for event in event_list %}
       <p><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.title }}</a></p>
     {% endfor %}
-    <h2>Angaben zum Modul</h2>
+
+    <h2 class="mt-5">Angaben zum Modul</h2>
     <table class="table">
       <tr>
         <td>Anbieter</td>
