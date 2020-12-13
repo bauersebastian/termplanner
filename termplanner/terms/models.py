@@ -66,6 +66,7 @@ class SemesterModule(TimeStampedModel):
         null=True,
         blank=True,
     )
+    done = models.BooleanField("Erledigt?", default=False)
 
     def __str__(self):
         return str(self.id)

@@ -58,7 +58,7 @@ class EventCreateView(LoginRequiredMixin, FormView):
 
 class SemesterModuleUpdateView(LoginRequiredMixin, IsOwnerMixin, UpdateView):
     model = SemesterModule
-    fields = ["module", "term", "points_sl", "points_exam", "grade"]
+    fields = ["module", "term", "points_sl", "points_exam", "grade", "done"]
     action = "Update"
 
 
