@@ -22,6 +22,16 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         return SemesterModule.objects.filter(user=self.request.user.id)
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["semestermodule_list_current"] = SemesterModule.objects.filter(
+            user=self.request.user.id
+        ).filter(done=False)
+        context["semestermodule_list_done"] = SemesterModule.objects.filter(
+            user=self.request.user.id
+        ).filter(done=True)
+        return context
+
 
 class SemesterModuleCreateView(LoginRequiredMixin, CreateView):
     model = SemesterModule

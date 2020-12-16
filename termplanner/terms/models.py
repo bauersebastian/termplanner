@@ -28,6 +28,12 @@ class Module(TimeStampedModel):
 
 
 class TermStarts(datetime.date, models.Choices):
+    WS_17 = 2017, 10, 1, "Wintersemester 2017/18"
+    SS_18 = 2018, 4, 1, "Sommersemester 2018"
+    WS_18 = 2018, 10, 1, "Wintersemester 2018/19"
+    SS_19 = 2019, 4, 1, "Sommersemester 2019"
+    WS_19 = 2019, 10, 1, "Wintersemester 2019/20"
+    SS_20 = 2020, 4, 1, "Sommersemester 2020"
     WS_20 = 2020, 10, 1, "Wintersemester 2020/21"
     SS_21 = 2021, 4, 1, "Sommersemester 2021"
     WS_21 = 2021, 10, 1, "Wintersemester 2021/22"
@@ -76,6 +82,11 @@ class SemesterModule(TimeStampedModel):
         return reverse("terms:detail", kwargs={"pk": self.pk})
 
 
+class OpenEventManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(done=False)
+
+
 class Event(TimeStampedModel):
     class EventType(models.TextChoices):
         SCRIPT = "SC", _("Skriptabarbeitung")
@@ -99,6 +110,12 @@ class Event(TimeStampedModel):
     note = models.TextField("Notiz", blank=True)
     done = models.BooleanField("Erledigt?", default=False)
     done_at = models.DateTimeField("Erledigt am", blank=True, null=True)
+
+    objects = models.Manager()
+    open_objects = OpenEventManager()
+
+    class Meta:
+        ordering = ["start_date"]
 
     def __str__(self):
         return self.title

@@ -1,42 +1,92 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1>Meine Semester</h1>
-{% if semestermodule_list %}
-  <table class="table mt-4">
-    <thead class="table_vawi">
-      <tr>
-        <th scope="col">Modulbezeichnung</th>
-        <th scope="col">ECTS</th>
-        <th scope="col">Note</th>
-        <th scope="col">Nächste Termine</th>
-      </tr>
-    </thead>
-    <tbody>
-    {% for semestermodule in semestermodule_list %}
-      <tr>
-        <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
-        <td>{{ semestermodule.module.ects }}</td>
-        {% if semestermodule.grade != None %}
-          <td>{{ semestermodule.grade }}</td>
-        {% else %}
-          <td>-</td>
-        {% endif %}
-        <td>
-          <ul class="list-group list-group-flush">
-            {% for event in semestermodule.events.all %}
-                <li class="list-group-item"><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.start_date }} - {{ event.title }}</a> </li>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Meine Semester</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        {% if semestermodule_list_current %}
+          <h2>Aktuell belegte Module</h2>
+          <table class="table mt-4">
+            <thead class="table_vawi">
+              <tr>
+                <th scope="col">Modulbezeichnung</th>
+                <th scope="col">ECTS</th>
+                <th scope="col">Note</th>
+                <th scope="col">Nächste offene Ereignisse</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for semestermodule in semestermodule_list_current %}
+              <tr>
+                <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
+                <td>{{ semestermodule.module.ects }}</td>
+                {% if semestermodule.grade != None %}
+                  <td>{{ semestermodule.grade }}</td>
+                {% else %}
+                  <td>-</td>
+                {% endif %}
+                <td>
+                  <ul class="list-group list-group-flush">
+                    {% for event in semestermodule.events.all %}
+                      {% if event.done == False %}
+                        <li class="list-group-item"><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.start_date }} - {{ event.title }}</a> </li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </td>
+              </tr>
             {% endfor %}
-          </ul>
-        </td>
-      </tr>
-    {% endfor %}
-    </tbody>
-  </table>
-  {% else %}
-    <p>Du hast noch kein Modul hinterlegt. Füge doch gleich eines hinzu.</p>
-  {% endif %}
+            </tbody>
+          </table>
+          {% else %}
+            <p>Du hast noch kein Modul hinterlegt. Füge doch gleich eines hinzu.</p>
+          {% endif %}
+      </div>
+    </div>
 
-  <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add"%}">
-      Modul hinzufügen
-  </a>
+    <div class="row">
+      <div class="col">
+        <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add"%}">
+          Modul hinzufügen
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        {% if semestermodule_list_done %}
+          <h2>Abgeschlossene Module</h2>
+          <table class="table mt-4">
+            <thead class="table_vawi">
+              <tr>
+                <th scope="col">Modulbezeichnung</th>
+                <th scope="col">ECTS</th>
+                <th scope="col">Note</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for semestermodule in semestermodule_list_done %}
+              <tr>
+                <th scope="row"><a href="{% url 'terms:detail' semestermodule.id %}">{{semestermodule.module.title}}</a></th>
+                <td>{{ semestermodule.module.ects }}</td>
+                {% if semestermodule.grade != None %}
+                  <td>{{ semestermodule.grade }}</td>
+                {% else %}
+                  <td>-</td>
+                {% endif %}
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
+          {% else %}
+            <p>Du hast leider noch keine abgeschlossenen Module.</p>
+          {% endif %}
+      </div>
+    </div>
+  </div>
+
 {% endblock %}
