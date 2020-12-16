@@ -43,7 +43,7 @@
             </tbody>
           </table>
           {% else %}
-            <p>Du hast noch kein Modul hinterlegt. Füge doch gleich eines hinzu.</p>
+            <p>Du hast noch kein Modul hinterlegt, welches du aktuell belegst. Füge doch gleich eines hinzu.</p>
           {% endif %}
       </div>
     </div>
@@ -85,6 +85,11 @@
           {% else %}
             <p>Du hast leider noch keine abgeschlossenen Module.</p>
           {% endif %}
+        <p>Du hast bereits {{ semestermodule_list_done.count }}
+          {% if semestermodule_list_done.count == 1 %}Modul {% else %}Module {% endif %}abgeschlossen.
+        </p>
+        <p>Somit hast du bisher {{ ects_done.module__ects__sum }} ECTS Punkte gesammelt.</p>
+
       </div>
     </div>
   </div>

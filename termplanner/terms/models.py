@@ -74,6 +74,9 @@ class SemesterModule(TimeStampedModel):
     )
     done = models.BooleanField("Erledigt?", default=False)
 
+    class Meta:
+        ordering = ["term"]
+
     def __str__(self):
         return str(self.id)
 

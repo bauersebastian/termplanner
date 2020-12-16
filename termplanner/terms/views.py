@@ -1,4 +1,5 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.db.models import Sum
 from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
 from django.views.generic import (
@@ -30,6 +31,11 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
         context["semestermodule_list_done"] = SemesterModule.objects.filter(
             user=self.request.user.id
         ).filter(done=True)
+        context["ects_done"] = (
+            SemesterModule.objects.filter(user=self.request.user.id)
+            .filter(done=True)
+            .aggregate(Sum("module__ects"))
+        )
         return context
 
 
