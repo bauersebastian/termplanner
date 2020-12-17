@@ -33,7 +33,15 @@
                   <ul class="list-group list-group-flush">
                     {% for event in semestermodule.events.all %}
                       {% if event.done == False %}
-                        <li class="list-group-item"><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.start_date }} - {{ event.title }}</a> </li>
+                        <li class="list-group-item">
+                          <a href="{% url 'terms:detail_event' semestermodule.id event.id %}">
+                            {{ event.start_date|date:"SHORT_DATE_FORMAT" }}
+                            {% if event.end_date %}
+                              bis {{ event.end_date|date:"SHORT_DATE_FORMAT"  }}
+                            {% endif %}
+                            - {{ event.title }}
+                          </a>
+                        </li>
                       {% endif %}
                     {% endfor %}
                   </ul>
