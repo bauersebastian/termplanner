@@ -84,20 +84,20 @@
     </div>
     <div class="row">
       <div class="col">
-        <table class="table mt-4">
+        <table class="table mt-4 table-hover" style="cursor: pointer;">
           <thead class="table_vawi">
             <tr>
               <th scope="col">Datum</th>
               <th scope="col">Art</th>
               <th scope="col">Modul</th>
-              <th scope="col">Notiz</th>
+              <th scope="col">Bezeichnung</th>
             </tr>
           </thead>
           <tbody>
           {% for event in user_events %}
-            <tr>
+            <tr onclick="window.location='{% url 'terms:detail_event' event.semestermodule.id event.id %}';">
               <td>{{ event.start_date|date:"SHORT_DATE_FORMAT" }}</td>
-              <td></td>
+              <td>{{ event.get_event_type_display }}</td>
               <td>{{ event.semestermodule.module.title }}</td>
               <td>{{ event.title }}</td>
             </tr>

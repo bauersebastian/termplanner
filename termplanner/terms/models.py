@@ -92,7 +92,7 @@ class OpenEventManager(models.Manager):
 
 class Event(TimeStampedModel):
     class EventType(models.TextChoices):
-        SCRIPT = "SC", _("Skriptabarbeitung")
+        SCRIPT = "SC", _("Skriptbearbeitung")
         SL = "SL", _("Studienleistung")
         EXAM_A = "EA", _("Klausur Block A")
         EXAM_B = "EB", _("Klausur Block B")
