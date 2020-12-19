@@ -1,7 +1,11 @@
+import calendar as pycal
+from datetime import date, datetime, timedelta
+
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Sum
 from django.shortcuts import get_object_or_404
 from django.urls import reverse_lazy
+from django.utils.safestring import mark_safe
 from django.views.generic import (
     CreateView,
     DeleteView,
@@ -11,6 +15,7 @@ from django.views.generic import (
     UpdateView,
 )
 
+from termplanner.utils.calendar import Calendar
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
 from .forms import EventForm
@@ -36,6 +41,20 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
             .filter(done=True)
             .aggregate(Sum("module__ects"))
         )
+        user_events = Event.open_objects.select_related("semestermodule").filter(
+            semestermodule__user_id=self.request.user.id
+        )
+        context["user_events"] = user_events
+        # use today's date for the calendar
+        d = get_date(self.request.GET.get("month", None))
+        context["prev_month"] = prev_month(d)
+        context["next_month"] = next_month(d)
+        # Instantiate our calendar class with today's year and date
+        cal = Calendar(d.year, d.month)
+        # Call the formatmonth method, which returns our calendar as a table
+        html_cal = cal.formatmonth(withyear=True, events=user_events)
+        context["calendar"] = mark_safe(html_cal)
+
         return context
 
 
@@ -110,3 +129,25 @@ class EventDeleteView(LoginRequiredMixin, IsOwnerOfSemesterModuleMixin, DeleteVi
     def get_success_url(self):
         semestermodule_id = self.kwargs["semestermodule_id"]
         return reverse_lazy("terms:detail", kwargs={"pk": semestermodule_id})
+
+
+def get_date(req_day):
+    if req_day:
+        year, month = (int(x) for x in req_day.split("-"))
+        return date(year, month, day=1)
+    return datetime.today()
+
+
+def prev_month(d):
+    first = d.replace(day=1)
+    prev_month = first - timedelta(days=1)
+    month = "month=" + str(prev_month.year) + "-" + str(prev_month.month)
+    return month
+
+
+def next_month(d):
+    days_in_month = pycal.monthrange(d.year, d.month)[1]
+    last = d.replace(day=days_in_month)
+    next_month = last + timedelta(days=1)
+    month = "month=" + str(next_month.year) + "-" + str(next_month.month)
+    return month
