@@ -14,7 +14,7 @@ class Calendar(LocaleHTMLCalendar):
         events_per_day = events.filter(start_date__day=day)
         d = ""
         for event in events_per_day:
-            d += f"<li> {event.title} </li>"
+            d += f"<li><a href='{event.get_absolute_url()}'>{event.title}</a> </li>"
 
         if day != 0:
             return f"<td><span class='date'>{day}</span><ul> {d} </ul></td>"
