@@ -7,9 +7,36 @@
 
 {% block content %}
   <h1>Modul hinzufügen</h1>
-  <form action="." method="post">
+  <form action="." method="post" id="semesterModuleForm" data-modules-url="{% url 'terms:ajax_load_modules' %}">
   {% csrf_token %}
   {{ form|crispy }}
   <button type="submit" class="btn btn-primary">Speichern</button>
   </form>
+
 {% endblock content %}
+{% block custom_javascript %}
+  <script>
+
+    $("#id_term").change(function() {
+      let url = $("#semesterModuleForm").attr("data-modules-url");
+      let term = $("#id_term option:selected").text();
+      if (term.indexOf("Winter") >= 0) {
+        term = "WS"
+      } else {
+        term = "SS"
+      }
+
+      $.ajax({
+        url: url,
+        data: {
+          'term': term
+        },
+        success: function (data) {
+          $("#id_module").html(data);
+        }
+      });
+
+    });
+
+  </script>
+{% endblock %}

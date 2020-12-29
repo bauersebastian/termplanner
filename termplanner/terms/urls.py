@@ -41,4 +41,5 @@ urlpatterns = [
         view=views.EventDeleteView.as_view(),
         name="delete_event",
     ),
+    path(route="ajax/load-modules/", view=views.load_modules, name="ajax_load_modules"),
 ]

@@ -1,7 +1,17 @@
 from django import forms
 from tempus_dominus.widgets import DateTimePicker
 
-from .models import Event
+from .models import Event, Module, SemesterModule
+
+
+class SemesterModuleForm(forms.ModelForm):
+    class Meta:
+        model = SemesterModule
+        fields = ("term", "module", "points_sl", "points_exam", "grade", "done")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["module"].queryset = Module.objects.none()
 
 
 class EventForm(forms.ModelForm):

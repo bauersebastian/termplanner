@@ -4,7 +4,7 @@ from datetime import date, datetime, timedelta
 from allauth.account.forms import LoginForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Sum
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
 from django.utils.safestring import mark_safe
 from django.views.generic import (
@@ -20,8 +20,8 @@ from django.views.generic.base import TemplateView
 from termplanner.utils.calendar import Calendar
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
-from .forms import EventForm
-from .models import Event, SemesterModule
+from .forms import EventForm, SemesterModuleForm
+from .models import Event, Module, SemesterModule
 
 
 class SemesterModuleListView(LoginRequiredMixin, ListView):
@@ -62,7 +62,7 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
 
 class SemesterModuleCreateView(LoginRequiredMixin, CreateView):
     model = SemesterModule
-    fields = ["module", "term", "points_sl", "points_exam", "grade"]
+    form_class = SemesterModuleForm
 
     def form_valid(self, form):
         form.instance.user = self.request.user
@@ -95,7 +95,7 @@ class EventCreateView(LoginRequiredMixin, FormView):
 
 class SemesterModuleUpdateView(LoginRequiredMixin, IsOwnerMixin, UpdateView):
     model = SemesterModule
-    fields = ["module", "term", "points_sl", "points_exam", "grade", "done"]
+    form_class = SemesterModuleForm
     action = "Update"
 
 
@@ -162,3 +162,11 @@ class HomeView(TemplateView):
         context = super().get_context_data(**kwargs)
         context["form"] = LoginForm()
         return context
+
+
+def load_modules(request):
+    term = request.GET.get("term")
+    modules = Module.objects.filter(term=term).order_by("title")
+    return render(
+        request, "terms/ajax/module_dropdown_list_options.html", {"modules": modules}
+    )
