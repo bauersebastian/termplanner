@@ -13,6 +13,24 @@ class SemesterModuleForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         self.fields["module"].queryset = Module.objects.none()
 
+        if "term" in self.data:
+            try:
+                # get the selected modules primary key
+                module_pk = self.data.get("module")
+                # grab information from the db of that module
+                module = Module.objects.get(pk=module_pk)
+                # get the term of the module
+                term = module.term
+                self.fields["module"].queryset = Module.objects.filter(
+                    term=term
+                ).order_by("title")
+            except (ValueError, TypeError):
+                pass
+        elif self.instance.pk:
+            self.fields["module"].queryset = Module.objects.filter(
+                term=self.instance.module.term
+            ).order_by("title")
+
 
 class EventForm(forms.ModelForm):
     title = forms.CharField(label="Titel")
