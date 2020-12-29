@@ -8,6 +8,7 @@ class SemesterModuleForm(forms.ModelForm):
     class Meta:
         model = SemesterModule
         fields = ("term", "module", "points_sl", "points_exam", "grade", "done")
+        help_texts = {"module": "Bitte Semester zuerst auswählen"}
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
