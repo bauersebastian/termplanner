@@ -1,6 +1,7 @@
 import calendar as pycal
 from datetime import date, datetime, timedelta
 
+from allauth.account.forms import LoginForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Sum
 from django.shortcuts import get_object_or_404
@@ -14,6 +15,7 @@ from django.views.generic import (
     ListView,
     UpdateView,
 )
+from django.views.generic.base import TemplateView
 
 from termplanner.utils.calendar import Calendar
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
@@ -151,3 +153,12 @@ def next_month(d):
     next_month = last + timedelta(days=1)
     month = "month=" + str(next_month.year) + "-" + str(next_month.month)
     return month
+
+
+class HomeView(TemplateView):
+    template_name = "pages/home.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["form"] = LoginForm()
+        return context

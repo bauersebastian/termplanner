@@ -5,8 +5,10 @@ from django.urls import include, path
 from django.views import defaults as default_views
 from django.views.generic import RedirectView, TemplateView
 
+from termplanner.terms.views import HomeView
+
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", view=HomeView.as_view(), name="home"),
     path(
         "about/", TemplateView.as_view(template_name="pages/about.html"), name="about"
     ),

@@ -1,4 +1,20 @@
 {% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% load account socialaccount %}
+
 {% block content %}
-  <h1>Plane dein Semester bei VAWi</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Plane dein Semester bei VAWi</h1>
+      </div>
+    </div>
+    {% if not request.user.is_authenticated %}
+      <div class="row mt-5">
+      <div class="col">
+        {% include "account/login_snippet.html" %}
+      </div>
+      </div>
+    {% endif %}
 {% endblock %}
