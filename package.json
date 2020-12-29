@@ -17,10 +17,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-uglify-es": "^1.0.4",
-    "gulp-sourcemaps": "^3.0.0",
     "jquery": "^3.5.1",
     "pixrem": "^5.0.0",
-    "popper.js": "1.14.3"
+    "popper.js": "1.14.7"
   },
   "engines": {
     "node": ">=8"
