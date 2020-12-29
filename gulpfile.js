@@ -22,6 +22,7 @@ const rename = require('gulp-rename')
 const sass = require('gulp-sass')
 const spawn = require('child_process').spawn
 const uglify = require('gulp-uglify-es').default
+const sourcemaps = require('gulp-sourcemaps');
 
 // Relative paths function
 function pathsConfig(appName) {
@@ -94,11 +95,13 @@ function scripts() {
 // Vendor Javascript minification
 function vendorScripts() {
   return src(paths.vendorsJs)
+    .pipe(sourcemaps.init())
     .pipe(concat('vendors.js'))
     .pipe(dest(paths.js))
     .pipe(plumber()) // Checks for errors
     .pipe(uglify()) // Minifies the js
     .pipe(rename({ suffix: '.min' }))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(dest(paths.js))
 }
 
