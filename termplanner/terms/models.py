@@ -49,9 +49,13 @@ class SemesterModule(TimeStampedModel):
         related_name="semester_modules",
     )
     module = models.ForeignKey(
-        Module, on_delete=models.SET_NULL, null=True, related_name="semester_modules"
+        Module,
+        verbose_name="Modulbezeichnung",
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name="semester_modules",
     )
-    term = models.DateField(choices=TermStarts.choices)
+    term = models.DateField(choices=TermStarts.choices, verbose_name="Semester")
     points_sl = models.FloatField(
         "Punkte Studienleistung",
         validators=[MinValueValidator(0.0), MaxValueValidator(18)],
