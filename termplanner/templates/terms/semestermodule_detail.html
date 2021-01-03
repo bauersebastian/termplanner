@@ -20,15 +20,33 @@
         <table class="table">
       <tr>
         <td>Punkte Studienleistung</td>
-        <td>{{ semestermodule.points_sl }}</td>
+        <td>
+          {% if semestermodule.points_sl %}
+            {{ semestermodule.points_sl }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
       </tr>
       <tr>
         <td>Punkte Klausur</td>
-        <td>{{ semestermodule.points_exam }}</td>
+        <td>
+          {% if semestermodule.points_exam %}
+            {{ semestermodule.points_exam }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
       </tr>
       <tr>
         <td>Note</td>
-        <td>{{ semestermodule.grade }}</td>
+        <td>
+          {% if semestermodule.grade %}
+            {{ semestermodule.grade }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
       </tr>
     </table>
       </div>
