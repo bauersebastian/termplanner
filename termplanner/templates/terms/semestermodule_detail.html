@@ -37,13 +37,17 @@
         {% for event in event_list %}
           <tr>
             <td>
-              {{ event.start_date }}
+              {{ event.start_date|date:"SHORT_DATE_FORMAT" }}
             </td>
             <td>
-              {{ event.end_date }}
+              {% if event.end_date %}
+                {{ event.end_date|date:"SHORT_DATE_FORMAT" }}
+              {% else %}
+                -
+              {% endif %}
             </td>
             <td>
-              {{ event.type }}
+              {{ event.get_event_type_display }}
             </td>
             <td>
               <a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.title }}</a>

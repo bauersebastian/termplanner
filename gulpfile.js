@@ -106,7 +106,15 @@ function vendorScripts() {
 // Image compression
 function imgCompression() {
   return src(`${paths.images}/*`)
-    .pipe(imagemin()) // Compresses PNG, JPEG, GIF and SVG images
+    .pipe(imagemin([
+        imagemin.svgo({
+            plugins: [
+                {removeViewBox: false},
+                {removeUselessStrokeAndFill: false },
+                {cleanupIDs: false}
+            ]
+        })
+    ])) // Compresses PNG, JPEG, GIF and SVG images
     .pipe(dest(paths.images))
 }
 
