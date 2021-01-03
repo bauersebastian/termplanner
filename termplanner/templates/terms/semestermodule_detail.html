@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
   <div class="container">
     <div class="row">
@@ -10,47 +11,7 @@
         <div class="col"><a class="btn btn-secondary float-right mr-2" role="button" href="{% url "terms:update" semestermodule.id %}">Modul ändern</a></div>
       </div>
     </div>
-    <div class="row mt-4">
-      <div class="col">
-        <p>Belegt im {{ semestermodule.get_term_display }}</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <table class="table">
-      <tr>
-        <td>Punkte Studienleistung</td>
-        <td>
-          {% if semestermodule.points_sl %}
-            {{ semestermodule.points_sl }}
-          {% else %}
-            -
-          {% endif %}
-        </td>
-      </tr>
-      <tr>
-        <td>Punkte Klausur</td>
-        <td>
-          {% if semestermodule.points_exam %}
-            {{ semestermodule.points_exam }}
-          {% else %}
-            -
-          {% endif %}
-        </td>
-      </tr>
-      <tr>
-        <td>Note</td>
-        <td>
-          {% if semestermodule.grade %}
-            {{ semestermodule.grade }}
-          {% else %}
-            -
-          {% endif %}
-        </td>
-      </tr>
-    </table>
-      </div>
-    </div>
+
     <div class="row mt-4">
       <div class="col">
         <h2>Termine</h2>
@@ -61,12 +22,99 @@
       </a>
       </div>
     </div>
+    <table class="table">
+      <thead class="table_vawi">
+        <tr>
+          <th scope="col">Startdatum</th>
+          <th scope="col">Enddatum</th>
+          <th scope="col">Art</th>
+          <th scope="col">Bezeichnung</th>
+          <th scope="col">Erledigt?</th>
+          <th scope="col">Aktion</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for event in event_list %}
+          <tr>
+            <td>
+              {{ event.start_date }}
+            </td>
+            <td>
+              {{ event.end_date }}
+            </td>
+            <td>
+              {{ event.type }}
+            </td>
+            <td>
+              <a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.title }}</a>
+            </td>
+            {% if event.done == True %}
+              <td>
+              <svg class="bi text-success" width="25" height="25" fill="currentColor">
+                <use xlink:href="{% static 'images/bootstrap-icons.svg' %}#check-circle"/>
+              </svg>
+              </td>
+            {% else %}
+              <td>
+              <svg class="bi text-danger" width="25" height="25" fill="currentColor">
+                <use xlink:href="{% static 'images/bootstrap-icons.svg' %}#x-circle"/>
+              </svg>
+              </td>
+            {% endif %}
+            <td>
+              <a href="{% url 'terms:update_event' event.id %}">Bearbeiten</a>
+            </td>
+          </tr>
 
-    {% for event in event_list %}
-      <p><a href="{% url 'terms:detail_event' semestermodule.id event.id %}">{{ event.title }}</a></p>
-    {% endfor %}
+      {% endfor %}
+      </tbody>
 
-    <h2 class="mt-5">Angaben zum Modul</h2>
+    </table>
+
+    <div class="row mt-4">
+      <div class="col">
+        <p>Belegt im {{ semestermodule.get_term_display }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table">
+          <tr>
+            <td>Punkte Studienleistung</td>
+            <td>
+              {% if semestermodule.points_sl %}
+                {{ semestermodule.points_sl }}
+              {% else %}
+                -
+              {% endif %}
+            </td>
+          </tr>
+          <tr>
+            <td>Punkte Klausur</td>
+            <td>
+              {% if semestermodule.points_exam %}
+                {{ semestermodule.points_exam }}
+              {% else %}
+                -
+              {% endif %}
+            </td>
+          </tr>
+          <tr>
+            <td>Note</td>
+            <td>
+              {% if semestermodule.grade %}
+                {{ semestermodule.grade }}
+              {% else %}
+                -
+              {% endif %}
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+
+    <h2 class="mt-4">Angaben zum Modul</h2>
     <table class="table">
       <tr>
         <td>Anbieter</td>

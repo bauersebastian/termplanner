@@ -28,7 +28,13 @@
       </tr>
       <tr>
         <td>Ende</td>
-        <td>{{ event.end_date }}</td>
+        <td>
+          {% if event.end_date %}
+            {{ event.end_date }}
+          {% else %}
+            -
+          {% endif %}
+        </td>
       </tr>
       <tr>
         <td>Erledigt?</td>
@@ -49,6 +55,13 @@
       </tr>
     </table>
     <h2>Notiz zum Ereignis</h2>
-    <p>{{ event.note }}</p>
+    {% if event.note %}
+      <p>{{ event.note }}</p>
+    {% else %}
+      <p>Es wurden noch keine Notizen hinterlegt.</p>
+    {% endif %}
+    <p>
+      <a class="float-right btn btn-info" role="button" href="{% url 'terms:detail' event.semestermodule.id %}">zurück zum Modul</a>
+    </p>
   </div>
 {% endblock content %}
