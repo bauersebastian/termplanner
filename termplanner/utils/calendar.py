@@ -1,4 +1,5 @@
 from calendar import LocaleHTMLCalendar
+from datetime import date
 
 
 class Calendar(LocaleHTMLCalendar):
@@ -14,10 +15,16 @@ class Calendar(LocaleHTMLCalendar):
         events_per_day = events.filter(start_date__day=day)
         d = ""
         for event in events_per_day:
-            d += f"<li><a href='{event.get_absolute_url()}'>{event.title}</a> </li>"
+            d += (
+                f"<li><a href='{event.get_absolute_url()}'>"
+                f"{event.semestermodule.module.short_title} - {event.title}</a> </li>"
+            )
 
         if day != 0:
-            return f"<td><span class='date'>{day}</span><ul> {d} </ul></td>"
+            if date(self.year, self.month, day) == date.today():
+                return f"<td class='table-info'><span class='date'>{day}</span><ul> {d} </ul></td>"
+            else:
+                return f"<td><span class='date'>{day}</span><ul> {d} </ul></td>"
         return "<td></td>"
 
     # formats a week as a tr
@@ -38,4 +45,5 @@ class Calendar(LocaleHTMLCalendar):
         cal += f"{self.formatweekheader()}\n"
         for week in self.monthdays2calendar(self.year, self.month):
             cal += f"{self.formatweek(week, events)}\n"
+        cal += "</table>"
         return cal

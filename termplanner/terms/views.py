@@ -54,6 +54,7 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
         # Instantiate our calendar class with today's year and date
         cal = Calendar(d.year, d.month)
         # Call the formatmonth method, which returns our calendar as a table
+        # User Events contains all events of an user which are not done
         html_cal = cal.formatmonth(withyear=True, events=user_events)
         context["calendar"] = mark_safe(html_cal)
 

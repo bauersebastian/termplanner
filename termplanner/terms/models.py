@@ -76,6 +76,10 @@ class SemesterModule(TimeStampedModel):
     )
     done = models.BooleanField("Erledigt?", default=False)
 
+    @property
+    def last_three_events(self):
+        return Event.open_objects.filter(semestermodule=self.pk)[:3]
+
     class Meta:
         ordering = ["term"]
 

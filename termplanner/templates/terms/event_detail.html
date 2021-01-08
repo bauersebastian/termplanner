@@ -61,7 +61,8 @@
       <p>Es wurden noch keine Notizen hinterlegt.</p>
     {% endif %}
     <p>
-      <a class="float-right btn btn-info" role="button" href="{% url 'terms:detail' event.semestermodule.id %}">zurück zum Modul</a>
+      <a class="float-right btn btn-info" role="button" href="{% url 'terms:list'%}">zurück zum Dashboard</a>
+      <a class="float-right btn btn-info mr-2" role="button" href="{% url 'terms:detail' event.semestermodule.id %}">zurück zum Modul</a>
     </p>
   </div>
 {% endblock content %}

@@ -5,9 +5,14 @@
       <div class="col">
         <h1>Meine Semester</h1>
       </div>
+      <div class="col">
+        <a class="btn btn-info float-right" role="button" href="{% url "terms:add"%}">
+          Modul hinzufügen
+        </a>
+      </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col table-responsive">
         {% if semestermodule_list_current %}
           <h2>Aktuell belegte Module</h2>
           <table class="table mt-4">
@@ -17,6 +22,7 @@
                 <th scope="col">ECTS</th>
                 <th scope="col">Note</th>
                 <th scope="col">Nächste offene Ereignisse</th>
+                <th></th>
               </tr>
             </thead>
             <tbody>
@@ -30,21 +36,23 @@
                   <td>-</td>
                 {% endif %}
                 <td>
-                  <ul class="list-group list-group-flush">
-                    {% for event in semestermodule.events.all %}
-                      {% if event.done == False %}
-                        <li class="list-group-item">
-                          <a href="{% url 'terms:detail_event' semestermodule.id event.id %}">
+                  <div class="list-group list-group-flush">
+                    {% for event in semestermodule.last_three_events %}
+                          <a href="{% url 'terms:detail_event' semestermodule.id event.id %}"
+                             class="list-group-item list-group-item-action">
                             {{ event.start_date|date:"SHORT_DATE_FORMAT" }}
                             {% if event.end_date %}
                               bis {{ event.end_date|date:"SHORT_DATE_FORMAT"  }}
                             {% endif %}
                             - {{ event.title }}
                           </a>
-                        </li>
-                      {% endif %}
                     {% endfor %}
-                  </ul>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  <a class="btn btn-secondary" role="button" href="{% url 'terms:detail' semestermodule.id %}">
+                    Zur Planung
+                  </a>
                 </td>
               </tr>
             {% endfor %}
@@ -58,9 +66,7 @@
 
     <div class="row">
       <div class="col">
-        <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add"%}">
-          Modul hinzufügen
-        </a>
+
       </div>
     </div>
 
@@ -77,38 +83,43 @@
       </div>
     </div>
 
-    <div class="row">
+    <div id="calendar" class="row">
       <div class="col">
         {{ calendar }}
       </div>
     </div>
-    <div class="row">
-      <div class="col">
+
+    <div id="table-user-events" class="row">
+      <div class="col table-responsive">
+
         <table class="table mt-4 table-hover" style="cursor: pointer;">
           <thead class="table_vawi">
             <tr>
               <th scope="col">Datum</th>
+              <th scope="col">Bezeichnung</th>
               <th scope="col">Art</th>
               <th scope="col">Modul</th>
-              <th scope="col">Bezeichnung</th>
+
             </tr>
           </thead>
           <tbody>
           {% for event in user_events %}
             <tr onclick="window.location='{% url 'terms:detail_event' event.semestermodule.id event.id %}';">
               <td>{{ event.start_date|date:"SHORT_DATE_FORMAT" }}</td>
+              <td>{{ event.title }}</td>
               <td>{{ event.get_event_type_display }}</td>
               <td>{{ event.semestermodule.module.title }}</td>
-              <td>{{ event.title }}</td>
+
             </tr>
           {% endfor %}
           </tbody>
         </table>
+
       </div>
     </div>
 
     <div class="row">
-      <div class="col">
+      <div class="col table-responsive">
         {% if semestermodule_list_done %}
           <h2>Abgeschlossene Module</h2>
           <table class="table mt-4">
