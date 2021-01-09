@@ -7,6 +7,9 @@ from django.views.generic import RedirectView, TemplateView
 
 from termplanner.terms.views import HomeView
 
+admin.site.site_header = "VAWi Planer Administration"
+admin.site.index_title = "Planer Verwaltung"
+
 urlpatterns = [
     path("", view=HomeView.as_view(), name="home"),
     path(
