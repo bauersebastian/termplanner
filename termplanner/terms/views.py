@@ -1,5 +1,5 @@
 import calendar as pycal
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 from allauth.account.forms import LoginForm
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -114,6 +114,14 @@ class SemesterModuleDetailView(LoginRequiredMixin, IsOwnerMixin, DetailView):
         context["event_list"] = Event.objects.filter(
             semestermodule=context["semestermodule"].id
         )
+        context["days_until_exam_a"] = days_until_test(
+            semestermodule_id=context["semestermodule"].id,
+            event_type=Event.EventType.EXAM_A,
+        )
+        context["days_until_exam_b"] = days_until_test(
+            semestermodule_id=context["semestermodule"].id,
+            event_type=Event.EventType.EXAM_B,
+        )
         return context
 
 
@@ -171,3 +179,17 @@ def load_modules(request):
     return render(
         request, "terms/ajax/module_dropdown_list_options.html", {"modules": modules}
     )
+
+
+def days_until_test(semestermodule_id, event_type):
+    day_of_test_event = (
+        Event.objects.filter(semestermodule=semestermodule_id)
+        .filter(event_type=event_type)
+        .first()
+    )
+    if day_of_test_event:
+        testday = day_of_test_event.start_date
+        today = datetime.now(timezone.utc)
+        delta = testday - today
+        if delta.days > 0:
+            return delta.days
