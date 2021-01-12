@@ -35,7 +35,8 @@
       </a>
       </div>
     </div>
-    <table class="table">
+    {% if event_list %}
+      <table class="table">
       <thead class="table_vawi">
         <tr>
           <th scope="col">Startdatum</th>
@@ -87,10 +88,19 @@
       </tbody>
 
     </table>
+    {% else %}
+      <div class="row">
+        <div class="col">
+          <p>Es wurden noch keine Termine für das Modul erfasst.</p>
+        </div>
+      </div>
+
+    {% endif %}
+
 
     <div class="row mt-4">
       <div class="col">
-        <p>Belegt im {{ semestermodule.get_term_display }}</p>
+        <h5>Belegt im {{ semestermodule.get_term_display }}</h5>
       </div>
     </div>
     <div class="row">
