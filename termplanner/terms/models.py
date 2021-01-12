@@ -57,14 +57,12 @@ class SemesterModule(TimeStampedModel):
     points_sl = models.FloatField(
         "Punkte Studienleistung",
         validators=[MinValueValidator(0.0), MaxValueValidator(18)],
-        default=0,
         null=True,
         blank=True,
     )
     points_exam = models.FloatField(
         "Punkte Klausur",
         validators=[MinValueValidator(0.0), MaxValueValidator(90)],
-        default=0,
         null=True,
         blank=True,
     )
