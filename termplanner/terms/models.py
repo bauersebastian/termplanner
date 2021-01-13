@@ -26,8 +26,6 @@ class Module(TimeStampedModel):
 
 
 class TermStarts(datetime.date, models.Choices):
-    WS_17 = 2017, 10, 1, "Wintersemester 2017/18"
-    SS_18 = 2018, 4, 1, "Sommersemester 2018"
     WS_18 = 2018, 10, 1, "Wintersemester 2018/19"
     SS_19 = 2019, 4, 1, "Sommersemester 2019"
     WS_19 = 2019, 10, 1, "Wintersemester 2019/20"
@@ -35,9 +33,6 @@ class TermStarts(datetime.date, models.Choices):
     WS_20 = 2020, 10, 1, "Wintersemester 2020/21"
     SS_21 = 2021, 4, 1, "Sommersemester 2021"
     WS_21 = 2021, 10, 1, "Wintersemester 2021/22"
-    SS_22 = 2022, 4, 1, "Sommersemester 2022"
-    WS_22 = 2022, 10, 1, "Wintersemester 2022/23"
-    SS_23 = 2023, 4, 1, "Sommersemester 2023"
 
 
 class SemesterModule(TimeStampedModel):
