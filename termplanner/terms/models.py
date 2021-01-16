@@ -3,6 +3,7 @@ import datetime
 from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+from django.db.models import Count
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 from model_utils.models import TimeStampedModel
@@ -72,6 +73,10 @@ class SemesterModule(TimeStampedModel):
     @property
     def last_three_events(self):
         return Event.open_objects.filter(semestermodule=self.pk)[:3]
+
+    @property
+    def number_of_open_events(self):
+        return Event.open_objects.filter(semestermodule=self.pk).aggregate(Count())
 
     class Meta:
         ordering = ["term"]
