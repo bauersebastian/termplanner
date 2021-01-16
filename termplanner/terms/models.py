@@ -21,6 +21,10 @@ class Module(TimeStampedModel):
     TermType = models.TextChoices("TermType", "SS WS SS/WS")
     term = models.CharField(choices=TermType.choices, max_length=5, default=TermType.SS)
 
+    class Meta:
+        verbose_name_plural = "Module"
+        verbose_name = "Modul"
+
     def __str__(self):
         return self.title
 
