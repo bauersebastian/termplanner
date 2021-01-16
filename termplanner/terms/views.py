@@ -6,7 +6,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Sum
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
-from django.utils.safestring import mark_safe
 from django.views.generic import (
     CreateView,
     DeleteView,
@@ -17,7 +16,6 @@ from django.views.generic import (
 )
 from django.views.generic.base import TemplateView
 
-from termplanner.utils.calendar import Calendar
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
 from .forms import EventForm, SemesterModuleForm
@@ -46,17 +44,7 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
         user_events = Event.open_objects.select_related("semestermodule").filter(
             semestermodule__user_id=self.request.user.id
         )
-        context["user_events"] = user_events
-        # use today's date for the calendar
-        d = get_date(self.request.GET.get("month", None))
-        context["prev_month"] = prev_month(d)
-        context["next_month"] = next_month(d)
-        # Instantiate our calendar class with today's year and date
-        cal = Calendar(d.year, d.month)
-        # Call the formatmonth method, which returns our calendar as a table
-        # User Events contains all events of an user which are not done
-        html_cal = cal.formatmonth(withyear=True, events=user_events)
-        context["calendar"] = mark_safe(html_cal)
+        context["events"] = user_events
 
         return context
 

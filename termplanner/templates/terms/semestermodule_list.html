@@ -1,4 +1,49 @@
 {% extends "base.html" %}
+{% block css %}
+  {{ block.super }}
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+{% endblock css %}
+{% block top_js %}
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/locales-all.min.js'></script>
+  <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('fullcalendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          editable: false,
+          locale: 'de',
+          weekNumbers: true,
+          themeSystem: 'bootstrap',
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+          navLinks: true,
+          events: [
+                  {% for i in events %}
+                {
+                    title: "{{ i.semestermodule.module.short_title }} - {{ i.title }}",
+                    {% if i.all_day %}
+                      allDay: true,
+                    {% endif %}
+                    start: '{{ i.start_date|date:"c" }}',
+                    end: '{{ i.end_date|date:"c" }}',
+                    url: '{% url 'terms:detail_event' i.semestermodule.id i.id %}',
+                    groupId: '{{ i.semestermodule.id }}',
+
+                },
+                {% endfor %}
+          ]
+        });
+        calendar.render();
+      });
+
+    </script>
+{% endblock top_js %}
 {% block content %}
   <div class="container">
     <div class="row">
@@ -76,19 +121,12 @@
       </div>
     </div>
 
-    <div class="row mt-4 mb-4">
+    <div class="row mb-2">
       <div class="col">
-	        <a class="btn btn-info left" href="{% url 'terms:list' %}?{{ prev_month }}#dates"> Vorheriger Monat </a>
-	        <a class="btn btn-info right" href="{% url 'terms:list' %}?{{ next_month }}#dates"> Nächster Monat </a>
+        <div id='fullcalendar'></div>
       </div>
     </div>
-
-    <div id="calendar" class="row">
-      <div class="col">
-        {{ calendar }}
-      </div>
-    </div>
-
+    {% if events %}
     <div id="table-user-events" class="row">
       <div class="col table-responsive">
 
@@ -103,7 +141,7 @@
             </tr>
           </thead>
           <tbody>
-          {% for event in user_events %}
+          {% for event in events %}
             <tr onclick="window.location='{% url 'terms:detail_event' event.semestermodule.id event.id %}';">
               <td>{{ event.start_date|date:"SHORT_DATE_FORMAT" }}</td>
               <td>{{ event.title }}</td>
@@ -117,6 +155,7 @@
 
       </div>
     </div>
+    {% endif %}
 
     <div class="row">
       <div class="col table-responsive">

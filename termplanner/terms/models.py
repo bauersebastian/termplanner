@@ -113,6 +113,15 @@ class Event(TimeStampedModel):
     done = models.BooleanField("Erledigt?", default=False)
     done_at = models.DateTimeField("Erledigt am", blank=True, null=True)
 
+    @property
+    def all_day(self):
+        if self.end_date:
+            delta = self.end_date - self.start_date
+            if delta.days > 0:
+                return True
+        else:
+            return False
+
     objects = models.Manager()
     open_objects = OpenEventManager()
 
