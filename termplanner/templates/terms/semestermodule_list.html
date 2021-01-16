@@ -23,6 +23,14 @@
             right: 'dayGridMonth,timeGridWeek,timeGridDay'
           },
           navLinks: true,
+          eventDidMount: function(info) {
+            $(info.el).tooltip({
+              title: info.event.extendedProps.description,
+              placement: 'top',
+              trigger: 'hover',
+              container: 'body'
+            });
+          },
           events: [
                   {% for i in events %}
                 {
@@ -30,14 +38,15 @@
                     {% if i.all_day %}
                       allDay: true,
                     {% endif %}
-                    start: '{{ i.start_date|date:"c" }}',
-                    end: '{{ i.end_date|date:"c" }}',
+                    start: '{{ i.start_date|date:"Y-m-d" }}T{{ i.start_date|date:"H:m:s" }}',
+                    end: '{{ i.end_date|date:"Y-m-d" }}T{{ i.end_date|date:"H:m:s" }}',
                     url: '{% url 'terms:detail_event' i.semestermodule.id i.id %}',
                     groupId: '{{ i.semestermodule.id }}',
+                    description: '{{ i.title }} im Modul {{ i.semestermodule.module.title }}',
 
                 },
                 {% endfor %}
-          ]
+          ],
         });
         calendar.render();
       });
