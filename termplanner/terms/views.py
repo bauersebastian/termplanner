@@ -3,7 +3,7 @@ from datetime import date, datetime, timedelta, timezone
 
 from allauth.account.forms import LoginForm
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.db.models import Sum
+from django.db.models import Count, Sum
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
 from django.views.generic import (
@@ -33,7 +33,8 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
         context["semestermodule_list_current"] = (
             SemesterModule.objects.filter(user=self.request.user.id)
             .filter(done=False)
-            .order_by("events")
+            .annotate(num_events=Count("events"))
+            .order_by("-num_events")
         )
         context["semestermodule_list_done"] = SemesterModule.objects.filter(
             user=self.request.user.id

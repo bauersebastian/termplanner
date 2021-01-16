@@ -38,8 +38,10 @@
                     {% if i.all_day %}
                       allDay: true,
                     {% endif %}
-                    start: '{{ i.start_date|date:"Y-m-d" }}T{{ i.start_date|date:"H:m:s" }}',
-                    end: '{{ i.end_date|date:"Y-m-d" }}T{{ i.end_date|date:"H:m:s" }}',
+                    start: '{{ i.start_date|date:"Y-m-d" }}T{{ i.start_date|date:"H:i:s" }}',
+                    {% if i.end_date %}
+                    end: '{{ i.end_date|date:"Y-m-d" }}T{{ i.end_date|date:"H:i:s" }}',
+                    {% endif %}
                     url: '{% url 'terms:detail_event' i.semestermodule.id i.id %}',
                     groupId: '{{ i.semestermodule.id }}',
                     description: '{{ i.title }} im Modul {{ i.semestermodule.module.title }}',
