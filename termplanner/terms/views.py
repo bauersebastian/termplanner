@@ -1,9 +1,11 @@
 import calendar as pycal
 from datetime import date, datetime, timedelta, timezone
+from io import BytesIO
 
 from allauth.account.forms import LoginForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.db.models import Count, Sum
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, render
 from django.urls import reverse_lazy
 from django.views.generic import (
@@ -15,6 +17,9 @@ from django.views.generic import (
     UpdateView,
 )
 from django.views.generic.base import TemplateView
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Paragraph, SimpleDocTemplate
 
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
@@ -184,3 +189,36 @@ def days_until_test(semestermodule_id, event_type):
         delta = testday - today
         if delta.days > 0:
             return delta.days
+
+
+def events_semestermodule_pdf_view(request):
+    pdf_buffer = BytesIO()
+    doc = SimpleDocTemplate(
+        pdf_buffer,
+        pagesize=A4,
+        rightMargin=72,
+        leftMargin=72,
+        topMargin=72,
+        bottomMargin=18,
+    )
+    sample_style_sheet = getSampleStyleSheet()
+    flowables = []
+    user_events = Event.open_objects.select_related("semestermodule").filter(
+        semestermodule__user_id=request.user.id
+    )
+    paragraph_1 = Paragraph(
+        "Meine laufenden Termine im Semester", sample_style_sheet["Heading1"]
+    )
+    flowables.append(paragraph_1)
+    for event in user_events:
+        paragraph_2 = Paragraph(f"{event.title}", sample_style_sheet["BodyText"])
+        flowables.append(paragraph_2)
+    doc.build(flowables)
+    pdf_value = pdf_buffer.getvalue()
+    pdf_buffer.close()
+
+    response = HttpResponse(content_type="application/pdf")
+    response["Content-Disposition"] = 'attachment; filename="some_file.pdf"'
+    response.write(pdf_value)
+
+    return response

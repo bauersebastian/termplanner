@@ -1,4 +1,5 @@
 import datetime
+from datetime import timedelta
 
 from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
@@ -125,6 +126,11 @@ class Event(TimeStampedModel):
                 return True
         else:
             return False
+
+    @property
+    def day_after_end(self):
+        if self.end_date:
+            return self.end_date + timedelta(days=1)
 
     objects = models.Manager()
     open_objects = OpenEventManager()

@@ -19,3 +19,4 @@ django-redis==4.12.1  # https://github.com/jazzband/django-redis
 #-------------------------------------------------------------------------------
 django-tempus-dominus==5.1.2.13 # https://pypi.org/project/django-tempus-dominus/
 pandas==1.1.4
+reportlab==3.5.59

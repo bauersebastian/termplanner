@@ -42,4 +42,7 @@ urlpatterns = [
         name="delete_event",
     ),
     path(route="ajax/load-modules/", view=views.load_modules, name="ajax_load_modules"),
+    path(
+        route="events_pdf", view=views.events_semestermodule_pdf_view, name="events_pdf"
+    ),
 ]
