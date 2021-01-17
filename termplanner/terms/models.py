@@ -122,7 +122,7 @@ class Event(TimeStampedModel):
     def all_day(self):
         if self.end_date:
             delta = self.end_date - self.start_date
-            if delta.days > 0:
+            if delta.days > 0 or delta.days < 0:
                 return True
         else:
             return False

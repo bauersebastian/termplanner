@@ -17,9 +17,11 @@ from django.views.generic import (
     UpdateView,
 )
 from django.views.generic.base import TemplateView
+from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.platypus import Paragraph, SimpleDocTemplate
+from reportlab.lib.units import cm
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
 
@@ -203,16 +205,79 @@ def events_semestermodule_pdf_view(request):
     )
     sample_style_sheet = getSampleStyleSheet()
     flowables = []
-    user_events = Event.open_objects.select_related("semestermodule").filter(
-        semestermodule__user_id=request.user.id
+    semestermodules = (
+        SemesterModule.objects.filter(user=request.user.id)
+        .filter(done=False)
+        .annotate(num_events=Count("events"))
+        .order_by("-num_events")
     )
-    paragraph_1 = Paragraph(
-        "Meine laufenden Termine im Semester", sample_style_sheet["Heading1"]
-    )
-    flowables.append(paragraph_1)
-    for event in user_events:
-        paragraph_2 = Paragraph(f"{event.title}", sample_style_sheet["BodyText"])
-        flowables.append(paragraph_2)
+    headline = Paragraph("Termine im Semester", sample_style_sheet["Heading1"])
+    flowables.append(headline)
+    for module in semestermodules:
+        event_query = module.events.filter(done=False)
+
+        module_headline = Paragraph(module.module.title, sample_style_sheet["Heading2"])
+        flowables.append(module_headline)
+        if not event_query:
+            no_events = Paragraph(
+                "Keine offenen Termine im Modul", sample_style_sheet["BodyText"]
+            )
+            flowables.append(no_events)
+        data = []
+        for event in event_query:
+            line = []
+            if event.all_day:
+                formatted_start_date = event.start_date.strftime("%d.%m.%Y")
+                formatted_end_date = event.end_date.strftime("%d.%m.%Y")
+                line.append(
+                    Paragraph(
+                        f"{formatted_start_date} bis {formatted_end_date}",
+                        sample_style_sheet["BodyText"],
+                    )
+                )
+            else:
+                if event.end_date:
+                    formatted_start_date = event.start_date.strftime("%d.%m.%Y - %H:%M")
+                    formatted_end_date = event.end_date.strftime("%H:%M Uhr")
+                    line.append(
+                        Paragraph(
+                            f"{formatted_start_date} bis {formatted_end_date}",
+                            sample_style_sheet["BodyText"],
+                        )
+                    )
+                else:
+                    formatted_start_date = event.start_date.strftime(
+                        "%d.%m.%Y - %H:%M Uhr"
+                    )
+                    line.append(f"{formatted_start_date}")
+            line.append(Paragraph(f"{event.title}", sample_style_sheet["BodyText"]))
+            line.append(
+                Paragraph(
+                    f"{event.get_event_type_display()}", sample_style_sheet["BodyText"]
+                )
+            )
+
+            if line:
+                data.append(line)
+                if event.note:
+                    second_line = []
+                    note = [Paragraph(f"{event.note}", sample_style_sheet["BodyText"])]
+                    second_line.append("Notiz:")
+                    second_line.append(note)
+                    data.append(second_line)
+                else:
+                    data.append([])
+        if data:
+            tstyle = []
+            for i, row in enumerate(data):
+                if i % 2 == 0:
+                    tstyle.append(("LINEABOVE", (0, i), (-1, i), 1, colors.grey))
+                    tstyle.append(("SPAN", (1, i + 1), (2, i + 1)))
+            t = Table(data, colWidths=(6 * cm, 6 * cm, 4 * cm))
+            t.setStyle(TableStyle(tstyle))
+            flowables.append(t)
+            flowables.append(Spacer(1 * cm, 1 * cm))
+
     doc.build(flowables)
     pdf_value = pdf_buffer.getvalue()
     pdf_buffer.close()
