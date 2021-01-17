@@ -20,7 +20,7 @@ from django.views.generic.base import TemplateView
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
-from reportlab.lib.units import cm
+from reportlab.lib.units import cm, mm
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 from termplanner.utils.mixins import IsOwnerMixin, IsOwnerOfSemesterModuleMixin
@@ -276,14 +276,14 @@ def events_semestermodule_pdf_view(request):
             t = Table(data, colWidths=(6 * cm, 6 * cm, 4 * cm))
             t.setStyle(TableStyle(tstyle))
             flowables.append(t)
-            flowables.append(Spacer(1 * cm, 1 * cm))
+            flowables.append(Spacer(1 * cm, 5 * mm))
 
     doc.build(flowables)
     pdf_value = pdf_buffer.getvalue()
     pdf_buffer.close()
 
     response = HttpResponse(content_type="application/pdf")
-    response["Content-Disposition"] = 'attachment; filename="some_file.pdf"'
+    response["Content-Disposition"] = 'attachment; filename="vawi_termine.pdf"'
     response.write(pdf_value)
 
     return response
