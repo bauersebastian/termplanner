@@ -110,6 +110,7 @@ class Event(TimeStampedModel):
     start_date = models.DateTimeField("Start des Ereignisses")
     end_date = models.DateTimeField("Ende des Ereignisses", blank=True, null=True)
     event_type = models.CharField(
+        "Art des Ereignisses",
         max_length=2,
         choices=EventType.choices,
         default=EventType.SCRIPT,
