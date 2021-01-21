@@ -101,6 +101,7 @@ class Event(TimeStampedModel):
         EXAM_A = "EA", _("Klausur Block A")
         EXAM_B = "EB", _("Klausur Block B")
         EXAM_C = "EC", _("Klausur Block C")
+        TERM_PAPER = "TP", _("Hausarbeit")
         ALIGNMENT = "AL", _("Abstimmungstermin")
 
     semestermodule = models.ForeignKey(
