@@ -1,1 +1,3 @@
 * text=auto
+termplanner/static/js/* linguist-vendored
+termplanner/static/css/* linguist-vendored

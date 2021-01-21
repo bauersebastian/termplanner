@@ -45,9 +45,6 @@
             <li class="nav-item {% if request.get_full_path == home_url %}active{% endif %}">
               <a class="nav-link" href="{% url 'home' %}">Startseite</a>
             </li>
-            <li class="nav-item {% if "/about" in request.path %}active{% endif %}">
-              <a class="nav-link" href="{% url 'about' %}">Über uns</a>
-            </li>
 
             {# Links for authenticated users only #}
             {% if request.user.is_authenticated %}
