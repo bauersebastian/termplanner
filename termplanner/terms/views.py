@@ -227,8 +227,10 @@ def events_semestermodule_pdf_view(request):
         for event in event_query:
             line = []
             if event.all_day:
-                formatted_start_date = event.start_date.strftime("%d.%m.%Y")
-                formatted_end_date = event.end_date.strftime("%d.%m.%Y")
+                formatted_start_date = event.start_date.astimezone().strftime(
+                    "%d.%m.%Y"
+                )
+                formatted_end_date = event.end_date.astimezone().strftime("%d.%m.%Y")
                 line.append(
                     Paragraph(
                         f"{formatted_start_date} bis {formatted_end_date}",
@@ -237,8 +239,12 @@ def events_semestermodule_pdf_view(request):
                 )
             else:
                 if event.end_date:
-                    formatted_start_date = event.start_date.strftime("%d.%m.%Y - %H:%M")
-                    formatted_end_date = event.end_date.strftime("%H:%M Uhr")
+                    formatted_start_date = event.start_date.astimezone().strftime(
+                        "%d.%m.%Y - %H:%M"
+                    )
+                    formatted_end_date = event.end_date.astimezone().strftime(
+                        "%H:%M Uhr"
+                    )
                     line.append(
                         Paragraph(
                             f"{formatted_start_date} bis {formatted_end_date}",
@@ -246,7 +252,7 @@ def events_semestermodule_pdf_view(request):
                         )
                     )
                 else:
-                    formatted_start_date = event.start_date.strftime(
+                    formatted_start_date = event.start_date.astimezone().strftime(
                         "%d.%m.%Y - %H:%M Uhr"
                     )
                     line.append(f"{formatted_start_date}")
