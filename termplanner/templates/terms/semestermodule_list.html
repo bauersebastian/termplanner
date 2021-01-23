@@ -214,10 +214,10 @@
             {% if competences %}
               <h4>Bisherige Schwerpunkte im Studium</h4>
               <ul>
-                <li>Wirtschaftswissenschaften: {{ competences.wiwi }}%</li>
-                <li>Informatik: {{ competences.cs }}%</li>
-                <li>Wirtschaftsinformatik: {{ competences.infosys }}%</li>
-                <li>Schlüsselkompetenzen: {{ competences.key }}%</li>
+                <li>Wirtschaftswissenschaften: {{ competences.wiwi|floatformat }}%</li>
+                <li>Informatik: {{ competences.cs|floatformat }}%</li>
+                <li>Wirtschaftsinformatik: {{ competences.infosys|floatformat }}%</li>
+                <li>Schlüsselkompetenzen: {{ competences.key|floatformat }}%</li>
               </ul>
             {% endif %}
           {% else %}
