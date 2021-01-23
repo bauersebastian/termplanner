@@ -32,6 +32,37 @@ from .models import Event, Module, SemesterModule
 class SemesterModuleListView(LoginRequiredMixin, ListView):
     model = SemesterModule
 
+    def calculate_competences(self):
+        done_modules = SemesterModule.objects.filter(user=self.request.user.id).filter(
+            done=True
+        )
+        count_modules = done_modules.count()
+        if count_modules is None or count_modules == 0:
+            return None
+        wiwi = 0
+        cs = 0
+        key = 0
+        infosys = 0
+        for enrollment in done_modules:
+            if enrollment.module.quota_economics:
+                wiwi += enrollment.module.quota_economics
+            if enrollment.module.quota_cs:
+                cs += enrollment.module.quota_cs
+            if enrollment.module.quota_is:
+                infosys += enrollment.module.quota_is
+            if enrollment.module.quota_key_competence:
+                key += enrollment.module.quota_key_competence
+        wiwi_percent = wiwi / count_modules
+        cs_percent = cs / count_modules
+        key_percent = key / count_modules
+        infosys_percent = infosys / count_modules
+        competences = dict()
+        competences["wiwi"] = wiwi_percent
+        competences["cs"] = cs_percent
+        competences["key"] = key_percent
+        competences["infosys"] = infosys_percent
+        return competences
+
     def get_queryset(self):
         return SemesterModule.objects.filter(user=self.request.user.id)
 
@@ -55,6 +86,7 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
             semestermodule__user_id=self.request.user.id
         )
         context["events"] = user_events
+        context["competences"] = self.calculate_competences()
 
         return context
 

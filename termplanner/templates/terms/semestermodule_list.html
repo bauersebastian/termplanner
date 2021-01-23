@@ -211,6 +211,15 @@
           {% if semestermodule_list_done.count == 1 %}Modul {% else %}Module {% endif %}abgeschlossen.
           </p>
           <p>Somit hast du bisher {{ ects_done.module__ects__sum }} ECTS Punkte gesammelt.</p>
+            {% if competences %}
+              <h4>Bisherige Schwerpunkte im Studium</h4>
+              <ul>
+                <li>Wirtschaftswissenschaften: {{ competences.wiwi }}%</li>
+                <li>Informatik: {{ competences.cs }}%</li>
+                <li>Wirtschaftsinformatik: {{ competences.infosys }}%</li>
+                <li>Schlüsselkompetenzen: {{ competences.key }}%</li>
+              </ul>
+            {% endif %}
           {% else %}
             <p>Du hast leider noch keine abgeschlossenen Module.</p>
           {% endif %}
