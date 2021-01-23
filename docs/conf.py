@@ -26,9 +26,9 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "Termplanner"
-copyright = """2020, SQM Team"""
-author = "SQM Team"
+project = "VAWi Planer"
+copyright = """2020-21, SQM Team"""
+author = "Sebastian Bauer"
 
 
 # -- General configuration ---------------------------------------------------

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-23 23:51+0100\n"
+"POT-Creation-Date: 2021-01-23 13:40+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,7 +111,9 @@ msgstr ""
 #: termplanner/templates/account/login.html:7
 #: termplanner/templates/account/login.html:11
 #: termplanner/templates/account/login.html:44
-#: termplanner/templates/base.html:65
+#: termplanner/templates/account/login_snippet.html:7
+#: termplanner/templates/account/login_snippet.html:22
+#: termplanner/templates/base.html:72
 msgid "Sign In"
 msgstr ""
 
@@ -136,13 +138,14 @@ msgid ""
 msgstr ""
 
 #: termplanner/templates/account/login.html:43
+#: termplanner/templates/account/login_snippet.html:21
 msgid "Forgot Password?"
 msgstr ""
 
 #: termplanner/templates/account/logout.html:5
 #: termplanner/templates/account/logout.html:8
 #: termplanner/templates/account/logout.html:17
-#: termplanner/templates/base.html:56
+#: termplanner/templates/base.html:63
 msgid "Sign Out"
 msgstr ""
 
@@ -220,7 +223,7 @@ msgstr ""
 
 #: termplanner/templates/account/signup.html:9
 #: termplanner/templates/account/signup.html:19
-#: termplanner/templates/base.html:61
+#: termplanner/templates/base.html:68
 msgid "Sign Up"
 msgstr ""
 
@@ -274,9 +277,37 @@ msgid ""
 "mail address</a>."
 msgstr ""
 
-#: termplanner/templates/base.html:52
+#: termplanner/templates/base.html:59
 msgid "My Profile"
 msgstr "Mein Profil"
+
+#: termplanner/terms/models.py:99
+msgid "Skriptbearbeitung"
+msgstr ""
+
+#: termplanner/terms/models.py:100
+msgid "Studienleistung"
+msgstr ""
+
+#: termplanner/terms/models.py:101
+msgid "Klausur Block A"
+msgstr ""
+
+#: termplanner/terms/models.py:102
+msgid "Klausur Block B"
+msgstr ""
+
+#: termplanner/terms/models.py:103
+msgid "Klausur Block C"
+msgstr ""
+
+#: termplanner/terms/models.py:104
+msgid "Hausarbeit"
+msgstr ""
+
+#: termplanner/terms/models.py:105
+msgid "Abstimmungstermin"
+msgstr ""
 
 #: termplanner/users/apps.py:7
 msgid "Users"
@@ -284,11 +315,11 @@ msgstr ""
 
 #: termplanner/users/forms.py:17
 msgid "This username has already been taken."
-msgstr ""
+msgstr "Dieser Benutzername ist bereits vergeben."
 
 #: termplanner/users/models.py:11
 msgid "Name of User"
-msgstr ""
+msgstr "Name des Benutzers"
 
 #: termplanner/users/views.py:34
 msgid "Infos successfully updated"

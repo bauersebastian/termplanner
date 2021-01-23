@@ -8,11 +8,11 @@ Willkommen bei der Dokumentation zum VAWi Planer!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Inhalte:
 
-   howto
-   pycharm/configuration
-   users
+   register
+   semestermodules
+   events
 
 
 
