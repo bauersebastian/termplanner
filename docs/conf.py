@@ -29,6 +29,7 @@ django.setup()
 project = "VAWi Planer"
 copyright = """2020-21, SQM Team"""
 author = "Sebastian Bauer"
+language = "de"
 
 
 # -- General configuration ---------------------------------------------------

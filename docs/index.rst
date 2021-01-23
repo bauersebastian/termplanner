@@ -16,9 +16,7 @@ Willkommen bei der Dokumentation zum VAWi Planer!
 
 
 
-Indices and tables
-==================
+Suche
+-------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
