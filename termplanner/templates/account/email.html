@@ -7,7 +7,7 @@
 {% block head_title %}{% trans "Account" %}{% endblock %}
 
 {% block inner %}
-<h1>{% trans "E-mail Addresses" %}</h1>
+<h1>E-Mail Adressen ändern</h1>
 
 {% if user.emailaddress_set.all %}
 <p>{% trans 'The following e-mail addresses are associated with your account:' %}</p>
@@ -24,19 +24,23 @@
 
     {{ emailaddress.email }}
     {% if emailaddress.verified %}
-    <span class="verified">{% trans "Verified" %}</span>
+    <span class="verified">/ {% trans "Verified" %}</span>
     {% else %}
-    <span class="unverified">{% trans "Unverified" %}</span>
+    <span class="unverified">/ {% trans "Unverified" %}</span>
     {% endif %}
-    {% if emailaddress.primary %}<span class="primary">{% trans "Primary" %}</span>{% endif %}
+    {% if emailaddress.primary %}<span class="primary">/ {% trans "Primary" %}</span>{% endif %}
   </label>
 </div>
   {% endfor %}
 
+<div class="form-group mb-0">
+  <button class="secondaryAction btn btn-primary mb-2" type="submit" name="action_primary" >{% trans 'Make Primary' %}</button>
+</div>
+<div class="form-group mb-0">
+  <button class="secondaryAction btn btn-primary mb-2" type="submit" name="action_send" >{% trans 'Re-send Verification' %}</button>
+</div>
 <div class="form-group">
-      <button class="secondaryAction btn btn-primary mb-2" type="submit" name="action_primary" >{% trans 'Make Primary' %}</button>
-      <button class="secondaryAction btn btn-primary mb-2" type="submit" name="action_send" >{% trans 'Re-send Verification' %}</button>
-      <button class="primaryAction btn btn-primary mb-2" type="submit" name="action_remove" >{% trans 'Remove' %}</button>
+  <button class="primaryAction btn btn-primary mb-2" type="submit" name="action_remove" >{% trans 'Remove' %}</button>
 </div>
 
 </fieldset>

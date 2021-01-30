@@ -8,11 +8,12 @@
 
   <div class="row">
     <div class="col-sm-12">
-
-      <h2>{{ object.username }}</h2>
       {% if object.name %}
-        <p>{{ object.name }}</p>
+        <h2>Profil von {{ object.name }} bearbeiten</h2>
+      {% else %}
+        <h2>Profil von {{ object.username }} bearbeiten</h2>
       {% endif %}
+      <p>Nachfolgend hast du die Möglichkeit die Angaben in deinem Profil eigenständig zu aktualisieren.</p>
     </div>
   </div>
 
@@ -21,8 +22,8 @@
 <div class="row">
 
   <div class="col-sm-12">
-    <a class="btn btn-primary" href="{% url 'users:update' %}" role="button">Mein Profil</a>
-    <a class="btn btn-primary" href="{% url 'account_email' %}" role="button">E-Mail</a>
+    <a class="btn btn-primary" href="{% url 'users:update' %}" role="button">Name ändern</a>
+    <a class="btn btn-primary" href="{% url 'account_email' %}" role="button">E-Mail ändern</a>
     <a class="btn btn-primary" href="{% url 'account_change_password' %}" role="button">Passwort ändern</a>
     <!-- Your Stuff: Custom user template urls -->
   </div>

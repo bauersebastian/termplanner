@@ -4,13 +4,14 @@
 {% block title %}{{ user.username }}{% endblock %}
 
 {% block content %}
-  <h1>{{ user.username }}</h1>
+  <h1>Benutzerprofil ändern</h1>
+  <p>Dein aktueller Benutzername lautet: {{ user.username }}</p>
   <form class="form-horizontal" method="post" action="{% url 'users:update' %}">
     {% csrf_token %}
     {{ form|crispy }}
     <div class="control-group">
       <div class="controls">
-        <button type="submit" class="btn btn-primary">Update</button>
+        <button type="submit" class="btn btn-primary">Benutzer ändern</button>
       </div>
     </div>
   </form>
