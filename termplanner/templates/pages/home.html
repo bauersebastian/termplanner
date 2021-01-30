@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load static i18n %}
 {% load crispy_forms_tags %}
 {% load account socialaccount %}
 
@@ -14,6 +14,8 @@
             Studienleistungen, Klausuren, Hausarbeiten, Lerngruppen, Videokonferenzen…mit dem VAWI Semesterplaner lassen sich Termine und Aktivitäten in deinem VAWI Studium perfekt planen und koordinieren.
             Der VAWI Planer ist speziell auf die Bedürfnisse eines VAWI Studenten ausgerichtet und bietet dir alles, um bestens organisiert dein Studium zu bestreiten.
           </p>
+        <img class="mb-3 img-fluid" src="{% static 'images/home_student.jpg' %}" alt="Student am Mac">
+
         <h3>Funktionen:</h3>
         <ul>
           <li>
@@ -45,7 +47,7 @@
     </div>
     {% if not request.user.is_authenticated %}
       <div class="row mt-5">
-      <div class="col">
+      <div class="col-6">
         {% include "account/login_snippet.html" %}
       </div>
       </div>
