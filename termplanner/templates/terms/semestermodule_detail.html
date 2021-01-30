@@ -3,12 +3,12 @@
 {% block content %}
   <div class="container">
     <div class="row">
-      <div class="col">
-        <h1>{{ semestermodule.module.title }}</h1>
+      <div class="col-6">
+        <h2>{{ semestermodule.module.title }}</h2>
       </div>
-      <div class="col">
-        <div class="col"><a class="btn btn-danger float-right" role="button" href="{% url "terms:delete" semestermodule.id %}">Modul löschen</a></div>
-        <div class="col"><a class="btn btn-secondary float-right mr-2" role="button" href="{% url "terms:update" semestermodule.id %}">Modul ändern</a></div>
+      <div class="col-6">
+        <a class="btn btn-danger float-right mr-0" role="button" href="{% url "terms:delete" semestermodule.id %}">Modul löschen</a>
+        <a class="btn btn-secondary float-right mr-2" role="button" href="{% url "terms:update" semestermodule.id %}">Modul ändern</a>
       </div>
     </div>
     <div class="row mt-3">
@@ -25,14 +25,14 @@
     </div>
 
 
-    <div class="row mt-4">
-      <div class="col">
-        <h2>Termine</h2>
+    <div class="row mt-3 mb-2">
+      <div class="col-6">
+        <h3>Termine</h3>
       </div>
-      <div class="col">
+      <div class="col-6">
         <a class="btn btn-secondary float-right" role="button" href="{% url "terms:add_event" semestermodule.id%}">
           Termin hinzufügen
-      </a>
+        </a>
       </div>
     </div>
     {% if event_list %}

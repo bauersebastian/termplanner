@@ -72,7 +72,7 @@ class SemesterModuleListView(LoginRequiredMixin, ListView):
             SemesterModule.objects.filter(user=self.request.user.id)
             .filter(done=False)
             .annotate(num_events=Count("events"))
-            .order_by("-num_events")
+            .order_by("term", "-num_events")
         )
         context["semestermodule_list_done"] = SemesterModule.objects.filter(
             user=self.request.user.id
