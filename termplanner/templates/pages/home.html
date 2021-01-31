@@ -45,11 +45,4 @@
 
       </div>
     </div>
-    {% if not request.user.is_authenticated %}
-      <div class="row mt-5">
-      <div class="col-6">
-        {% include "account/login_snippet.html" %}
-      </div>
-      </div>
-    {% endif %}
 {% endblock %}
