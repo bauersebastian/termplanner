@@ -14,14 +14,14 @@ context('Module', () => {
     })
 
 
-    it('Es sollten neue Module hinzugefügt werden können.', () => {
+    it('(#5) Es sollten neue Module hinzugefügt werden können.', () => {
         cy.get(':nth-child(2) > .btn').contains('Modul hinzufügen')
         cy.get(':nth-child(2) > .btn').click()
         cy.wait(100)
         cy.url().should('include', '/semester/add')
     })
 
-    it('Es sollten alle Felder enthalten sein.', () => {
+    it('(#6) Es sollten alle Felder enthalten sein.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#div_id_term > label').contains('Semester')
@@ -32,7 +32,7 @@ context('Module', () => {
         cy.get('.form-check-label').contains('Erledigt?')
     })
 
-    it('Es soll ein Hilfetext ausgegeben werden, sofern kein Semester ausgewählt wird.', () => {
+    it('(#7) Es soll ein Hilfetext ausgegeben werden, sofern kein Semester ausgewählt wird.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('.btn').click()
@@ -43,7 +43,7 @@ context('Module', () => {
 
     })
 
-    it('Es soll ein Hilfetext ausgegeben werden, sofern kein Modul ausgewählt wird.', () => {
+    it('(#8) Es soll ein Hilfetext ausgegeben werden, sofern kein Modul ausgewählt wird.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -55,7 +55,7 @@ context('Module', () => {
         })
     })
 
-    it('Es soll zwischen Sommer- und Wintersemester unterschieden werden.', () => {
+    it('(#9) Es soll zwischen Sommer- und Wintersemester unterschieden werden.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -64,7 +64,7 @@ context('Module', () => {
 
     })
 
-    it('Gespeicherte Werte sollen korrekt übernommen werden.', () => {
+    it('(#10) Gespeicherte Werte sollen korrekt übernommen werden.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -97,7 +97,7 @@ context('Module', () => {
 
     })
 
-    it('Die Modulangaben sind enthalten.', () => {
+    it('(#11) Die Modulangaben sind enthalten.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -135,7 +135,7 @@ context('Module', () => {
 
     })
 
-    it('Module sollen gelöscht werden können.', () => {
+    it('(#12) Module sollen gelöscht werden können.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -158,7 +158,7 @@ context('Module', () => {
         //TODO: Ggf. URL aufrufen
     })
 
-    it('Module sollen bearbeitet werden können.', () => {
+    it('(#13) Module sollen bearbeitet werden können.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')
@@ -198,7 +198,7 @@ context('Module', () => {
     })
 
 
-    it('Als Note darf kein Wert über 5.0 angegeben werden.', () => {
+    it('(#14) Als Note darf kein Wert über 5.0 angegeben werden.', () => {
         cy.get(':nth-child(2) > .btn').click()
 
         cy.get('#id_term').select('Wintersemester 2020/21')

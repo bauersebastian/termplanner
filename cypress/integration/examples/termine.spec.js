@@ -31,7 +31,7 @@ context('Termine', () => {
         cy.get('.btn').click()
     })
 
-    it('Angaben sollen in die Übersicht korrekt übernommen werden.', () => {
+    it('(#25) Angaben sollen in die Übersicht korrekt übernommen werden.', () => {
         add_module()
 
         cy.get(':nth-child(3) > :nth-child(2) > .btn').click()
@@ -50,7 +50,7 @@ context('Termine', () => {
 
     })
 
-    it('Der Button zum Hinzufügen von Terminen soll vorhanden sein.', () => {
+    it('(#26) Der Button zum Hinzufügen von Terminen soll vorhanden sein.', () => {
         add_module()
 
         cy.get(':nth-child(3) > :nth-child(2) > .btn').contains('Termin hinzufügen')
@@ -58,7 +58,7 @@ context('Termine', () => {
     })
 
 
-    it('Alle Angaben zum Hinzufügen von Terminen sollen vorhanden sein.', () => {
+    it('(#27) Alle Angaben zum Hinzufügen von Terminen sollen vorhanden sein.', () => {
         add_module()
 
         cy.get(':nth-child(3) > :nth-child(2) > .btn').click()
