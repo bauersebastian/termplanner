@@ -14,7 +14,7 @@ context('Mein Profil', () => {
         cy.get('.btn').click()
     })
 
-    it('Der PDF-Export sollte vorhanden sein.', () => {
+    it('(#21) Der PDF-Export sollte vorhanden sein.', () => {
         cy.get(':nth-child(3) > .col > .btn').contains('PDF Export der Terminplanung')
     })
 

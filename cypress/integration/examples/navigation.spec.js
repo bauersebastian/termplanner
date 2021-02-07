@@ -5,36 +5,36 @@ context('Navigation', () => {
         cy.visit(Cypress.env('baseUrl'))
     })
 
-    it('Alle Navigationspunkte sollen enthalten sein.', () => {
+    it('(#15) Alle Navigationspunkte sollen enthalten sein.', () => {
         cy.get('.active > .nav-link').contains('Startseite')
         cy.get('#sign-up-link').contains('Registrieren')
         cy.get('#log-in-link').contains('Anmelden')
     })
 
-    it('Es sollen alle Footer-Links enthalten sein.', () => {
+    it('(#16) Es sollen alle Footer-Links enthalten sein.', () => {
         cy.get('[href="/imprint/"]').contains('Impressum')
         cy.get('[href="/privacy/"]').contains('Datenschutz')
         cy.get('[target="_blank"]').contains('Handbuch')
     })
 
-    it('Der Impressumslink soll funktionsfähig sein.', () => {
+    it('(#17) Der Impressumslink soll funktionsfähig sein.', () => {
         cy.get('[href="/imprint/"]').click()
         cy.get('h1').contains('Impressum')
         cy.url().should('include', '/imprint')
     })
 
-    it('Der Datenschutzlink soll funktionsfähig sein.', () => {
+    it('(#18) Der Datenschutzlink soll funktionsfähig sein.', () => {
         cy.get('[href="/privacy/"]').click()
         cy.get('h1').contains('Datenschutz')
         cy.url().should('include', '/privacy')
     })
 
-    it('Der Handbuchlink soll funktionsfähig sein.', () => {
+    it('(#19) Der Handbuchlink soll funktionsfähig sein.', () => {
         cy.get('.text-muted > [target="_blank"]').should('have.attr', 'href', 'https://termplanner.readthedocs.io/de/latest/index.html')
     })
 
 
-    it('Alle Navigationspunkte sollen nach dem Login enthalten sein.', () => {
+    it('(#20) Alle Navigationspunkte sollen nach dem Login enthalten sein.', () => {
         cy.visit(Cypress.env('loginUrl'))
 
         cy.get('#id_login').type(Cypress.env('login_name_correct'))
