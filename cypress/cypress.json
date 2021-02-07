@@ -1,0 +1,10 @@
+{
+    "env": {
+        "baseUrl": "https://semesterplaner.herokuapp.com/",
+        "loginUrl": "https://semesterplaner.herokuapp.com/accounts/login/",
+        "login_name_correct": "<Your Username>",
+        "login_name_wrong": "Test",
+        "login_password_correct": "<Your Password>",
+        "login_password_wrong": "PasswortFalsch"
+    }
+}
