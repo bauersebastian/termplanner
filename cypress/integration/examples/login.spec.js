@@ -4,7 +4,7 @@ context('Login', () => {
   })
 
 
-  it('Der Login und Logout sollen funktionsfähig sein.', () => {
+  it('(#1) Der Login und Logout sollen funktionsfähig sein.', () => {
 
     // Login-Seite
     cy.get('#id_login').type(Cypress.env('login_name_correct'))
@@ -26,7 +26,7 @@ context('Login', () => {
     cy.get('.alert').contains('Du hast dich abgemeldet.')
   })
 
-  it('Es soll ein Hilfetext ausgegeben werden, sofern kein Benutzername enthalten ist.', () => {
+  it('(#2) Es soll ein Hilfetext ausgegeben werden, sofern kein Benutzername enthalten ist.', () => {
 
     // Login-Seite
     cy.get('#id_password').type(Cypress.env('login_password_wrong'))
@@ -36,7 +36,7 @@ context('Login', () => {
     })
   })
 
-  it('Es soll ein Hilfetext ausgegeben werden, sofern kein Passwort eingegeben wurde.', () => {
+  it('(#3) Es soll ein Hilfetext ausgegeben werden, sofern kein Passwort eingegeben wurde.', () => {
 
     // Login-Seite
     cy.get('#id_login').type(Cypress.env('login_name_wrong'))
@@ -46,7 +46,7 @@ context('Login', () => {
     })
   })
 
-  it('Es soll ein Hinweistext ausgegeben werden, sofern das Passwort falsch eingegeben wurde.', () => {
+  it('(#4) Es soll ein Hinweistext ausgegeben werden, sofern das Passwort falsch eingegeben wurde.', () => {
 
     // Login-Seite
     cy.get('#id_login').type(Cypress.env('login_name_wrong'))

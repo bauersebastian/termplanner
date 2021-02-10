@@ -15,7 +15,7 @@ context('Termine', () => {
         cy.get('.btn').click()
     })
 
-    it('Der Button Passwort ändern sollte vorhanden sein.', () => {
+    it('(#22) Der Button Passwort ändern sollte vorhanden sein.', () => {
         cy.contains('Passwort ändern').click()
         cy.contains('Passwort ändern')
         cy.get('#div_id_oldpassword > .requiredField').contains('Aktuelles Passwort*')
@@ -23,7 +23,7 @@ context('Termine', () => {
         cy.get('#div_id_password2 > .requiredField').contains('Neues Passwort (Wiederholung)*')
     })
 
-    it('Der Button Name ändern sollte vorhanden sein und die entsprechenden Felder.', () => {
+    it('(#23) Der Button Name ändern sollte vorhanden sein und die entsprechenden Felder.', () => {
         cy.contains('Mein Profil').click()
         cy.contains('Name ändern').click()
         cy.contains(Cypress.env('login_name_correct'))
@@ -33,7 +33,7 @@ context('Termine', () => {
         cy.get('.btn').contains('Benutzer ändern')
     })
 
-    it('Der Button E-Mailadresse ändern sollte vorhanden sein.', () => {
+    it('(#24) Der Button E-Mailadresse ändern sollte vorhanden sein.', () => {
         cy.contains('E-Mail ändern').click()
         cy.contains('Folgende E-Mail-Adressen sind mit diesem Konto verknüpft:')
         cy.get('.primary_email').contains('Bestätigt / Primär')
