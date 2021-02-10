@@ -26,9 +26,9 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = "VAWi Planer"
-copyright = """2020-21, SQM Team"""
-author = "Sebastian Bauer"
+project = "VAWi Semesterplaner"
+copyright = """2020-21, SQM -Gruppe VAWi-Semesterplaner"""
+author = "Gruppe „VAWi-Semesterplaner“"
 language = "de"
 
 
